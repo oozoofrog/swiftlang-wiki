@@ -1,0 +1,144 @@
+site_name: Swift Compiler Wiki
+site_url: https://oozoofrog.github.io/swiftlang-wiki/
+site_description: Swift 컴파일러 내부 구조 위키 — 71+ pages, LLM-generated knowledge base
+repo_url: https://github.com/oozoofrog/swiftlang-wiki
+repo_name: oozoofrog/swiftlang-wiki
+edit_uri: edit/main/pages/
+
+docs_dir: pages
+site_dir: site
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ko
+  - roamlinks
+  - obsidian-interactive-graph
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - toc:
+      permalink: true
+
+nav:
+  - 개요:
+    - overview.md
+    - compiling-swift-generics.md
+  - 컴파일러 코어:
+    - type-checker.md
+    - request-evaluator.md
+    - diagnostics.md
+    - serialization.md
+    - dependency-analysis.md
+    - compiler-driver.md
+    - compiler-performance.md
+    - debugging-the-compiler.md
+    - runtime.md
+    - ast-node-hierarchy.md
+    - swift-compiler-sources.md
+    - modules.md
+  - SIL:
+    - sil-reference.md
+    - sil-types.md
+    - sil-instructions.md
+    - sil-ownership.md
+    - sil-function-attributes.md
+    - sil-function-conventions.md
+    - sil-initializer-conventions.md
+    - sil-memory-access.md
+    - sil-arc-optimization.md
+    - sil-utilities.md
+    - optimizer-design.md
+    - sil-optimizer-pass-catalog.md
+    - high-level-sil-optimizations.md
+    - transparent-attr.md
+  - ABI:
+    - abi-mangling.md
+    - abi-type-metadata.md
+    - abi-type-layout.md
+    - abi-calling-convention.md
+    - abi-generic-signature.md
+    - abi-stability.md
+    - library-evolution.md
+  - Generics:
+    - generic-signatures.md
+    - substitution-maps.md
+    - archetypes.md
+    - conformances.md
+    - generics-manifesto.md
+  - Interop:
+    - objc-interop.md
+    - c-to-swift-name-translation.md
+    - how-swift-imports-c-apis.md
+    - cpp-interop-overview.md
+    - cpp-using-from-swift.md
+    - cpp-calling-swift.md
+  - 언어 설계:
+    - ownership-manifesto.md
+    - error-handling.md
+    - dynamic-casting.md
+    - access-control.md
+    - literals.md
+    - failable-initializers.md
+  - 기여 가이드:
+    - getting-started.md
+    - first-pull-request.md
+    - compiler-faq.md
+    - testing-guide.md
+    - continuous-integration.md
+    - development-tips.md
+    - stdlib-programmers-manual.md
+  - 패키지:
+    - swift-syntax-package.md
+    - swift-driver-package.md
+    - swift-package-manager.md
+    - sourcekit-lsp.md
+    - swift-testing-package.md
+    - swift-foundation-package.md
+    - swift-build-package.md
+    - swift-format-package.md
+    - llbuild-package.md
+    - swift-collections-package.md
+    - swift-nio-package.md
+  - 용어:
+    - glossary-compiler.md
