@@ -27,4 +27,4 @@ SIL에서 메모리 접근의 배타성(exclusivity) 모델. 원본: `swift/docs
 - **dynamic**: 런타임 검사
 - **unsafe**: 검사 없음
 
-관련 페이지: [[sil-reference]], [[keyword-network]], [[sil-instructions]], [[sil-ownership]], [[concurrency-data-race-safety]], [[runtime]]
+관련 페이지: [[proposal-initialization-and-accessors-to-property-model]], [[sil-reference]], [[keyword-network]], [[sil-instructions]], [[sil-ownership]], [[concurrency-data-race-safety]], [[runtime]]

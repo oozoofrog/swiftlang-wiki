@@ -26,6 +26,9 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - Value Semantics / COW proposal 교차 읽기: [[proposal-value-semantics-and-cow-to-ownership]]
 - Declaration Type Checker proposal 교차 읽기: [[proposal-declaration-type-checker-to-sema]]
 - Compilation Model / WMO proposal 교차 읽기: [[proposal-compilation-model-and-wmo-to-driver]]
+- ObjC interop proposal 교차 읽기: [[proposal-objc-interop-to-importer-and-dispatch]]
+- Initialization/Accessors proposal 교차 읽기: [[proposal-initialization-and-accessors-to-property-model]]
+- Remote Mirrors proposal 교차 읽기: [[proposal-remote-mirrors-to-runtime-reflection]]
 - stdlib/runtime/compiler 허브: [[standard-library-runtime-and-compiler]]
 - 툴체인 전체 지도: [[swift-toolchain-stack]]
 - 매크로/도구 허브: [[swift-macro-tooling-stack]]
@@ -50,6 +53,9 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - [[proposal-value-semantics-and-cow-to-ownership|value semantics/COW]]
 - [[proposal-declaration-type-checker-to-sema|declaration type checker proposal]]
 - [[proposal-compilation-model-and-wmo-to-driver|compilation model/WMO]]
+- [[proposal-objc-interop-to-importer-and-dispatch|objc interop proposal]]
+- [[proposal-initialization-and-accessors-to-property-model|initialization/accessors]]
+- [[proposal-remote-mirrors-to-runtime-reflection|remote mirrors]]
 - [[standard-library-runtime-and-compiler|stdlib/runtime/compiler]]
 - [[swift-toolchain-stack|toolchain stack]]
 - [[swift-macro-tooling-stack|macro/tooling]]
@@ -272,6 +278,9 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - value semantics / COW proposal이 실제 ownership/runtime과 어떻게 이어졌는지 보고 싶다 → [[proposal-value-semantics-and-cow-to-ownership]]
 - declaration type checker proposal이 현대 Sema와 어떻게 이어졌는지 보고 싶다 → [[proposal-declaration-type-checker-to-sema]]
 - build model / WMO proposal이 driver와 어떻게 이어졌는지 보고 싶다 → [[proposal-compilation-model-and-wmo-to-driver]]
+- ObjC interop proposal이 importer/dynamic dispatch와 어떻게 이어졌는지 보고 싶다 → [[proposal-objc-interop-to-importer-and-dispatch]]
+- initialization/accessors proposal이 property model과 어떻게 이어졌는지 보고 싶다 → [[proposal-initialization-and-accessors-to-property-model]]
+- remote mirrors proposal이 runtime/reflection과 어떻게 이어졌는지 보고 싶다 → [[proposal-remote-mirrors-to-runtime-reflection]]
 
 ## 자주 같이 움직이는 키워드 묶음
 
@@ -297,6 +306,12 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
   - [[proposal-declaration-type-checker-to-sema]] → [[type-checker]] → [[request-evaluator]]
 - proposal → implementation (driver/WMO)
   - [[proposal-compilation-model-and-wmo-to-driver]] → [[compiler-driver]] → [[dependency-analysis]]
+- proposal → implementation (ObjC interop)
+  - [[proposal-objc-interop-to-importer-and-dispatch]] → [[clang-importer]] → [[objc-interop]]
+- proposal → implementation (property model)
+  - [[proposal-initialization-and-accessors-to-property-model]] → [[sil-initializer-conventions]] → [[sil-memory-access]]
+- proposal → implementation (reflection/runtime)
+  - [[proposal-remote-mirrors-to-runtime-reflection]] → [[abi-type-metadata]] → [[runtime]]
 - Sendable → actor isolation → FlowIsolation → ownership
   - [[concurrency-data-race-safety]] → [[sil-optimizer-pass-catalog]] → [[sil-ownership]]
 - ABI stability → metadata → runtime → library evolution

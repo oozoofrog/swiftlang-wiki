@@ -8,8 +8,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 
 | 항목 | 값 |
 |------|-----|
-| 페이지 | 121 |
-| 교차참조 | 2205 |
+| 페이지 | 124 |
+| 교차참조 | 2329 |
 | 소스 | swift/docs/, 서브프로젝트 README, 코드 분석 |
 
 ## 빠른 탐색
@@ -32,6 +32,9 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **[Value Semantics / COW proposals → ownership/runtime](proposal-value-semantics-and-cow-to-ownership.md)** — 값 의미론·COW proposal을 현재 ownership/runtime 문맥으로 읽는 교차 페이지
 - **[Declaration Type Checker proposal → 현대 Sema](proposal-declaration-type-checker-to-sema.md)** — 선언 타입 체커 proposal을 TypeChecker/Request Evaluator 맥락으로 읽는 교차 페이지
 - **[Compilation Model / WMO proposals → driver](proposal-compilation-model-and-wmo-to-driver.md)** — 초기 build model/WMO proposal을 driver·dependency analysis 맥락으로 읽는 교차 페이지
+- **[ObjC interop proposal → importer / dispatch](proposal-objc-interop-to-importer-and-dispatch.md)** — ObjC interop proposal을 importer와 dynamic dispatch 문맥으로 읽는 교차 페이지
+- **[Initialization / Accessors proposals → property model](proposal-initialization-and-accessors-to-property-model.md)** — init/accessors proposal을 property model과 SIL access 문맥으로 읽는 교차 페이지
+- **[Remote Mirrors proposal → runtime/reflection](proposal-remote-mirrors-to-runtime-reflection.md)** — remote mirrors proposal을 metadata/runtime/debugging 문맥으로 읽는 교차 페이지
 - **[표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md)** — stdlib, runtime, compiler가 어떻게 한 몸처럼 움직이는지 정리한 허브
 - **[Swift 툴체인 스택](swift-toolchain-stack.md)** — LLVM/Clang/driver/SwiftPM/CMake/Ninja/lit/LLDB까지 포함한 기술 스택 지도
 - **[Swift 매크로·도구 스택](swift-macro-tooling-stack.md)** — SwiftSyntax, SourceKit-LSP, formatter, macro 생태계를 묶는 허브
@@ -64,6 +67,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **task/executor/runtime 중심**: [Swift Task·Executor·Runtime](swift-task-executor-runtime.md) → [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [런타임](runtime.md) → [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md)
 - **설계 역사 중심**: [Swift Evolution / proposal history](swift-evolution-and-proposal-history.md) → [Generics Manifesto](generics-manifesto.md) → [Ownership Manifesto](ownership-manifesto.md) → [ABI Stability Manifesto 해설](official-docs/abi-stability-manifesto.md)
 - **proposal → 구현 교차 읽기**: [Value Semantics / COW proposals](proposal-value-semantics-and-cow-to-ownership.md) → [Declaration Type Checker proposal](proposal-declaration-type-checker-to-sema.md) → [Compilation Model / WMO proposals](proposal-compilation-model-and-wmo-to-driver.md)
+- **proposal → 구현 교차 읽기 2차**: [ObjC interop proposal](proposal-objc-interop-to-importer-and-dispatch.md) → [Initialization / Accessors proposals](proposal-initialization-and-accessors-to-property-model.md) → [Remote Mirrors proposal](proposal-remote-mirrors-to-runtime-reflection.md)
 - **stdlib/runtime 중심**: [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md) → [Standard Library 교차 읽기](official-docs/standard-library-to-compiler-crosswalk.md) → [ABI 안정성](abi-stability.md) → [런타임](runtime.md)
 - **동시성 안전성 중심**: [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md) → [타입 체커](type-checker.md) → [SIL 옵티마이저 패스 카탈로그](sil-optimizer-pass-catalog.md)
 - **Swift 전체 조감 루트**: [Swift 전체 지도](swift-ecosystem-map.md) → [Swift 언어 개요](swift-language-overview.md) → [Swift와 Swift Compiler의 관계](swift-and-swift-compiler.md) → [Swift 타입 시스템](swift-type-system.md) → [Swift 소유권·메모리 모델](swift-ownership-memory-model.md) → [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [Swift actor isolation·Sendable](swift-actor-isolation-and-sendable.md) → [Swift Task·Executor·Runtime](swift-task-executor-runtime.md) → [Swift Evolution / proposal history](swift-evolution-and-proposal-history.md) → [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md) → [Swift 툴체인 스택](swift-toolchain-stack.md)
@@ -84,7 +88,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 | [Generics](generic-signatures.md) | 5 | 시그니처, 치환 맵, 아키타입, Conformance |
 | [Interop](objc-interop.md) | 6 | ObjC, C API 임포트, C++ 양방향 |
 | [언어 설계](ownership-manifesto.md) | 8 | 소유권, 동시성 안전성, 에러 처리, 캐스팅, 접근 제어 |
-| [제안 → 구현 교차 읽기](swift-evolution-and-proposal-history.md) | 4 | evolution 허브, value semantics/COW, declaration type checker, compilation model/WMO |
+| [제안 → 구현 교차 읽기](swift-evolution-and-proposal-history.md) | 7 | evolution 허브, value semantics/COW, declaration type checker, compilation model/WMO, ObjC interop, initialization/accessors, remote mirrors |
 | [기여 가이드](getting-started.md) | 7 | 시작하기, 테스트, CI, FAQ |
 | [패키지](swift-syntax-package.md) | 11 | SwiftPM, SourceKit-LSP, SwiftNIO 등 |
 | [툴체인/인프라](swift-toolchain-stack.md) | 7 | LLVM, Clang Importer, 빌드·테스트·디버그 스택, CMake/Ninja, lit/FileCheck, LLDB |

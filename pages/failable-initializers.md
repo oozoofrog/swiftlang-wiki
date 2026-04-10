@@ -22,4 +22,4 @@ sources: [failable-initializers.md]
 
 DI(Definite Initialization) 패스가 추적을 담당, struct는 완전 지원됨.
 
-관련 페이지: [[sil-initializer-conventions]], [[keyword-network]], [[type-checker]], [[diagnostics]], [[sil-function-conventions]], [[dynamic-casting]], [[overview]]
+관련 페이지: [[proposal-initialization-and-accessors-to-property-model]], [[sil-initializer-conventions]], [[keyword-network]], [[type-checker]], [[diagnostics]], [[sil-function-conventions]], [[dynamic-casting]], [[overview]]

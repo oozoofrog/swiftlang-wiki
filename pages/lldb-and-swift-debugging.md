@@ -82,6 +82,7 @@ Swift 내부 자료구조를 가장 직접적으로 들여다보는 창에 가�
 - [[swift-toolchain-stack]]
 - [[swift-compiler-build-test-debug-stack]]
 - [[debugging-the-compiler]]
+- [[proposal-remote-mirrors-to-runtime-reflection]]
 - [[official-docs/swift-repl-and-debugger]]
 - [[llvm-backend]]
 - [[runtime]]

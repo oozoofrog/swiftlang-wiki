@@ -48,4 +48,4 @@ Swift 런타임은 프로그램에서 사용되는 모든 타입에 대해 **메
 - **Enum**: nominal type descriptor + generic arguments + payload 정보
 - **Tuple**: 요소 수 + 레이블 + 요소 타입 포인터
 
-관련 페이지: [[abi-type-layout]], [[abi-mangling]], [[abi-calling-convention]], [[abi-stability]], [[runtime]], [[dynamic-casting]], [[glossary-compiler]]
+관련 페이지: [[proposal-remote-mirrors-to-runtime-reflection]], [[abi-type-layout]], [[abi-mangling]], [[abi-calling-convention]], [[abi-stability]], [[runtime]], [[dynamic-casting]], [[glossary-compiler]]

@@ -39,4 +39,5 @@
 | 2026-04-10 | publish | swift-actor-isolation-and-sendable.md, swift-task-executor-runtime.md, mkdocs.yml, index.md, keyword-network.md | concurrency deep-dive, isolation, runtime | actor/sendable 세부 허브와 task/executor/runtime 세부 허브 추가 + 동시성/런타임/학습 경로 보강 |
 | 2026-04-10 | publish | swift-evolution-and-proposal-history.md, mkdocs.yml, index.md, keyword-network.md | design history, manifesto, proposals | Swift Evolution / proposal history 허브 추가 + manifesto/library-evolution/concurrency 문서와 상호연결 |
 | 2026-04-10 | publish | proposal-value-semantics-and-cow-to-ownership.md 외 2개, mkdocs.yml, index.md, keyword-network.md | proposal crosswalks, design-to-implementation | value semantics/COW, declaration type checker, compilation model/WMO proposal을 현재 구현 페이지로 연결하는 교차 읽기 페이지 추가 |
+| 2026-04-10 | publish | proposal-objc-interop-to-importer-and-dispatch.md 외 2개, mkdocs.yml, index.md, keyword-network.md | proposal crosswalks, interop, property model, runtime reflection | ObjC interop, initialization/accessors, remote mirrors proposal을 importer/property/runtime 문맥으로 연결하는 교차 읽기 페이지 추가 |
 

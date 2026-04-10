@@ -22,4 +22,4 @@ Swift가 Objective-C 코드 및 런타임과 상호운용하는 방식을 설명
 
 ---
 
-관련 페이지: [[overview]], [[runtime]], [[glossary-compiler]], [[c-to-swift-name-translation]]
+관련 페이지: [[proposal-objc-interop-to-importer-and-dispatch]], [[overview]], [[runtime]], [[glossary-compiler]], [[c-to-swift-name-translation]]
