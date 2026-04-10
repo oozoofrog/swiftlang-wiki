@@ -41,6 +41,7 @@ sources: [swift.org/documentation/standard-library/index.html]
 
 ## 같이 보면 좋은 위키 페이지
 
+- [[standard-library-runtime-and-compiler]]
 - [[stdlib-programmers-manual]]
 - [[runtime]]
 - [[abi-type-layout]]

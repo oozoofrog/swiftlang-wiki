@@ -29,4 +29,4 @@ Swift 소스 코드의 source-accurate 트리 표현(SwiftSyntax tree)을 다루
 
 `swift-syntax/`
 
-관련 페이지: [[overview]], [[keyword-network]], [[modules]], [[swift-format-package]], [[sourcekit-lsp]], [[swift-testing-package]]
+관련 페이지: [[overview]], [[keyword-network]], [[swift-macro-tooling-stack]], [[modules]], [[swift-format-package]], [[sourcekit-lsp]], [[swift-testing-package]]

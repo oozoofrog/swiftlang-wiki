@@ -128,6 +128,7 @@ SIL 단계의 흐름/격리 정보와도 연결된다는 뜻이다.
 
 특히 같이 보면 좋은 축:
 
+- Swift ownership / memory 허브: [[swift-ownership-memory-model]]
 - 값 이동과 borrow의 의미: [[ownership-manifesto]]
 - SIL ownership 규칙: [[sil-ownership]]
 - non-Sendable 값이 SIL에서 어떻게 추적되는가: [[sil-instructions]]
@@ -187,11 +188,13 @@ Swift 6의 concurrency migration은 단순한 스타일 권장이 아니라,
 4. [[sil-optimizer-pass-catalog]]
 5. [[sil-ownership]]
 6. [[ownership-manifesto]]
+7. [[swift-ownership-memory-model]]
 
 ## 같이 보면 좋은 페이지
 
 - [[official-docs/language-to-compiler-crosswalk]]
 - [[official-docs/swift-documentation-index]]
+- [[swift-ownership-memory-model]]
 - [[type-checker]]
 - [[diagnostics]]
 - [[sil-optimizer-pass-catalog]]

@@ -1,6 +1,6 @@
 site_name: Swift Compiler Wiki
 site_url: https://oozoofrog.dev/swiftlang-wiki/
-site_description: Swift 컴파일러 내부 구조 위키 — 99+ pages, LLM-generated knowledge base
+site_description: Swift와 Swift Compiler 전체 지식 위키 — 114 pages, LLM-generated knowledge base
 repo_url: https://github.com/oozoofrog/swiftlang-wiki
 repo_name: oozoofrog/swiftlang-wiki
 edit_uri: edit/main/pages/
@@ -65,6 +65,16 @@ nav:
   - 다운로드 자료: downloads/index.md
   - 키워드 연결망: keyword-network.md
   - 7일 입문 코스: swift-compiler-7-day-course.md
+  - Swift 전체 지도:
+    - swift-ecosystem-map.md
+    - swift-language-overview.md
+    - swift-and-swift-compiler.md
+    - swift-type-system.md
+    - swift-ownership-memory-model.md
+    - standard-library-runtime-and-compiler.md
+    - swift-toolchain-stack.md
+    - swift-macro-tooling-stack.md
+    - swift-compiler-learning-stack.md
   - 공식 문서 해설:
     - official-docs/index.md
     - official-docs/language-to-compiler-crosswalk.md
@@ -173,5 +183,12 @@ nav:
     - llbuild-package.md
     - swift-collections-package.md
     - swift-nio-package.md
+  - 툴체인/인프라:
+    - swift-compiler-build-test-debug-stack.md
+    - llvm-backend.md
+    - clang-importer.md
+    - cmake-and-ninja-build.md
+    - lit-and-filecheck.md
+    - lldb-and-swift-debugging.md
   - 용어:
     - glossary-compiler.md

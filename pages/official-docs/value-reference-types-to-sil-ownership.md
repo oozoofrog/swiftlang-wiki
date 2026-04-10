@@ -41,6 +41,7 @@ sources: [swift.org/documentation/articles/value-and-reference-types.html]
 
 ## 같이 보면 좋은 위키 페이지
 
+- [[swift-ownership-memory-model]]
 - [[sil-ownership]]
 - [[sil-arc-optimization]]
 - [[sil-memory-access]]

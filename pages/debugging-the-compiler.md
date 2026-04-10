@@ -45,4 +45,4 @@ Swift 컴파일러와 중간 표현을 디버깅하는 기법 모음. 원본: `s
 - `-Xllvm -sil-opt-pass-count=<N>`: N번째 패스까지만 실행 (bisect 가능)
 - 패스 카운트 bisect으로 버그 유발 패스 식별
 
-관련 페이지: [[sil-reference]], [[optimizer-design]], [[overview]]
+관련 페이지: [[swift-compiler-build-test-debug-stack]], [[lldb-and-swift-debugging]], [[llvm-backend]], [[sil-reference]], [[optimizer-design]], [[overview]]

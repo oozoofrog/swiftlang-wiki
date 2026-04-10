@@ -34,4 +34,4 @@ Swift 런타임 ABI 인터페이스. 원본: `swift/docs/Runtime.md`
 - `swift/lib/SwiftDemangle/` — 디맹글링 라이브러리
 - `swift/include/swift/Runtime/` — 런타임 헤더
 
-관련 페이지: [[overview]], [[abi-mangling]], [[abi-type-metadata]], [[abi-type-layout]], [[abi-stability]], [[dynamic-casting]], [[glossary-compiler]]
+관련 페이지: [[overview]], [[standard-library-runtime-and-compiler]], [[abi-mangling]], [[abi-type-metadata]], [[abi-type-layout]], [[abi-stability]], [[dynamic-casting]], [[glossary-compiler]]

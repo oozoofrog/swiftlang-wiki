@@ -30,4 +30,9 @@
 | 2026-04-10 | update | keyword-network.md, glossary-compiler.md 외 저링크 페이지 다수 | keywords, glossary, navigation | 키워드 허브 추가 + glossary 링크화 + 저링크 페이지 교차참조 보강 |
 | 2026-04-10 | update | 기여/Interop/SIL 세부 페이지 다수 | keywords, navigation, crossrefs | 2차 연결망 보강: contributor/C++/SIL/ABI 관련 저링크 페이지 교차참조 확장 |
 | 2026-04-10 | sanitize | pages/, sources/, files/downloads/, OPERATIONS.md | public pages, source excerpts, bundle metadata | 로컬 맥 경로/사용자명/머신 한정 표현 제거, 공개 경로 표기는 `swift/...` 및 상대경로(`.`/`files/...`) 기준으로 일반화 |
+| 2026-04-10 | plan | plans/2026-04-10-complete-swift-wiki-expansion.md | expansion roadmap | Swift + Swift Compiler 전체 위키 완성 목표를 위한 장기 확장 계획 문서 추가 |
+| 2026-04-10 | publish | swift-ecosystem-map.md 외 4개, mkdocs.yml, index.md, keyword-network.md | Swift whole-map, learning, navigation | Swift 언어/컴파일러/툴체인/학습 스택/상호관계 상위 허브 5페이지 추가 + 홈/키워드/nav 연결 |
+| 2026-04-10 | publish | llvm-backend.md 외 5개, mkdocs.yml, index.md, keyword-network.md | toolchain, infrastructure, contributor workflow | LLVM / Clang Importer / LLDB / CMake·Ninja / lit·FileCheck / build-test-debug 스택 페이지 추가 + 기존 가이드와 상호연결 |
+| 2026-04-10 | publish | swift-type-system.md 외 2개, mkdocs.yml, index.md, keyword-network.md | language, semantics, stdlib/runtime, tooling | Swift 타입 시스템 / 매크로·도구 스택 / 표준 라이브러리·런타임·컴파일러 상위 허브 추가 + 기존 언어/도구/stdlib 페이지와 상호연결 |
+| 2026-04-10 | publish | swift-ownership-memory-model.md, mkdocs.yml, index.md, keyword-network.md | ownership, memory, concurrency bridge | Swift 소유권·메모리 모델 상위 허브 추가 + 언어/OSSA/runtime/concurrency 문서 사이 역링크 보강 |
 

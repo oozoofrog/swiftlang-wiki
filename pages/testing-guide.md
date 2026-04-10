@@ -31,4 +31,4 @@ sources: [testing.md]
 - `FileCheck`으로 출력 패턴 검증
 - `REQUIRES:`로 플랫폼/조건 제어
 
-관련 페이지: [[overview]], [[keyword-network]], [[debugging-the-compiler]], [[getting-started]], [[continuous-integration]], [[first-pull-request]], [[compiler-faq]]
+관련 페이지: [[overview]], [[keyword-network]], [[swift-compiler-build-test-debug-stack]], [[lit-and-filecheck]], [[debugging-the-compiler]], [[getting-started]], [[continuous-integration]], [[first-pull-request]], [[compiler-faq]]

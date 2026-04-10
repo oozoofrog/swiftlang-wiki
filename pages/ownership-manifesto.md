@@ -40,4 +40,4 @@ Copy-on-write 값 타입은 성공적이지만 한계 존재:
 - `@owned`, `@guaranteed`, `@inout` 파라미터 규약
 - `copy_value`, `destroy_value`, `move_value` 인스트럭션
 
-관련 페이지: [[sil-ownership]], [[sil-function-conventions]], [[abi-stability]]
+관련 페이지: [[swift-ownership-memory-model]], [[sil-ownership]], [[sil-function-conventions]], [[abi-stability]]

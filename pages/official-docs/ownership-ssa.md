@@ -41,6 +41,7 @@ Ownership SSA(OSSA)의 ownership kind, borrow scope, lifetime-ending use, safe i
 
 ## 같이 보면 좋은 위키 페이지
 
+- [[swift-ownership-memory-model]]
 - [[sil-ownership]]
 - [[ownership-manifesto]]
 - [[sil-memory-access]]
