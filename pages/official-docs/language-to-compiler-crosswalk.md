@@ -31,6 +31,10 @@ sources: [swift-docs-20260410-081300]
 | 진단 UX / 컴파일러 도구 | [[diagnostics-authoring]], [[compiler-performance-reference]], [[swift-repl-and-debugger]] | diagnostics infra, verifier, profiling, debugger integration | [[diagnostics]], [[debugging-the-compiler]], [[compiler-performance]] |
 | 동시성 안전성 | [[concurrency-data-race-safety-to-compiler-checks]] | isolation checking, Sendable, diagnostics, ownership | [[concurrency-data-race-safety]], [[type-checker]], [[diagnostics]], [[sil-optimizer-pass-catalog]], [[ownership-manifesto]] |
 
+## 빠른 시작
+
+- 전체 입문 루트를 순서대로 따라가고 싶다면 [[swift-compiler-7-day-course]]부터 시작하면 된다.
+
 ## 추천 학습 경로
 
 ### 1. 언어 입문에서 구현으로

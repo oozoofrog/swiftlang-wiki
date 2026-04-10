@@ -135,6 +135,34 @@ SIL 단계의 흐름/격리 정보와도 연결된다는 뜻이다.
 즉 표면적으로는 `actor`와 `Sendable` 이야기지만,
 더 깊게 들어가면 ownership / isolation / region 추적 이야기로 바뀐다.
 
+
+## 이 머신 기준 실제 경로
+
+이 페이지를 로컬 소스와 같이 읽고 싶다면, 실제 Swift 소스 트리는 다음 경로에 있다.
+
+- 소스 루트: `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift`
+
+동시성 안전성과 직접적으로 이어지는 파일:
+
+- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Sema/TypeCheckConcurrency.cpp`
+- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/AST/ActorIsolation.cpp`
+- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SIL/IR/ActorIsolation.cpp`
+- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILGen/SILGenConcurrency.cpp`
+- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILOptimizer/Mandatory/SendNonSendable.cpp`
+- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILOptimizer/Mandatory/FlowIsolation.cpp`
+- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILOptimizer/Utils/RegionIsolation.cpp`
+- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/SIL/Ownership.md`
+
+## 이 머신에서 확인한 명령
+
+이 머신에서 다음 명령은 실제 실행 확인했다.
+
+- `swiftc -swift-version 6 -typecheck sample.swift`
+- `swiftc -strict-concurrency=complete -typecheck sample.swift`
+
+즉 학습용으로는 먼저 warning 기반(`-strict-concurrency=complete`)으로 현재 위반 지점을 보고,
+그 다음 Swift 6 language mode로 올리는 흐름을 실제로 시험해볼 수 있다.
+
 ## 왜 이 주제가 중요한가
 
 Swift 6의 concurrency migration은 단순한 스타일 권장이 아니라,

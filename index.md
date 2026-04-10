@@ -1,5 +1,5 @@
 ---
-page_count: 97
+page_count: 98
 source_count: 72
 last_updated: "2026-04-10"
 ---
@@ -16,6 +16,7 @@ last_updated: "2026-04-10"
 | [official-docs/index](pages/official-docs/index.md) | 다운로드된 공식 문서별 위키 정리 허브 | official-docs, references, crosswalk |
 | [language-to-compiler-crosswalk](pages/official-docs/language-to-compiler-crosswalk.md) | 문법/라이브러리/빌드 지식이 컴파일러 내부와 만나는 지도 | crosswalk, learning-path, compiler |
 | [concurrency-data-race-safety](pages/concurrency-data-race-safety.md) | Swift 6 데이터 경쟁 안전성 검사와 컴파일러 내부 연결 | concurrency, sendable, diagnostics |
+| [swift-compiler-7-day-course](pages/swift-compiler-7-day-course.md) | 실제 로컬 경로를 따라가는 Swift 컴파일러 입문 7일 코스 | course, beginner, source-guided |
 
 ## 공식 문서 해설 (Reference)
 
