@@ -25,4 +25,5 @@
 | 2026-04-09 | update | index.md, overview.md | 전체 | 23개 신규 페이지 인덱스 등록 + overview 교차참조 추가 |
 | 2026-04-10 | publish | downloads/index.md, mkdocs.yml | downloads, Home, Wiki Index | Swift 공식/준공식 참고 문서 다운로드 허브 추가 + ZIP/개별 파일 정적 자산 배치 |
 | 2026-04-10 | publish | official-docs/*.md, downloads/index.md, mkdocs.yml, index.md | 공식/다운로드 문서 21건 개별 해설 + 언어→컴파일러 교차학습 지도 + 위키 내비게이션 확장 |
+| 2026-04-10 | publish | concurrency-data-race-safety.md | concurrency, type-checker, diagnostics, sil-optimizer-pass-catalog | Swift 6 데이터 경쟁 안전성 전용 심화 페이지 추가 + 공식 문서 교차 페이지 연결 |
 

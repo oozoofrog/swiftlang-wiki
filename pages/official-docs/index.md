@@ -59,4 +59,4 @@ sources: [swift-docs-20260410-081300]
 | [Standard Library → 컴파일러 교차 읽기](standard-library-to-compiler-crosswalk.md) | 표준 라이브러리는 Swift 프로그램의 base layer이며, 소스와 테스트는 메인 swift 저장소에 있다. | [[stdlib-programmers-manual]], [[runtime]], [[abi-type-layout]] |
 | [Core Libraries → 컴파일러 교차 읽기](core-libraries-to-compiler-crosswalk.md) | Foundation, libdispatch, Swift Testing, XCTest를 하나의 교차 플랫폼 라이브러리군으로 소개한다. | [[swift-foundation-package]], [[swift-testing-package]], [[how-swift-imports-c-apis]] |
 | [Value/Reference Types → SIL 소유권 교차 읽기](value-reference-types-to-sil-ownership.md) | struct/enum/tuple는 value type, class/actor/closure는 reference type으로 소개한다. | [[sil-ownership]], [[sil-arc-optimization]], [[sil-memory-access]] |
-| [Concurrency Data Race Safety → 컴파일러 검사 교차 읽기](concurrency-data-race-safety-to-compiler-checks.md) | 번들 안의 파일 자체에는 동시성 본문이 없고 redirect만 존재한다. | [[type-checker]], [[diagnostics]], [[sil-optimizer-pass-catalog]] |
+| [Concurrency Data Race Safety → 컴파일러 검사 교차 읽기](concurrency-data-race-safety-to-compiler-checks.md) | 번들 안의 파일 자체에는 동시성 본문이 없고 redirect만 존재한다. | [[concurrency-data-race-safety]], [[type-checker]], [[diagnostics]] |

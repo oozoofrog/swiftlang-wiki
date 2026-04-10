@@ -1,5 +1,5 @@
 ---
-page_count: 96
+page_count: 97
 source_count: 72
 last_updated: "2026-04-10"
 ---
@@ -15,6 +15,7 @@ last_updated: "2026-04-10"
 | [downloads](pages/downloads/index.md) | Swift 공식/준공식 참고 문서 다운로드 허브 | downloads, references, offline |
 | [official-docs/index](pages/official-docs/index.md) | 다운로드된 공식 문서별 위키 정리 허브 | official-docs, references, crosswalk |
 | [language-to-compiler-crosswalk](pages/official-docs/language-to-compiler-crosswalk.md) | 문법/라이브러리/빌드 지식이 컴파일러 내부와 만나는 지도 | crosswalk, learning-path, compiler |
+| [concurrency-data-race-safety](pages/concurrency-data-race-safety.md) | Swift 6 데이터 경쟁 안전성 검사와 컴파일러 내부 연결 | concurrency, sendable, diagnostics |
 
 ## 공식 문서 해설 (Reference)
 
@@ -168,6 +169,7 @@ last_updated: "2026-04-10"
 | [library-evolution](pages/library-evolution.md) | 바이너리 호환성 유지 규칙 (@frozen, @inlinable) | library-evolution, resilience |
 | [high-level-sil-optimizations](pages/high-level-sil-optimizations.md) | @_semantics 기반 고수준 SIL 최적화 | sil, semantics, currency-types |
 | [transparent-attr](pages/transparent-attr.md) | @_transparent 속성 시맨틱 | transparent, inlining |
+| [concurrency-data-race-safety](pages/concurrency-data-race-safety.md) | Swift 6 데이터 경쟁 안전성 검사와 migration 전략 | concurrency, sendable, actor-isolation |
 
 ## 용어 (Glossary)
 

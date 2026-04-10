@@ -29,7 +29,7 @@ sources: [swift-docs-20260410-081300]
 | 코어 라이브러리와 생태계 | [[core-libraries-to-compiler-crosswalk]] | modules, overlays, ObjC interop, toolchain boundaries | [[swift-foundation-package]], [[swift-testing-package]], [[modules]], [[objc-interop]] |
 | 빌드 시스템 / 패키지 | [[swiftpm-docs-to-build-pipeline]], [[driver-internals]], [[swift-compiler-architecture]] | driver, llbuild, dependency analysis | [[swift-package-manager]], [[compiler-driver]], [[dependency-analysis]], [[llbuild-package]] |
 | 진단 UX / 컴파일러 도구 | [[diagnostics-authoring]], [[compiler-performance-reference]], [[swift-repl-and-debugger]] | diagnostics infra, verifier, profiling, debugger integration | [[diagnostics]], [[debugging-the-compiler]], [[compiler-performance]] |
-| 동시성 안전성 | [[concurrency-data-race-safety-to-compiler-checks]] | isolation checking, Sendable, diagnostics, ownership | [[type-checker]], [[diagnostics]], [[sil-optimizer-pass-catalog]], [[ownership-manifesto]] |
+| 동시성 안전성 | [[concurrency-data-race-safety-to-compiler-checks]] | isolation checking, Sendable, diagnostics, ownership | [[concurrency-data-race-safety]], [[type-checker]], [[diagnostics]], [[sil-optimizer-pass-catalog]], [[ownership-manifesto]] |
 
 ## 추천 학습 경로
 
@@ -73,7 +73,7 @@ sources: [swift-docs-20260410-081300]
 - 문법 문서를 읽다가 “왜 이런 규칙이 필요한가?”가 궁금해지면 `TypeChecker`, `Diagnostics`, `SIL` 계열로 이동한다.
 - 표준 라이브러리 문서를 읽다가 “이 값 의미론/성능 특성은 어떻게 구현되나?”가 궁금해지면 `Ownership SSA`, `High-Level Optimizations in SIL`, `Runtime`, `ABI`로 이동한다.
 - 패키지/빌드 문서를 읽다가 “Swift가 왜 파일 하나만 독립 컴파일하기 어려운가?”가 궁금해지면 `Driver Internals`, `Compiler Driver`, `Dependency Analysis`로 이동한다.
-- concurrency / Sendable / actor 같은 표면 기능을 읽다가 “이 안전성은 누가 검사하나?”가 궁금해지면 `TypeChecker`, `Diagnostics`, 관련 SIL pass 문서로 이동한다.
+- concurrency / Sendable / actor 같은 표면 기능을 읽다가 “이 안전성은 누가 검사하나?”가 궁금해지면 먼저 [[concurrency-data-race-safety]]를 보고, 그 다음 `TypeChecker`, `Diagnostics`, 관련 SIL pass 문서로 이동한다.
 
 ## 메모
 

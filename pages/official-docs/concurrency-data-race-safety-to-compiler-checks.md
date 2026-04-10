@@ -23,7 +23,7 @@ sources: [swift.org/documentation/concurrency/index.html]
 - 번들 안의 파일 자체에는 동시성 본문이 없고 redirect만 존재한다.
 - canonical 주제가 “enable data race safety”인 만큼, 핵심은 async/await 입문보다 strict checking과 migration이다.
 - 즉 이 문서를 읽는 이유는 동시성 기능 소개보다 compiler-enforced safety를 따라가는 데 있다.
-- 현재 위키에는 전용 concurrency 페이지가 약하므로, 타입 검사·진단·SIL pass 관점의 연결이 특히 중요하다.
+- 현재 위키에는 이제 전용 심화 페이지 [[concurrency-data-race-safety]]가 추가되었고, 이 페이지는 그 심화 페이지로 들어가기 전의 공식 문서 입구 역할을 한다.
 
 ## 컴파일러와 어떻게 연결되나
 
@@ -41,6 +41,7 @@ sources: [swift.org/documentation/concurrency/index.html]
 
 ## 같이 보면 좋은 위키 페이지
 
+- [[concurrency-data-race-safety]]
 - [[type-checker]]
 - [[diagnostics]]
 - [[sil-optimizer-pass-catalog]]
@@ -49,4 +50,4 @@ sources: [swift.org/documentation/concurrency/index.html]
 
 ## 읽는 방법 메모
 
-redirect-only라 본문 요약은 불가능하지만, 오히려 “Swift 6의 동시성 안전성은 결국 어디서 검사되는가?”를 묻는 지점으로 바꾸면 위키 가치가 생긴다.
+이 페이지는 redirect-only 공식 문서를 따라 들어오는 입구다. 실제 심화 설명은 [[concurrency-data-race-safety]]에서 다룬다.

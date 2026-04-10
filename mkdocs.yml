@@ -1,6 +1,6 @@
 site_name: Swift Compiler Wiki
 site_url: https://oozoofrog.dev/swiftlang-wiki/
-site_description: Swift 컴파일러 내부 구조 위키 — 96+ pages, LLM-generated knowledge base
+site_description: Swift 컴파일러 내부 구조 위키 — 97+ pages, LLM-generated knowledge base
 repo_url: https://github.com/oozoofrog/swiftlang-wiki
 repo_name: oozoofrog/swiftlang-wiki
 edit_uri: edit/main/pages/
@@ -145,6 +145,7 @@ nav:
     - cpp-calling-swift.md
   - 언어 설계:
     - ownership-manifesto.md
+    - concurrency-data-race-safety.md
     - error-handling.md
     - dynamic-casting.md
     - access-control.md
