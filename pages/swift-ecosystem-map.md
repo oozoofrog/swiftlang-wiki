@@ -47,6 +47,7 @@ Swift를 이해하려면 최소한 다음을 함께 봐야 한다.
 - [[swift-concurrency-architecture]]
 - [[swift-actor-isolation-and-sendable]]
 - [[swift-task-executor-runtime]]
+- [[swift-evolution-and-proposal-history]]
 - [[official-docs/tspl-to-compiler-crosswalk]]
 - [[official-docs/language-to-compiler-crosswalk]]
 
@@ -83,10 +84,11 @@ Swift를 이해하려면 최소한 다음을 함께 봐야 한다.
 4. [[swift-concurrency-architecture]]
 5. [[swift-actor-isolation-and-sendable]]
 6. [[swift-task-executor-runtime]]
-7. [[swift-toolchain-stack]]
-8. [[swift-compiler-learning-stack]]
-9. [[keyword-network]]
-10. [[official-docs/index]]
+7. [[swift-evolution-and-proposal-history]]
+8. [[swift-toolchain-stack]]
+9. [[swift-compiler-learning-stack]]
+10. [[keyword-network]]
+11. [[official-docs/index]]
 
 ## 같이 보면 좋은 페이지
 
@@ -97,6 +99,7 @@ Swift를 이해하려면 최소한 다음을 함께 봐야 한다.
 - [[swift-concurrency-architecture]]
 - [[swift-actor-isolation-and-sendable]]
 - [[swift-task-executor-runtime]]
+- [[swift-evolution-and-proposal-history]]
 - [[keyword-network]]
 - [[glossary-compiler]]
 - [[swift-compiler-7-day-course]]

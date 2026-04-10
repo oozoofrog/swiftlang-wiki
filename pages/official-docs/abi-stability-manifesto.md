@@ -41,6 +41,7 @@ ABI 안정화 이전의 배경과 설계 방향을 한 번에 묶어 보여 주�
 
 ## 같이 보면 좋은 위키 페이지
 
+- [[swift-evolution-and-proposal-history]]
 - [[abi-stability]]
 - [[library-evolution]]
 - [[abi-type-layout]]

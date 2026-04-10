@@ -116,6 +116,7 @@ Swift를 실전에서 깊게 이해하려면 다음 질문들이 결국 컴파�
 - [[swift-concurrency-architecture]]
 - [[swift-actor-isolation-and-sendable]]
 - [[swift-task-executor-runtime]]
+- [[swift-evolution-and-proposal-history]]
 - [[swift-ownership-memory-model]]
 - [[overview]]
 - [[official-docs/language-to-compiler-crosswalk]]

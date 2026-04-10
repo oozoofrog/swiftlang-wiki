@@ -35,4 +35,4 @@ Swift 제네릭 시스템의 장기 비전. 원본: `swift/docs/GenericsManifest
 - `swift/docs/Generics/` — "Compiling Swift Generics" 책
 - Generic signature, requirement machine, substitution map 등
 
-관련 페이지: [[compiling-swift-generics]], [[generic-signatures]], [[type-checker]], [[glossary-compiler]], [[overview]]
+관련 페이지: [[swift-evolution-and-proposal-history]], [[compiling-swift-generics]], [[generic-signatures]], [[type-checker]], [[glossary-compiler]], [[overview]]

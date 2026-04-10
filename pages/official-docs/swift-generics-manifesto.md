@@ -41,6 +41,7 @@ Swift 제네릭 시스템의 장기 비전과 용어 체계를 정리한 설계 
 
 ## 같이 보면 좋은 위키 페이지
 
+- [[swift-evolution-and-proposal-history]]
 - [[generics-manifesto]]
 - [[compiling-swift-generics]]
 - [[generic-signatures]]

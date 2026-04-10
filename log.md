@@ -37,4 +37,5 @@
 | 2026-04-10 | publish | swift-ownership-memory-model.md, mkdocs.yml, index.md, keyword-network.md | ownership, memory, concurrency bridge | Swift 소유권·메모리 모델 상위 허브 추가 + 언어/OSSA/runtime/concurrency 문서 사이 역링크 보강 |
 | 2026-04-10 | publish | swift-concurrency-architecture.md, mkdocs.yml, index.md, keyword-network.md | concurrency, runtime, migration, compiler bridge | Swift Concurrency 전체 구조 허브 추가 + strict concurrency/ownership/runtime 문서와 상호연결 |
 | 2026-04-10 | publish | swift-actor-isolation-and-sendable.md, swift-task-executor-runtime.md, mkdocs.yml, index.md, keyword-network.md | concurrency deep-dive, isolation, runtime | actor/sendable 세부 허브와 task/executor/runtime 세부 허브 추가 + 동시성/런타임/학습 경로 보강 |
+| 2026-04-10 | publish | swift-evolution-and-proposal-history.md, mkdocs.yml, index.md, keyword-network.md | design history, manifesto, proposals | Swift Evolution / proposal history 허브 추가 + manifesto/library-evolution/concurrency 문서와 상호연결 |
 

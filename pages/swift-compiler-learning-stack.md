@@ -149,8 +149,9 @@ Swift 고유 세부 구현으로 들어가기 전에,
 5. [[swift-concurrency-architecture]]
 6. [[swift-actor-isolation-and-sendable]]
 7. [[swift-task-executor-runtime]]
-8. [[swift-toolchain-stack]]
-9. [[keyword-network]]
+8. [[swift-evolution-and-proposal-history]]
+9. [[swift-toolchain-stack]]
+10. [[keyword-network]]
 
 ### 구현 중심 루트
 1. [[overview]]
@@ -175,7 +176,7 @@ Swift 고유 세부 구현으로 들어가기 전에,
 
 ## 이 위키에서 다음에 더 보강할 축
 
-- Swift Evolution / proposal history 허브
+- Swift proposal-to-implementation 개별 교차 페이지 묶음
 
 ## 같이 보면 좋은 페이지
 
@@ -186,5 +187,6 @@ Swift 고유 세부 구현으로 들어가기 전에,
 - [[swift-concurrency-architecture]]
 - [[swift-actor-isolation-and-sendable]]
 - [[swift-task-executor-runtime]]
+- [[swift-evolution-and-proposal-history]]
 - [[swift-toolchain-stack]]
 - [[swift-compiler-7-day-course]]

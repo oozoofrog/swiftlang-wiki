@@ -119,6 +119,7 @@ Swift의 제네릭, ownership, concurrency, resilience 같은 중요한 특성�
 - [[swift-concurrency-architecture]]
 - [[swift-actor-isolation-and-sendable]]
 - [[swift-task-executor-runtime]]
+- [[swift-evolution-and-proposal-history]]
 - [[standard-library-runtime-and-compiler]]
 - [[swift-macro-tooling-stack]]
 - [[overview]]

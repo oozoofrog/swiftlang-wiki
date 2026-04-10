@@ -22,6 +22,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - Swift Concurrency 허브: [[swift-concurrency-architecture]]
 - Swift actor isolation·Sendable 허브: [[swift-actor-isolation-and-sendable]]
 - Swift Task·Executor·Runtime 허브: [[swift-task-executor-runtime]]
+- Swift Evolution / proposal history 허브: [[swift-evolution-and-proposal-history]]
 - stdlib/runtime/compiler 허브: [[standard-library-runtime-and-compiler]]
 - 툴체인 전체 지도: [[swift-toolchain-stack]]
 - 매크로/도구 허브: [[swift-macro-tooling-stack]]
@@ -42,6 +43,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - [[swift-concurrency-architecture|concurrency architecture]]
 - [[swift-actor-isolation-and-sendable|actor/sendable]]
 - [[swift-task-executor-runtime|task/executor/runtime]]
+- [[swift-evolution-and-proposal-history|evolution/proposal history]]
 - [[standard-library-runtime-and-compiler|stdlib/runtime/compiler]]
 - [[swift-toolchain-stack|toolchain stack]]
 - [[swift-macro-tooling-stack|macro/tooling]]
@@ -55,6 +57,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - task, actor, executor, Sendable까지 동시성 전체 그림을 먼저 잡고 싶다 → [[swift-concurrency-architecture]]
 - actor 경계와 `Sendable` 오류를 집중해서 보고 싶다 → [[swift-actor-isolation-and-sendable]]
 - task / executor / runtime 실행 모델을 보고 싶다 → [[swift-task-executor-runtime]]
+- 왜 이런 기능들이 이런 방향으로 왔는지 설계 역사를 보고 싶다 → [[swift-evolution-and-proposal-history]]
 - 기본 타입/표준 라이브러리/런타임이 어떻게 한 몸인지 보고 싶다 → [[standard-library-runtime-and-compiler]]
 - SwiftSyntax / 매크로 / SourceKit 도구축을 보고 싶다 → [[swift-macro-tooling-stack]]
 - 무엇을 어느 정도까지 배워야 할지 알고 싶다 → [[swift-compiler-learning-stack]]
@@ -245,6 +248,22 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - 매크로/IDE/formatter 도구축까지 함께 보고 싶다 → [[swift-macro-tooling-stack]]
 - 테스트/툴링 생태계와 연결해서 보고 싶다 → [[swift-testing-package]] / [[sourcekit-lsp]]
 
+## 11. 설계 비전 / proposal / 역사
+
+핵심 키워드:
+- [[swift-evolution-and-proposal-history|evolution/proposal history]]
+- [[generics-manifesto|Generics Manifesto]]
+- [[ownership-manifesto|Ownership Manifesto]]
+- [[official-docs/abi-stability-manifesto|ABI Stability Manifesto]]
+- [[library-evolution|library evolution]]
+- [[official-docs/swift-generics-manifesto|swift-generics-manifesto]]
+
+추천 이동:
+- 설계 비전과 proposal history를 한 장으로 먼저 보고 싶다 → [[swift-evolution-and-proposal-history]]
+- 제네릭 쪽 장기 비전부터 보고 싶다 → [[generics-manifesto]] / [[official-docs/swift-generics-manifesto]]
+- ownership 방향을 보고 싶다 → [[ownership-manifesto]] / [[swift-ownership-memory-model]]
+- ABI / resilience 방향을 보고 싶다 → [[official-docs/abi-stability-manifesto]] / [[library-evolution]]
+
 ## 자주 같이 움직이는 키워드 묶음
 
 - literal → contextual type → constraint solving → diagnostics
@@ -261,6 +280,8 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
   - [[swift-actor-isolation-and-sendable]] → [[concurrency-data-race-safety]] → [[sil-optimizer-pass-catalog]]
 - Task → TaskGroup → executor → runtime
   - [[swift-task-executor-runtime]] → [[swift-concurrency-architecture]] → [[runtime]]
+- manifesto → proposal history → implementation
+  - [[generics-manifesto]] → [[swift-evolution-and-proposal-history]] → [[type-checker]]
 - Sendable → actor isolation → FlowIsolation → ownership
   - [[concurrency-data-race-safety]] → [[sil-optimizer-pass-catalog]] → [[sil-ownership]]
 - ABI stability → metadata → runtime → library evolution
