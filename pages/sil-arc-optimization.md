@@ -24,4 +24,4 @@ ARC(Automatic Reference Counting) 최적화 패스에 대한 레퍼런스. 원�
 
 - `swift/lib/SILOptimizer/ARC/` — ARC 최적화 패스 구현
 
-관련 페이지: [[sil-reference]], [[sil-ownership]], [[optimizer-design]]
+관련 페이지: [[sil-reference]], [[keyword-network]], [[sil-ownership]], [[optimizer-design]], [[high-level-sil-optimizations]], [[compiler-performance]], [[runtime]]

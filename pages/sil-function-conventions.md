@@ -23,4 +23,4 @@ SIL 함수의 파라미터/결과 전달 규약. 원본: `swift/docs/SIL/SILFunc
 - **@owned**: 직접 반환, caller가 소유권 획득
 - **@unowned**: 직접 반환, 소유권 없음
 
-관련 페이지: [[sil-reference]], [[sil-function-attributes]], [[sil-ownership]]
+관련 페이지: [[sil-reference]], [[keyword-network]], [[sil-function-attributes]], [[sil-ownership]], [[sil-types]], [[abi-calling-convention]], [[sil-initializer-conventions]]

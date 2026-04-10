@@ -32,4 +32,4 @@ Swift에서 C++ API를 호출하려면 상호운용 모드를 활성화하고 Cl
 
 인라인 함수, 함수 템플릿(호출 시 인스턴스화) 지원. `const` 참조 → 값 전달, 비-`const` 참조 → `inout`. 예외의 Swift 전파는 미정의 동작이며, 가상 함수/이동 생성자/C++20 모듈은 미지원.
 
-관련 페이지: [[cpp-interop-overview]], [[c-to-swift-name-translation]]
+관련 페이지: [[cpp-interop-overview]], [[keyword-network]], [[c-to-swift-name-translation]], [[how-swift-imports-c-apis]], [[objc-interop]], [[modules]], [[cpp-calling-swift]]

@@ -30,4 +30,4 @@ Swift 프로젝트의 CI와 `@swift-ci` 봇 사용법.
 - 시뮬레이터 영향 시 validation test 필수
 - 교차 레포 변경은 `Please test with following PR` 사용
 
-관련 페이지: [[testing-guide]], [[overview]]
+관련 페이지: [[testing-guide]], [[keyword-network]], [[overview]], [[first-pull-request]], [[compiler-faq]], [[debugging-the-compiler]], [[swift-driver-package]]

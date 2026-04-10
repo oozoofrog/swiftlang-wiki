@@ -23,4 +23,4 @@ Swift 5부터 ABI 안정 플랫폼에서 지원되는 라이브러리 진화 모
 
 기본 원칙: 처음 공개 시의 선택이 미래 진화를 제한하지 않도록 설계.
 
-관련 페이지: [[abi-stability]], [[overview]], [[runtime]]
+관련 페이지: [[abi-stability]], [[keyword-network]], [[overview]], [[runtime]], [[access-control]], [[standard-library-to-compiler-crosswalk]], [[official-docs/abi-stability-manifesto]]

@@ -21,4 +21,4 @@ SIL 타입은 Swift의 타입 시스템 위에 구축되며, 값의 메모리 �
 - **Address-only type**: 크기 미정 또는 소유권 규칙으로 인해 주소로만 접근
 - **Trivial type**: 복사/소멸 시 참조 카운팅 불필요 (예: `Int`, `Float`)
 
-관련 페이지: [[sil-reference]], [[sil-instructions]], [[sil-ownership]]
+관련 페이지: [[sil-reference]], [[keyword-network]], [[sil-instructions]], [[sil-ownership]], [[sil-function-conventions]], [[abi-type-layout]], [[abi-type-metadata]]

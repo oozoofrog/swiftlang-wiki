@@ -23,4 +23,4 @@ stdlib 기여자를 위한 가이드로, 코딩 규칙, 내부 어노테이션, 
 - `_precondition`/`_debugPrecondition`/`_internalInvariant`: 3단계 assertion
 - `@_transparent`: 진단 전 인라이닝 강제, CRISP 패턴 등
 
-관련 페이지: [[overview]], [[compiler-performance]]
+관련 페이지: [[overview]], [[keyword-network]], [[compiler-performance]], [[standard-library-to-compiler-crosswalk]], [[high-level-sil-optimizations]], [[transparent-attr]], [[library-evolution]]

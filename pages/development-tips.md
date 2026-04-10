@@ -26,4 +26,4 @@ Release로 표준 라이브러리, Debug로 swift-frontend만 빌드 후 Release
 - `ninja -nv <target>`: dry-run으로 실제 명령 확인
 - `-suppress-warnings`: 경고 숨기고 에러만 확인
 
-관련 페이지: [[debugging-the-compiler]], [[getting-started]]
+관련 페이지: [[debugging-the-compiler]], [[keyword-network]], [[getting-started]], [[compiler-faq]], [[testing-guide]], [[continuous-integration]], [[compiler-performance]]

@@ -34,7 +34,7 @@
 ## 가장 자주 쓰는 명령
 
 ```bash
-cd ~/develop/oozoofrog/swiftlang/.wiki
+cd <swiftlang-root>/.wiki
 
 # 현재 상태 요약
 ./scripts/wikictl.py status

@@ -25,4 +25,4 @@ Swift 컴파일러 개발 시 자주 묻는 질문 모음.
 - `git grep --ignore-case "패턴"` 또는 ripgrep 활용
 - Documentation Index 참고
 
-관련 페이지: [[getting-started]], [[debugging-the-compiler]], [[overview]]
+관련 페이지: [[getting-started]], [[keyword-network]], [[debugging-the-compiler]], [[overview]], [[development-tips]], [[testing-guide]], [[continuous-integration]]

@@ -15,11 +15,10 @@ Swift 컴파일러 위키를 처음부터 끝까지 한 번에 읽는 건 꽤 �
 ## 이 코스의 전제
 
 - 하루 60~90분 정도를 가정한다.
-- 이 머신 기준 실제 Swift 소스 트리 경로는 다음과 같다.
-  - `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift`
-- 이 머신에서 확인한 Swift toolchain:
-  - `Apple Swift version 6.3`
-- 이 머신에서 실제로 동작 확인한 탐색 플래그:
+- 로컬에 클론한 Swift 저장소 루트를 `<swift-source-root>`라고 두고 읽는다.
+- 아래 경로 표기는 모두 `<swift-source-root>` 기준이다.
+- 사용 중 toolchain 정보는 먼저 `swiftc --version`으로 확인한다.
+- 입문 탐색에 자주 쓰는 플래그:
   - `-dump-parse`
   - `-dump-ast`
   - `-typecheck`
@@ -42,9 +41,9 @@ Swift 컴파일러 위키를 처음부터 끝까지 한 번에 읽는 건 꽤 �
 - [[official-docs/swift-compiler-architecture]]
 
 실제 경로:
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Parse/Parser.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Parse/PersistentParserState.cpp`
+- `<swift-source-root>/docs`
+- `<swift-source-root>/lib/Parse/Parser.cpp`
+- `<swift-source-root>/lib/Parse/PersistentParserState.cpp`
 
 해볼 명령:
 - `swiftc -dump-parse sample.swift`
@@ -66,12 +65,12 @@ Swift 컴파일러 위키를 처음부터 끝까지 한 번에 읽는 건 꽤 �
 - [[official-docs/diagnostics-authoring]]
 
 실제 경로:
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/TypeChecker.md`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Sema/TypeChecker.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Sema/CSGen.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Sema/CSSolver.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Sema/CSApply.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Sema/CSDiagnostics.cpp`
+- `<swift-source-root>/docs/TypeChecker.md`
+- `<swift-source-root>/lib/Sema/TypeChecker.cpp`
+- `<swift-source-root>/lib/Sema/CSGen.cpp`
+- `<swift-source-root>/lib/Sema/CSSolver.cpp`
+- `<swift-source-root>/lib/Sema/CSApply.cpp`
+- `<swift-source-root>/lib/Sema/CSDiagnostics.cpp`
 
 해볼 명령:
 - `swiftc -dump-ast sample.swift`
@@ -96,12 +95,12 @@ Swift 컴파일러 위키를 처음부터 끝까지 한 번에 읽는 건 꽤 �
 - [[official-docs/swift-generics-manifesto]]
 
 실제 경로:
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/Generics/README.md`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/Generics`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/AST/GenericSignature.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/AST/GenericEnvironment.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/AST/RequirementMachine/GenericSignatureQueries.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/AST/GenericParamList.cpp`
+- `<swift-source-root>/docs/Generics/README.md`
+- `<swift-source-root>/docs/Generics`
+- `<swift-source-root>/lib/AST/GenericSignature.cpp`
+- `<swift-source-root>/lib/AST/GenericEnvironment.cpp`
+- `<swift-source-root>/lib/AST/RequirementMachine/GenericSignatureQueries.cpp`
+- `<swift-source-root>/lib/AST/GenericParamList.cpp`
 
 끝나면 이해해야 할 것:
 - generic signature는 “문법 정보”가 아니라 의미적으로 정규화된 제약 집합이다.
@@ -120,12 +119,12 @@ Swift 컴파일러 위키를 처음부터 끝까지 한 번에 읽는 건 꽤 �
 - [[official-docs/swift-intermediate-language]]
 
 실제 경로:
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/SIL/SIL.md`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SIL`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILGen/SILGen.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILGen/SILGenExpr.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILGen/SILGenApply.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILGen/SILGenConcurrency.cpp`
+- `<swift-source-root>/docs/SIL/SIL.md`
+- `<swift-source-root>/lib/SIL`
+- `<swift-source-root>/lib/SILGen/SILGen.cpp`
+- `<swift-source-root>/lib/SILGen/SILGenExpr.cpp`
+- `<swift-source-root>/lib/SILGen/SILGenApply.cpp`
+- `<swift-source-root>/lib/SILGen/SILGenConcurrency.cpp`
 
 해볼 명령:
 - `swiftc -emit-silgen sample.swift`
@@ -149,14 +148,14 @@ Swift 컴파일러 위키를 처음부터 끝까지 한 번에 읽는 건 꽤 �
 - [[official-docs/concurrency-data-race-safety-to-compiler-checks]]
 
 실제 경로:
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/SIL/Ownership.md`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Sema/TypeCheckConcurrency.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/AST/ActorIsolation.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SIL/IR/ActorIsolation.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILGen/SILGenConcurrency.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILOptimizer/Mandatory/SendNonSendable.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILOptimizer/Mandatory/FlowIsolation.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILOptimizer/Utils/RegionIsolation.cpp`
+- `<swift-source-root>/docs/SIL/Ownership.md`
+- `<swift-source-root>/lib/Sema/TypeCheckConcurrency.cpp`
+- `<swift-source-root>/lib/AST/ActorIsolation.cpp`
+- `<swift-source-root>/lib/SIL/IR/ActorIsolation.cpp`
+- `<swift-source-root>/lib/SILGen/SILGenConcurrency.cpp`
+- `<swift-source-root>/lib/SILOptimizer/Mandatory/SendNonSendable.cpp`
+- `<swift-source-root>/lib/SILOptimizer/Mandatory/FlowIsolation.cpp`
+- `<swift-source-root>/lib/SILOptimizer/Utils/RegionIsolation.cpp`
 
 해볼 명령:
 - `swiftc -swift-version 6 -typecheck sample.swift`
@@ -182,11 +181,11 @@ Swift 컴파일러 위키를 처음부터 끝까지 한 번에 읽는 건 꽤 �
 - [[official-docs/driver-internals]]
 
 실제 경로:
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/CompilerPerformance.md`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/DriverInternals.md`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILOptimizer/PassManager/PassManager.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/SILOptimizer/Mandatory`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Sema/CSOptimizer.cpp`
+- `<swift-source-root>/docs/CompilerPerformance.md`
+- `<swift-source-root>/docs/DriverInternals.md`
+- `<swift-source-root>/lib/SILOptimizer/PassManager/PassManager.cpp`
+- `<swift-source-root>/lib/SILOptimizer/Mandatory`
+- `<swift-source-root>/lib/Sema/CSOptimizer.cpp`
 
 끝나면 이해해야 할 것:
 - 성능 문제는 Parser/Sema/SIL/LLVM 중 어디가 느린지 분리해서 봐야 한다.
@@ -208,15 +207,15 @@ Swift 컴파일러 위키를 처음부터 끝까지 한 번에 읽는 건 꽤 �
 - [[official-docs/abi-stability-manifesto]]
 
 실제 경로:
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/docs/ABIStabilityManifesto.md`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/IRGen/IRGenModule.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/IRGen/MetadataLayout.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/IRGen/MetadataRequest.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Demangling/ManglingUtils.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/stdlib/public/runtime/HeapObject.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/stdlib/public/runtime/MetadataLookup.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/stdlib/public/runtime/DynamicCast.cpp`
-- `/Volumes/eyedisk/develop/oozoofrog/swiftlang/swift/lib/Frontend/ModuleInterfaceLoader.cpp`
+- `<swift-source-root>/docs/ABIStabilityManifesto.md`
+- `<swift-source-root>/lib/IRGen/IRGenModule.cpp`
+- `<swift-source-root>/lib/IRGen/MetadataLayout.cpp`
+- `<swift-source-root>/lib/IRGen/MetadataRequest.cpp`
+- `<swift-source-root>/lib/Demangling/ManglingUtils.cpp`
+- `<swift-source-root>/stdlib/public/runtime/HeapObject.cpp`
+- `<swift-source-root>/stdlib/public/runtime/MetadataLookup.cpp`
+- `<swift-source-root>/stdlib/public/runtime/DynamicCast.cpp`
+- `<swift-source-root>/lib/Frontend/ModuleInterfaceLoader.cpp`
 
 해볼 명령:
 - `swiftc -emit-irgen sample.swift`

@@ -28,4 +28,4 @@ Swift 프로젝트에 첫 기여를 위한 PR 제출 과정.
 - Swift 포럼 Development 카테고리에서 질문
 - `git log`로 관련 코드 변경 이력 참고
 
-관련 페이지: [[getting-started]], [[testing-guide]], [[overview]]
+관련 페이지: [[getting-started]], [[keyword-network]], [[testing-guide]], [[overview]], [[continuous-integration]], [[compiler-faq]], [[development-tips]]

@@ -28,4 +28,6 @@
 | 2026-04-10 | publish | concurrency-data-race-safety.md | concurrency, type-checker, diagnostics, sil-optimizer-pass-catalog | Swift 6 데이터 경쟁 안전성 전용 심화 페이지 추가 + 공식 문서 교차 페이지 연결 |
 | 2026-04-10 | publish | swift-compiler-7-day-course.md, concurrency-data-race-safety.md | course, source-guided, concurrency | 입문자용 7일 코스 추가 + 실제 로컬 Swift 소스 경로/검증 명령 반영 |
 | 2026-04-10 | update | keyword-network.md, glossary-compiler.md 외 저링크 페이지 다수 | keywords, glossary, navigation | 키워드 허브 추가 + glossary 링크화 + 저링크 페이지 교차참조 보강 |
+| 2026-04-10 | update | 기여/Interop/SIL 세부 페이지 다수 | keywords, navigation, crossrefs | 2차 연결망 보강: contributor/C++/SIL/ABI 관련 저링크 페이지 교차참조 확장 |
+| 2026-04-10 | sanitize | pages/, sources/, files/downloads/, OPERATIONS.md | public pages, source excerpts, bundle metadata | 로컬 맥 경로/사용자명/머신 한정 표현 제거, `<swiftlang-root>`/`<swift-source-root>`/`<bundle-root>` 같은 범용 placeholder로 일반화 |
 

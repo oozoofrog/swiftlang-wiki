@@ -127,7 +127,38 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - 구현 패키지 구조를 보고 싶다 → [[swift-driver-package]] / [[llbuild-package]]
 - 성능과 연결해서 보고 싶다 → [[compiler-performance]] / [[official-docs/compiler-performance-reference]]
 
-## 8. 라이브러리 / 프레임워크 / 실사용 생태계
+## 8. Interop / Importer / C++
+
+핵심 키워드:
+- [[objc-interop]]
+- [[c-to-swift-name-translation]]
+- [[how-swift-imports-c-apis]]
+- [[cpp-interop-overview]]
+- [[cpp-using-from-swift]]
+- [[cpp-calling-swift]]
+
+추천 이동:
+- C/ObjC 선언이 Swift 이름으로 어떻게 들어오는지 보고 싶다 → [[c-to-swift-name-translation]] / [[how-swift-imports-c-apis]]
+- C++를 Swift에서 쓰는 쪽이 궁금하다 → [[cpp-using-from-swift]]
+- Swift를 C++에서 호출하는 쪽이 궁금하다 → [[cpp-calling-swift]]
+
+## 9. 기여 / 테스트 / CI
+
+핵심 키워드:
+- [[getting-started]]
+- [[development-tips]]
+- [[compiler-faq]]
+- [[testing-guide]]
+- [[continuous-integration]]
+- [[first-pull-request]]
+
+추천 이동:
+- 개발 환경을 처음 세팅한다 → [[getting-started]]
+- 빠른 실무 팁이 먼저 필요하다 → [[development-tips]] / [[compiler-faq]]
+- 테스트 작성/실행 체계를 익히고 싶다 → [[testing-guide]] / [[swift-testing-package]]
+- PR를 실제로 열기 전 흐름을 보고 싶다 → [[first-pull-request]] / [[continuous-integration]]
+
+## 10. 라이브러리 / 프레임워크 / 실사용 생태계
 
 핵심 키워드:
 - [[standard-library-to-compiler-crosswalk|standard library]]

@@ -25,4 +25,4 @@ Swift에서 모듈은 코드 공유의 기본 단위로 타입/함수/전역 변
 - 동일 모듈 내 소스 파일 선언은 암시적 상호 가시
 - 이름 충돌 시 현재 파일 > 같은 모듈 > selective > non-selective import 우선순위
 
-관련 페이지: [[serialization]], [[overview]], [[glossary-compiler]]
+관련 페이지: [[serialization]], [[keyword-network]], [[overview]], [[glossary-compiler]], [[access-control]], [[how-swift-imports-c-apis]], [[compiler-driver]], [[library-evolution]]

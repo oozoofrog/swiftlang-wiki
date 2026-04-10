@@ -28,4 +28,4 @@ Swift 컴파일러 기여를 위한 환경 구성과 편집-빌드-테스트-디
 - `sccache`로 빌드 캐싱
 - `--bootstrapping=hosttools`로 빌드 시간 단축
 
-관련 페이지: [[overview]], [[compiler-driver]], [[testing-guide]]
+관련 페이지: [[overview]], [[keyword-network]], [[compiler-driver]], [[testing-guide]], [[development-tips]], [[compiler-faq]], [[continuous-integration]], [[debugging-the-compiler]]

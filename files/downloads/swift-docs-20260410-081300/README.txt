@@ -1,5 +1,5 @@
 Swift docs local bundle
-Base: /Users/oozoofrog/Downloads/swift-docs-20260410-081300
+Base: <bundle-root>
 
 Downloaded files:
 - generics.pdf: files/download.swift.org/docs/assets/generics.pdf (2502370 bytes)

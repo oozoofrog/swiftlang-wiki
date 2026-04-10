@@ -31,4 +31,4 @@ Swift 언어의 현대적 테스트 프레임워크. 매크로 기반 API로 간
 
 `swift-testing/`
 
-관련 페이지: [[overview]], [[swift-syntax-package]]
+관련 페이지: [[overview]], [[keyword-network]], [[swift-syntax-package]], [[testing-guide]], [[core-libraries-to-compiler-crosswalk]], [[concurrency-data-race-safety]], [[sourcekit-lsp]]

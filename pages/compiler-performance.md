@@ -32,4 +32,4 @@ Swift 컴파일러 성능 분석 방법. 원본: `swift/docs/CompilerPerformance
 2. **제네릭 특수화**: 많은 제네릭 인스턴스화
 3. **모듈 크기**: 큰 swiftmodule 역직렬화
 
-관련 페이지: [[type-checker]], [[optimizer-design]], [[debugging-the-compiler]]
+관련 페이지: [[type-checker]], [[keyword-network]], [[optimizer-design]], [[debugging-the-compiler]], [[compiler-driver]], [[dependency-analysis]], [[official-docs/compiler-performance-reference]]
