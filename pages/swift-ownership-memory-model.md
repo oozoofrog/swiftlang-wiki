@@ -156,6 +156,7 @@ Sema, SIL, verifier, optimizer, concurrency 검증을 가로지르는 축이라�
 - [[swift-type-system]]
 - [[swift-concurrency-architecture]]
 - [[swift-actor-isolation-and-sendable]]
+- [[proposal-value-semantics-and-cow-to-ownership]]
 - [[standard-library-runtime-and-compiler]]
 - [[ownership-manifesto]]
 - [[sil-ownership]]

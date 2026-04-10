@@ -43,4 +43,4 @@ Swift는 **양방향 타입 추론** (bi-directional type inference)을 사용�
   - `CSSolver.cpp` — Constraint Solving
   - `CSApply.cpp` — Solution Application
 
-관련 페이지: [[overview]], [[request-evaluator]], [[diagnostics]], [[compiler-performance]], [[generics-manifesto]], [[glossary-compiler]]
+관련 페이지: [[overview]], [[request-evaluator]], [[proposal-declaration-type-checker-to-sema]], [[diagnostics]], [[compiler-performance]], [[generics-manifesto]], [[glossary-compiler]]

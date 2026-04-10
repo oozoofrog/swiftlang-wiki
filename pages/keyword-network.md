@@ -23,6 +23,9 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - Swift actor isolation·Sendable 허브: [[swift-actor-isolation-and-sendable]]
 - Swift Task·Executor·Runtime 허브: [[swift-task-executor-runtime]]
 - Swift Evolution / proposal history 허브: [[swift-evolution-and-proposal-history]]
+- Value Semantics / COW proposal 교차 읽기: [[proposal-value-semantics-and-cow-to-ownership]]
+- Declaration Type Checker proposal 교차 읽기: [[proposal-declaration-type-checker-to-sema]]
+- Compilation Model / WMO proposal 교차 읽기: [[proposal-compilation-model-and-wmo-to-driver]]
 - stdlib/runtime/compiler 허브: [[standard-library-runtime-and-compiler]]
 - 툴체인 전체 지도: [[swift-toolchain-stack]]
 - 매크로/도구 허브: [[swift-macro-tooling-stack]]
@@ -44,6 +47,9 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - [[swift-actor-isolation-and-sendable|actor/sendable]]
 - [[swift-task-executor-runtime|task/executor/runtime]]
 - [[swift-evolution-and-proposal-history|evolution/proposal history]]
+- [[proposal-value-semantics-and-cow-to-ownership|value semantics/COW]]
+- [[proposal-declaration-type-checker-to-sema|declaration type checker proposal]]
+- [[proposal-compilation-model-and-wmo-to-driver|compilation model/WMO]]
 - [[standard-library-runtime-and-compiler|stdlib/runtime/compiler]]
 - [[swift-toolchain-stack|toolchain stack]]
 - [[swift-macro-tooling-stack|macro/tooling]]
@@ -263,6 +269,9 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - 제네릭 쪽 장기 비전부터 보고 싶다 → [[generics-manifesto]] / [[official-docs/swift-generics-manifesto]]
 - ownership 방향을 보고 싶다 → [[ownership-manifesto]] / [[swift-ownership-memory-model]]
 - ABI / resilience 방향을 보고 싶다 → [[official-docs/abi-stability-manifesto]] / [[library-evolution]]
+- value semantics / COW proposal이 실제 ownership/runtime과 어떻게 이어졌는지 보고 싶다 → [[proposal-value-semantics-and-cow-to-ownership]]
+- declaration type checker proposal이 현대 Sema와 어떻게 이어졌는지 보고 싶다 → [[proposal-declaration-type-checker-to-sema]]
+- build model / WMO proposal이 driver와 어떻게 이어졌는지 보고 싶다 → [[proposal-compilation-model-and-wmo-to-driver]]
 
 ## 자주 같이 움직이는 키워드 묶음
 
@@ -282,6 +291,12 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
   - [[swift-task-executor-runtime]] → [[swift-concurrency-architecture]] → [[runtime]]
 - manifesto → proposal history → implementation
   - [[generics-manifesto]] → [[swift-evolution-and-proposal-history]] → [[type-checker]]
+- proposal → implementation (ownership/runtime)
+  - [[proposal-value-semantics-and-cow-to-ownership]] → [[swift-ownership-memory-model]] → [[runtime]]
+- proposal → implementation (Sema)
+  - [[proposal-declaration-type-checker-to-sema]] → [[type-checker]] → [[request-evaluator]]
+- proposal → implementation (driver/WMO)
+  - [[proposal-compilation-model-and-wmo-to-driver]] → [[compiler-driver]] → [[dependency-analysis]]
 - Sendable → actor isolation → FlowIsolation → ownership
   - [[concurrency-data-race-safety]] → [[sil-optimizer-pass-catalog]] → [[sil-ownership]]
 - ABI stability → metadata → runtime → library evolution

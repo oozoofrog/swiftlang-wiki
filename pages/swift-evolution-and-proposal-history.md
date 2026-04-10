@@ -109,6 +109,11 @@ implementation doc은 “어떻게”를 설명하는 경우가 많다.
 현재 구조를 알고 난 뒤 proposal 문서를 보면,
 무슨 제약을 풀려 했고 무엇이 아직 미완인지 더 잘 보인다.
 
+바로 이어 읽기 좋은 교차 페이지:
+- [[proposal-value-semantics-and-cow-to-ownership]]
+- [[proposal-declaration-type-checker-to-sema]]
+- [[proposal-compilation-model-and-wmo-to-driver]]
+
 ### 3. 마지막으로 구현 페이지로 내려간다
 proposal의 아이디어가 compiler / runtime / ABI에서 어떤 비용을 치렀는지 확인한다.
 
@@ -159,18 +164,21 @@ proposal의 아이디어가 compiler / runtime / ABI에서 어떤 비용을 치�
 2. [[generics-manifesto]]
 3. [[official-docs/swift-generics-manifesto]]
 4. [[swift-evolution-and-proposal-history]]
+5. [[proposal-declaration-type-checker-to-sema]]
 
 ### ownership / concurrency 중심
 1. [[swift-ownership-memory-model]]
 2. [[swift-concurrency-architecture]]
 3. [[ownership-manifesto]]
 4. [[swift-evolution-and-proposal-history]]
+5. [[proposal-value-semantics-and-cow-to-ownership]]
 
 ### ABI / 배포 / 안정성 중심
 1. [[standard-library-runtime-and-compiler]]
 2. [[library-evolution]]
 3. [[official-docs/abi-stability-manifesto]]
 4. [[swift-evolution-and-proposal-history]]
+5. [[proposal-compilation-model-and-wmo-to-driver]]
 
 ## 같이 보면 좋은 페이지
 
@@ -180,6 +188,9 @@ proposal의 아이디어가 compiler / runtime / ABI에서 어떤 비용을 치�
 - [[swift-type-system]]
 - [[swift-ownership-memory-model]]
 - [[swift-concurrency-architecture]]
+- [[proposal-value-semantics-and-cow-to-ownership]]
+- [[proposal-declaration-type-checker-to-sema]]
+- [[proposal-compilation-model-and-wmo-to-driver]]
 - [[generics-manifesto]]
 - [[ownership-manifesto]]
 - [[library-evolution]]

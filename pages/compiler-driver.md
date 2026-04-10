@@ -30,4 +30,4 @@ Swift에서 파일은 같은 모듈의 다른 파일의 선언을 암시적으�
 
 드라이버가 [[dependency-analysis]] 정보를 활용하여 변경에 영향받는 파일만 재컴파일.
 
-관련 페이지: [[dependency-analysis]], [[swift-driver-package]], [[overview]]
+관련 페이지: [[proposal-compilation-model-and-wmo-to-driver]], [[dependency-analysis]], [[swift-driver-package]], [[overview]]

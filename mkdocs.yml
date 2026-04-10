@@ -1,6 +1,6 @@
 site_name: Swift Compiler Wiki
 site_url: https://oozoofrog.dev/swiftlang-wiki/
-site_description: Swift와 Swift Compiler 전체 지식 위키 — 118 pages, LLM-generated knowledge base
+site_description: Swift와 Swift Compiler 전체 지식 위키 — 121 pages, LLM-generated knowledge base
 repo_url: https://github.com/oozoofrog/swiftlang-wiki
 repo_name: oozoofrog/swiftlang-wiki
 edit_uri: edit/main/pages/
@@ -79,6 +79,11 @@ nav:
     - swift-toolchain-stack.md
     - swift-macro-tooling-stack.md
     - swift-compiler-learning-stack.md
+  - 제안 → 구현 교차 읽기:
+    - swift-evolution-and-proposal-history.md
+    - proposal-value-semantics-and-cow-to-ownership.md
+    - proposal-declaration-type-checker-to-sema.md
+    - proposal-compilation-model-and-wmo-to-driver.md
   - 공식 문서 해설:
     - official-docs/index.md
     - official-docs/language-to-compiler-crosswalk.md
