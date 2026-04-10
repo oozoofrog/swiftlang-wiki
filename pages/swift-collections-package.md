@@ -23,4 +23,4 @@ sources: [swift-collections-readme.md]
 
 `swift-collections/`
 
-관련 페이지: [[overview]], [[swift-foundation-package]]
+관련 페이지: [[overview]], [[keyword-network]], [[swift-foundation-package]], [[standard-library-to-compiler-crosswalk]], [[high-level-sil-optimizations]], [[abi-type-layout]]

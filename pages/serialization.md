@@ -40,4 +40,4 @@ LLVM IR용으로 설계된 바이너리 컨테이너를 재활용:
 
 - `swift/lib/Serialization/` — 직렬화 구현
 
-관련 페이지: [[overview]], [[abi-stability]]
+관련 페이지: [[overview]], [[keyword-network]], [[modules]], [[abi-stability]], [[library-evolution]], [[runtime]], [[compiler-driver]]

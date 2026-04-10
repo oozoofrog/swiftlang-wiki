@@ -19,4 +19,4 @@ SIL 함수는 인라인 정책, 최적화 힌트, 시맨틱 어노테이션 등 
 - **최적화**: `[Onone]` — 최적화 비활성화
 - **가시성**: `[serialized]` — 모듈 외부 인라인 허용
 
-관련 페이지: [[sil-reference]], [[sil-function-conventions]]
+관련 페이지: [[sil-reference]], [[keyword-network]], [[sil-function-conventions]], [[high-level-sil-optimizations]], [[transparent-attr]], [[optimizer-design]]

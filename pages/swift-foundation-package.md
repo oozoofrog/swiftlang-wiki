@@ -28,4 +28,4 @@ Foundation 프레임워크의 순수 Swift 재구현. 크로스 플랫폼 지원
 
 `swift-foundation/`
 
-관련 페이지: [[overview]]
+관련 페이지: [[overview]], [[keyword-network]], [[core-libraries-to-compiler-crosswalk]], [[standard-library-to-compiler-crosswalk]], [[swift-collections-package]], [[modules]]

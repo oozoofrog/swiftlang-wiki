@@ -26,4 +26,4 @@ Netty(Java)에서 영감. 채널 파이프라인으로 인바운드/아웃바운
 
 `swift-nio/`
 
-관련 페이지: [[overview]]
+관련 페이지: [[overview]], [[keyword-network]], [[core-libraries-to-compiler-crosswalk]], [[swift-package-manager]], [[swift-testing-package]], [[concurrency-data-race-safety]]

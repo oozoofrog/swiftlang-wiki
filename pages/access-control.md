@@ -27,4 +27,4 @@ Swift의 접근 제어는 5단계로 구성되며, "더 낮은 접근 수준의 
 - `private(set)`, `internal(set)`으로 setter만 별도 제한 가능
 - `protected`와 class-only 접근은 의도적으로 제외됨
 
-관련 페이지: [[modules]], [[overview]]
+관련 페이지: [[modules]], [[keyword-network]], [[library-evolution]], [[type-checker]], [[diagnostics]], [[tspl-to-compiler-crosswalk]], [[overview]]

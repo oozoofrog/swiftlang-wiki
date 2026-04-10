@@ -26,4 +26,4 @@ SIL 분석 및 변환을 위한 유틸리티 인프라. 원본: `swift/docs/SIL/
 - **LoopAnalysis**: 루프 구조
 - **EscapeAnalysis**: 값 탈출 분석
 
-관련 페이지: [[sil-reference]], [[optimizer-design]]
+관련 페이지: [[sil-reference]], [[keyword-network]], [[optimizer-design]], [[sil-instructions]], [[sil-optimizer-pass-catalog]], [[compiler-performance]]

@@ -22,4 +22,4 @@ Swift에서 리터럴 표현식은 `ExpressibleBy*Literal` 프로토콜을 통�
 - 정수/부동소수점은 무한 정밀도 처리 후 범위 검사
 - 배열/딕셔너리는 가변 인자, 문자열 보간은 `StringInterpolation`으로 처리
 
-관련 페이지: [[type-checker]], [[overview]]
+관련 페이지: [[type-checker]], [[keyword-network]], [[generic-signatures]], [[runtime]], [[tspl-to-compiler-crosswalk]], [[overview]]

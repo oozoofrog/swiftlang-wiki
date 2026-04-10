@@ -29,4 +29,4 @@ SWIFT_EXEC=$SOME_PATH/swiftc swift build
 
 `swift-driver/`
 
-관련 페이지: [[compiler-driver]], [[overview]]
+관련 페이지: [[compiler-driver]], [[keyword-network]], [[dependency-analysis]], [[compiler-performance]], [[llbuild-package]], [[swift-build-package]], [[swift-package-manager]], [[driver-internals]]

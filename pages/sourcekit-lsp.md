@@ -29,4 +29,4 @@ Swift 툴체인(swift.org)과 Xcode에 포함.
 
 `sourcekit-lsp/`
 
-관련 페이지: [[overview]], [[swift-package-manager]]
+관련 페이지: [[overview]], [[keyword-network]], [[swift-package-manager]], [[swift-syntax-package]], [[how-swift-imports-c-apis]], [[compiler-driver]]

@@ -8,8 +8,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 
 | 항목 | 값 |
 |------|-----|
-| 페이지 | 98+ |
-| 교차참조 | 803+ |
+| 페이지 | 99+ |
+| 교차참조 | 1029+ |
 | 소스 | swift/docs/, 서브프로젝트 README, 코드 분석 |
 
 ## 빠른 탐색
@@ -23,6 +23,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **[공식 참고 문서 다운로드](downloads/index.md)** — ZIP/개별 문서 다운로드 허브
 - **[공식 문서 해설 허브](official-docs/index.md)** — 다운로드 문서별 위키 정리 페이지
 - **[언어 → 컴파일러 교차학습 지도](official-docs/language-to-compiler-crosswalk.md)** — 문법/라이브러리/빌드 지식이 내부 구현과 만나는 지도
+- **[위키 키워드 연결망](keyword-network.md)** — 용어/개념/패키지 페이지를 키워드 허브로 묶은 지도
 - **[Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md)** — actor isolation / Sendable / strict concurrency를 컴파일러 관점에서 정리
 - **[Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md)** — 공식 문서와 실제 소스 경로를 함께 따라가는 입문 루트
 - **[용어 사전](glossary-compiler.md)** — 컴파일러 핵심 용어 ~60개
@@ -38,6 +39,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **빌드/도구 중심**: [Swift Compiler 공개 개요 해설](official-docs/swift-compiler-architecture.md) → [Driver Internals 문서 해설](official-docs/driver-internals.md) → [SwiftPM 문서 → 빌드 파이프라인 교차 읽기](official-docs/swiftpm-docs-to-build-pipeline.md)
 - **동시성 안전성 중심**: [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md) → [타입 체커](type-checker.md) → [SIL 옵티마이저 패스 카탈로그](sil-optimizer-pass-catalog.md)
 - **입문자용 전체 루트**: [Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md)
+- **키워드 탐색 루트**: [위키 키워드 연결망](keyword-network.md) → [용어 사전](glossary-compiler.md) → 세부 페이지
 
 ## 카테고리
 
