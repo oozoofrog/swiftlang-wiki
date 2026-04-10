@@ -2,11 +2,20 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import shutil
 import subprocess
 from pathlib import Path
 from typing import Sequence
+
+
+SENSITIVE_LOCAL_PATTERNS = (
+    re.compile(r"/Users/[^\s\"']+"),
+    re.compile(r"/Volumes/[^\s\"']+"),
+    re.compile(r"~/develop\b"),
+    re.compile(r"\beyedisk\b"),
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -123,7 +132,79 @@ def resolve_mkdocs_command(root: Path = ROOT) -> list[str]:
     raise SystemExit('mkdocs executable not found. Install requirements or create .venv first.')
 
 
+def iter_public_text_files(root: Path = ROOT) -> list[Path]:
+    files: list[Path] = []
+    for pattern in ('pages/**/*.md', 'sources/**/*.md', 'files/downloads/**/*.json', 'files/downloads/**/*.txt'):
+        files.extend(sorted(root.glob(pattern)))
+    operations = root / 'OPERATIONS.md'
+    if operations.exists():
+        files.append(operations)
+    return files
+
+
+def find_sensitive_local_path_hits(root: Path = ROOT) -> list[dict[str, object]]:
+    hits: list[dict[str, object]] = []
+    for path in iter_public_text_files(root):
+        try:
+            text = path.read_text()
+        except UnicodeDecodeError:
+            continue
+        for line_no, line in enumerate(text.splitlines(), start=1):
+            if not any(pattern.search(line) for pattern in SENSITIVE_LOCAL_PATTERNS):
+                continue
+            hits.append({'path': path.relative_to(root).as_posix(), 'line': line_no, 'content': line.strip()})
+    return hits
+
+
+def sanitize_download_bundle_metadata(bundle_dir: Path) -> bool:
+    changed = False
+    manifest_path = bundle_dir / 'MANIFEST.json'
+    if manifest_path.exists():
+        data = json.loads(manifest_path.read_text())
+        base_dir = data.get('base_dir')
+        if data.get('base_dir') != '.':
+            data['base_dir'] = '.'
+            changed = True
+        for entry in data.get('downloaded', []):
+            save_as = entry.get('save_as')
+            saved_path = entry.get('saved_path')
+            normalized = saved_path
+            if save_as:
+                normalized = Path('files') / Path(save_as)
+                normalized = normalized.as_posix()
+            elif isinstance(saved_path, str) and isinstance(base_dir, str) and saved_path.startswith(base_dir.rstrip('/') + '/'):
+                normalized = Path(saved_path).relative_to(base_dir).as_posix()
+            elif isinstance(saved_path, str) and '/files/' in saved_path:
+                normalized = 'files/' + saved_path.split('/files/', 1)[1]
+            if normalized and normalized != saved_path:
+                entry['saved_path'] = normalized
+                changed = True
+        if changed:
+            manifest_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+
+    readme_path = bundle_dir / 'README.txt'
+    if readme_path.exists():
+        original = readme_path.read_text()
+        updated = re.sub(r'^Base:\s+.+$', 'Base: .', original, flags=re.MULTILINE)
+        if updated != original:
+            readme_path.write_text(updated)
+            changed = True
+    return changed
+
+
+def sanitize_download_bundles(root: Path = ROOT) -> int:
+    count = 0
+    downloads_root = root / 'files' / 'downloads'
+    if not downloads_root.exists():
+        return count
+    for bundle_dir in sorted(path for path in downloads_root.iterdir() if path.is_dir()):
+        if sanitize_download_bundle_metadata(bundle_dir):
+            count += 1
+    return count
+
+
 def stage_static_files(root: Path = ROOT) -> None:
+    sanitize_download_bundles(root)
     source_dir = root / 'files'
     target_dir = root / 'site' / 'files'
     if target_dir.exists():
@@ -163,10 +244,15 @@ def cmd_doctor(_: argparse.Namespace) -> int:
         issues.append(f"{len(snap['unlisted_pages'])} pages missing from mkdocs nav")
     if snap['site_stale']:
         issues.append('site build is stale')
+    sensitive_hits = find_sensitive_local_path_hits(ROOT)
+    if sensitive_hits:
+        issues.append(f"{len(sensitive_hits)} sensitive local path hits found in public files")
     if issues:
         print('Doctor found issues:')
         for issue in issues:
             print(f'  - {issue}')
+        for hit in sensitive_hits[:10]:
+            print(f"    • {hit['path']}:{hit['line']} -> {hit['content']}")
         return 1
     print('Doctor OK: wiki environment looks healthy.')
     print(f"Pages: {snap['pages']} | Sources: {snap['sources']} | Site URL: {snap['site_url']}")

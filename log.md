@@ -29,5 +29,5 @@
 | 2026-04-10 | publish | swift-compiler-7-day-course.md, concurrency-data-race-safety.md | course, source-guided, concurrency | 입문자용 7일 코스 추가 + 실제 로컬 Swift 소스 경로/검증 명령 반영 |
 | 2026-04-10 | update | keyword-network.md, glossary-compiler.md 외 저링크 페이지 다수 | keywords, glossary, navigation | 키워드 허브 추가 + glossary 링크화 + 저링크 페이지 교차참조 보강 |
 | 2026-04-10 | update | 기여/Interop/SIL 세부 페이지 다수 | keywords, navigation, crossrefs | 2차 연결망 보강: contributor/C++/SIL/ABI 관련 저링크 페이지 교차참조 확장 |
-| 2026-04-10 | sanitize | pages/, sources/, files/downloads/, OPERATIONS.md | public pages, source excerpts, bundle metadata | 로컬 맥 경로/사용자명/머신 한정 표현 제거, `<swiftlang-root>`/`<swift-source-root>`/`<bundle-root>` 같은 범용 placeholder로 일반화 |
+| 2026-04-10 | sanitize | pages/, sources/, files/downloads/, OPERATIONS.md | public pages, source excerpts, bundle metadata | 로컬 맥 경로/사용자명/머신 한정 표현 제거, 공개 경로 표기는 `swift/...` 및 상대경로(`.`/`files/...`) 기준으로 일반화 |
 

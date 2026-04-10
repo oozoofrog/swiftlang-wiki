@@ -136,22 +136,20 @@ SIL 단계의 흐름/격리 정보와도 연결된다는 뜻이다.
 더 깊게 들어가면 ownership / isolation / region 추적 이야기로 바뀐다.
 
 
-## Swift 소스 루트 기준 경로
+## Swift 소스 기준 경로
 
-이 페이지를 로컬 소스와 같이 읽고 싶다면, 로컬에 클론한 Swift 저장소 루트를 `<swift-source-root>`라고 두고 아래를 보면 된다.
-
-- 소스 루트 placeholder: `<swift-source-root>`
+이 페이지를 로컬 소스와 같이 읽고 싶다면, 로컬에 클론한 Swift 저장소를 `swift/` 기준으로 두고 아래를 보면 된다.
 
 동시성 안전성과 직접적으로 이어지는 파일:
 
-- `<swift-source-root>/lib/Sema/TypeCheckConcurrency.cpp`
-- `<swift-source-root>/lib/AST/ActorIsolation.cpp`
-- `<swift-source-root>/lib/SIL/IR/ActorIsolation.cpp`
-- `<swift-source-root>/lib/SILGen/SILGenConcurrency.cpp`
-- `<swift-source-root>/lib/SILOptimizer/Mandatory/SendNonSendable.cpp`
-- `<swift-source-root>/lib/SILOptimizer/Mandatory/FlowIsolation.cpp`
-- `<swift-source-root>/lib/SILOptimizer/Utils/RegionIsolation.cpp`
-- `<swift-source-root>/docs/SIL/Ownership.md`
+- `swift/lib/Sema/TypeCheckConcurrency.cpp`
+- `swift/lib/AST/ActorIsolation.cpp`
+- `swift/lib/SIL/IR/ActorIsolation.cpp`
+- `swift/lib/SILGen/SILGenConcurrency.cpp`
+- `swift/lib/SILOptimizer/Mandatory/SendNonSendable.cpp`
+- `swift/lib/SILOptimizer/Mandatory/FlowIsolation.cpp`
+- `swift/lib/SILOptimizer/Utils/RegionIsolation.cpp`
+- `swift/docs/SIL/Ownership.md`
 
 ## 예시 확인 명령
 

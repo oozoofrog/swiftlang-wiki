@@ -107,6 +107,46 @@ nav:
             self.assertTrue((root / 'site' / 'files' / 'downloads' / 'bundle.zip').exists())
             self.assertTrue((root / 'site' / 'files' / 'downloads' / 'doc.md').exists())
 
+    def test_sanitize_download_bundle_metadata_rewrites_absolute_paths_as_relative(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            bundle_dir = Path(tmpdir) / 'files' / 'downloads' / 'swift-docs-test'
+            bundle_dir.mkdir(parents=True)
+            manifest = bundle_dir / 'MANIFEST.json'
+            manifest.write_text('''{
+  "base_dir": "/Users/test/Downloads/swift-docs-test",
+  "downloaded": [
+    {
+      "save_as": "swiftlang-swift/docs/TypeChecker.md",
+      "saved_path": "/Users/test/Downloads/swift-docs-test/files/swiftlang-swift/docs/TypeChecker.md"
+    }
+  ]
+}
+''')
+            readme = bundle_dir / 'README.txt'
+            readme.write_text('Swift docs local bundle\nBase: /Users/test/Downloads/swift-docs-test\n')
+
+            wikictl.sanitize_download_bundle_metadata(bundle_dir)
+
+            self.assertIn('"base_dir": "."', manifest.read_text())
+            self.assertIn('"saved_path": "files/swiftlang-swift/docs/TypeChecker.md"', manifest.read_text())
+            self.assertEqual(readme.read_text(), 'Swift docs local bundle\nBase: .\n')
+
+    def test_find_sensitive_local_path_hits_detects_public_local_paths(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            (root / 'pages').mkdir()
+            (root / 'sources').mkdir()
+            (root / 'files' / 'downloads' / 'bundle').mkdir(parents=True)
+            (root / 'site').mkdir()
+            (root / 'mkdocs.yml').write_text('site_name: Demo\nnav:\n  - Home: index.md\n')
+            (root / 'pages' / 'index.md').write_text('open /Users/test/swift/README.md\n')
+            (root / 'files' / 'downloads' / 'bundle' / 'README.txt').write_text('Base: /Users/test/Downloads/swift-docs-test\n')
+
+            hits = wikictl.find_sensitive_local_path_hits(root)
+
+            self.assertTrue(any(hit['path'].endswith('pages/index.md') for hit in hits))
+            self.assertTrue(any(hit['path'].endswith('files/downloads/bundle/README.txt') for hit in hits))
+
 
 if __name__ == '__main__':
     unittest.main()
