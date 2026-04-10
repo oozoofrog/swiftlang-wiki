@@ -28,6 +28,8 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - Compilation Model / WMO proposal 교차 읽기: [[proposal-compilation-model-and-wmo-to-driver]]
 - ObjC interop proposal 교차 읽기: [[proposal-objc-interop-to-importer-and-dispatch]]
 - Initialization/Accessors proposal 교차 읽기: [[proposal-initialization-and-accessors-to-property-model]]
+- Initializer Inheritance proposal 교차 읽기: [[proposal-initializer-inheritance-to-modern-init-model]]
+- Constructors/ClassConstruction proposal 교차 읽기: [[proposal-constructors-and-class-construction-to-init-model]]
 - Remote Mirrors proposal 교차 읽기: [[proposal-remote-mirrors-to-runtime-reflection]]
 - stdlib/runtime/compiler 허브: [[standard-library-runtime-and-compiler]]
 - 툴체인 전체 지도: [[swift-toolchain-stack]]
@@ -55,6 +57,8 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - [[proposal-compilation-model-and-wmo-to-driver|compilation model/WMO]]
 - [[proposal-objc-interop-to-importer-and-dispatch|objc interop proposal]]
 - [[proposal-initialization-and-accessors-to-property-model|initialization/accessors]]
+- [[proposal-initializer-inheritance-to-modern-init-model|initializer inheritance]]
+- [[proposal-constructors-and-class-construction-to-init-model|constructors/class construction]]
 - [[proposal-remote-mirrors-to-runtime-reflection|remote mirrors]]
 - [[standard-library-runtime-and-compiler|stdlib/runtime/compiler]]
 - [[swift-toolchain-stack|toolchain stack]]
@@ -280,6 +284,8 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - build model / WMO proposal이 driver와 어떻게 이어졌는지 보고 싶다 → [[proposal-compilation-model-and-wmo-to-driver]]
 - ObjC interop proposal이 importer/dynamic dispatch와 어떻게 이어졌는지 보고 싶다 → [[proposal-objc-interop-to-importer-and-dispatch]]
 - initialization/accessors proposal이 property model과 어떻게 이어졌는지 보고 싶다 → [[proposal-initialization-and-accessors-to-property-model]]
+- initializer inheritance proposal이 현재 init 상속 규칙과 어떻게 이어졌는지 보고 싶다 → [[proposal-initializer-inheritance-to-modern-init-model]]
+- constructors/class construction rejected proposal이 왜 지금 모델로 이어졌는지 보고 싶다 → [[proposal-constructors-and-class-construction-to-init-model]]
 - remote mirrors proposal이 runtime/reflection과 어떻게 이어졌는지 보고 싶다 → [[proposal-remote-mirrors-to-runtime-reflection]]
 
 ## 자주 같이 움직이는 키워드 묶음
@@ -310,6 +316,10 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
   - [[proposal-objc-interop-to-importer-and-dispatch]] → [[clang-importer]] → [[objc-interop]]
 - proposal → implementation (property model)
   - [[proposal-initialization-and-accessors-to-property-model]] → [[sil-initializer-conventions]] → [[sil-memory-access]]
+- proposal → implementation (initializer inheritance)
+  - [[proposal-initializer-inheritance-to-modern-init-model]] → [[proposal-initialization-and-accessors-to-property-model]] → [[sil-initializer-conventions]]
+- proposal → implementation (constructors/class construction)
+  - [[proposal-constructors-and-class-construction-to-init-model]] → [[proposal-initializer-inheritance-to-modern-init-model]] → [[failable-initializers]]
 - proposal → implementation (reflection/runtime)
   - [[proposal-remote-mirrors-to-runtime-reflection]] → [[abi-type-metadata]] → [[runtime]]
 - Sendable → actor isolation → FlowIsolation → ownership

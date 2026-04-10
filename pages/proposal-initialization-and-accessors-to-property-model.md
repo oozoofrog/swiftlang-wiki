@@ -60,6 +60,8 @@ interop 문서이기도 하다.
 
 관련 페이지:
 - [[proposal-objc-interop-to-importer-and-dispatch]]
+- [[proposal-initializer-inheritance-to-modern-init-model]]
+- [[proposal-constructors-and-class-construction-to-init-model]]
 - [[objc-interop]]
 
 ## Accessors.rst의 핵심 포인트
@@ -144,6 +146,8 @@ full-value load/store만으로 처리하면 생기는 문제를 아주 길게 �
 - [[swift-evolution-and-proposal-history]]
 - [[proposal-value-semantics-and-cow-to-ownership]]
 - [[proposal-objc-interop-to-importer-and-dispatch]]
+- [[proposal-initializer-inheritance-to-modern-init-model]]
+- [[proposal-constructors-and-class-construction-to-init-model]]
 - [[failable-initializers]]
 - [[sil-initializer-conventions]]
 - [[sil-memory-access]]

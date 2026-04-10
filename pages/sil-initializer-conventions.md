@@ -25,4 +25,4 @@ SIL에서 이니셜라이저의 표현 규약. 원본: `swift/docs/SIL/SILInitia
 - `init?` → Optional 결과 반환
 - 실패 시 이미 초기화된 stored property를 소멸 후 `nil` 반환
 
-관련 페이지: [[proposal-initialization-and-accessors-to-property-model]], [[sil-reference]], [[keyword-network]], [[sil-function-conventions]], [[failable-initializers]], [[sil-memory-access]], [[sil-ownership]]
+관련 페이지: [[proposal-initialization-and-accessors-to-property-model]], [[proposal-initializer-inheritance-to-modern-init-model]], [[proposal-constructors-and-class-construction-to-init-model]], [[sil-reference]], [[keyword-network]], [[sil-function-conventions]], [[failable-initializers]], [[sil-memory-access]], [[sil-ownership]]

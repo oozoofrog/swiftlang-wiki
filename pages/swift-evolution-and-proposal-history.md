@@ -115,6 +115,8 @@ implementation doc은 “어떻게”를 설명하는 경우가 많다.
 - [[proposal-compilation-model-and-wmo-to-driver]]
 - [[proposal-objc-interop-to-importer-and-dispatch]]
 - [[proposal-initialization-and-accessors-to-property-model]]
+- [[proposal-initializer-inheritance-to-modern-init-model]]
+- [[proposal-constructors-and-class-construction-to-init-model]]
 - [[proposal-remote-mirrors-to-runtime-reflection]]
 
 ### 3. 마지막으로 구현 페이지로 내려간다
@@ -197,6 +199,8 @@ proposal의 아이디어가 compiler / runtime / ABI에서 어떤 비용을 치�
 - [[proposal-compilation-model-and-wmo-to-driver]]
 - [[proposal-objc-interop-to-importer-and-dispatch]]
 - [[proposal-initialization-and-accessors-to-property-model]]
+- [[proposal-initializer-inheritance-to-modern-init-model]]
+- [[proposal-constructors-and-class-construction-to-init-model]]
 - [[proposal-remote-mirrors-to-runtime-reflection]]
 - [[generics-manifesto]]
 - [[ownership-manifesto]]

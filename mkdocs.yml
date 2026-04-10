@@ -1,6 +1,6 @@
 site_name: Swift Compiler Wiki
 site_url: https://oozoofrog.dev/swiftlang-wiki/
-site_description: Swift와 Swift Compiler 전체 지식 위키 — 124 pages, LLM-generated knowledge base
+site_description: Swift와 Swift Compiler 전체 지식 위키 — 126 pages, LLM-generated knowledge base
 repo_url: https://github.com/oozoofrog/swiftlang-wiki
 repo_name: oozoofrog/swiftlang-wiki
 edit_uri: edit/main/pages/
@@ -86,6 +86,8 @@ nav:
     - proposal-compilation-model-and-wmo-to-driver.md
     - proposal-objc-interop-to-importer-and-dispatch.md
     - proposal-initialization-and-accessors-to-property-model.md
+    - proposal-initializer-inheritance-to-modern-init-model.md
+    - proposal-constructors-and-class-construction-to-init-model.md
     - proposal-remote-mirrors-to-runtime-reflection.md
   - 공식 문서 해설:
     - official-docs/index.md
