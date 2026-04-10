@@ -30,7 +30,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build site
-        run: mkdocs build
+        run: ./scripts/wikictl.py build
 
       - uses: actions/configure-pages@v5
 

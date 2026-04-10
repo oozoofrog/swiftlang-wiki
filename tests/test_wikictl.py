@@ -65,6 +65,48 @@ nav:
 
             self.assertTrue(wikictl.site_is_stale(root))
 
+    def test_build_status_snapshot_counts_nested_pages(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            (root / 'pages' / 'downloads').mkdir(parents=True)
+            (root / 'sources').mkdir()
+            (root / 'site').mkdir()
+            (root / 'mkdocs.yml').write_text('''\
+site_name: Demo
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - Downloads: downloads/index.md
+''')
+            (root / 'pages' / 'index.md').write_text('# home\n')
+            (root / 'pages' / 'downloads' / 'index.md').write_text('# downloads\n')
+            (root / 'site' / 'index.html').write_text('<html></html>\n')
+            (root / 'site' / 'downloads').mkdir()
+            (root / 'site' / 'downloads' / 'index.html').write_text('<html></html>\n')
+
+            import subprocess
+            subprocess.check_call(['git', 'init'], cwd=root)
+            subprocess.check_call(['git', 'config', 'user.email', 'test@example.com'], cwd=root)
+            subprocess.check_call(['git', 'config', 'user.name', 'Test User'], cwd=root)
+            subprocess.check_call(['git', 'add', '.'], cwd=root)
+            subprocess.check_call(['git', 'commit', '-m', 'init'], cwd=root)
+
+            snapshot = wikictl.build_status_snapshot(root)
+            self.assertEqual(snapshot['pages'], 2)
+
+    def test_stage_static_files_copies_files_tree_into_site(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            (root / 'files' / 'downloads').mkdir(parents=True)
+            (root / 'site').mkdir()
+            (root / 'files' / 'downloads' / 'bundle.zip').write_bytes(b'zip')
+            (root / 'files' / 'downloads' / 'doc.md').write_text('# raw\n')
+
+            wikictl.stage_static_files(root)
+
+            self.assertTrue((root / 'site' / 'files' / 'downloads' / 'bundle.zip').exists())
+            self.assertTrue((root / 'site' / 'files' / 'downloads' / 'doc.md').exists())
+
 
 if __name__ == '__main__':
     unittest.main()

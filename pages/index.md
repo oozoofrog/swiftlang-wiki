@@ -20,6 +20,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **[심볼 맹글링](abi-mangling.md)** — ABI 맹글링/디맹글링 체계
 - **[타입 체커](type-checker.md)** — 제약 기반 양방향 타입 추론
 - **[Generics 책](compiling-swift-generics.md)** — "Compiling Swift Generics" 요약
+- **[공식 참고 문서 다운로드](downloads/index.md)** — ZIP/개별 문서 다운로드 허브
 - **[용어 사전](glossary-compiler.md)** — 컴파일러 핵심 용어 ~60개
 
 ## 카테고리

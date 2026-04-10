@@ -24,7 +24,7 @@ fi
 PAGES_CHANGED=$(git diff --name-only HEAD -- pages/ 2>/dev/null | wc -l | tr -d ' ')
 PAGES_NEW=$(git ls-files --others --exclude-standard -- pages/ | wc -l | tr -d ' ')
 SOURCES_NEW=$(git ls-files --others --exclude-standard -- sources/ | wc -l | tr -d ' ')
-TOTAL_PAGES=$(ls pages/*.md 2>/dev/null | wc -l | tr -d ' ')
+TOTAL_PAGES=$(find pages -type f -name '*.md' 2>/dev/null | wc -l | tr -d ' ')
 
 # Build commit message
 if [ $# -gt 0 ]; then

@@ -12,6 +12,7 @@ from typing import Sequence
 ROOT = Path(__file__).resolve().parents[1]
 PAGES_DIR = ROOT / 'pages'
 SOURCES_DIR = ROOT / 'sources'
+FILES_DIR = ROOT / 'files'
 SITE_DIR = ROOT / 'site'
 MKDOCS_YML = ROOT / 'mkdocs.yml'
 SYNC_SH = ROOT / 'scripts' / 'sync.sh'
@@ -75,7 +76,7 @@ def read_site_url(root: Path = ROOT) -> str | None:
 
 
 def run_git(args: Sequence[str], *, root: Path = ROOT) -> str:
-    return subprocess.check_output(['git', *args], cwd=root, text=True).strip()
+    return subprocess.check_output(['git', *args], cwd=root, text=True, stderr=subprocess.DEVNULL).strip()
 
 
 def count_git_changes(root: Path = ROOT) -> tuple[int, int]:
@@ -100,8 +101,8 @@ def build_status_snapshot(root: Path = ROOT) -> dict[str, object]:
         branch = None
     return {
         'root': root,
-        'pages': len(list((root / 'pages').glob('*.md'))),
-        'sources': len(list((root / 'sources').glob('*'))),
+        'pages': len(list((root / 'pages').rglob('*.md'))),
+        'sources': len([p for p in (root / 'sources').rglob('*') if p.is_file()]),
         'modified': modified,
         'untracked': untracked,
         'unlisted_pages': find_unlisted_pages(root),
@@ -120,6 +121,15 @@ def resolve_mkdocs_command(root: Path = ROOT) -> list[str]:
     if mkdocs:
         return [mkdocs]
     raise SystemExit('mkdocs executable not found. Install requirements or create .venv first.')
+
+
+def stage_static_files(root: Path = ROOT) -> None:
+    source_dir = root / 'files'
+    target_dir = root / 'site' / 'files'
+    if target_dir.exists():
+        shutil.rmtree(target_dir)
+    if source_dir.exists():
+        shutil.copytree(source_dir, target_dir)
 
 
 def cmd_status(_: argparse.Namespace) -> int:
@@ -165,7 +175,11 @@ def cmd_doctor(_: argparse.Namespace) -> int:
 
 def cmd_build(_: argparse.Namespace) -> int:
     mkdocs_cmd = resolve_mkdocs_command(ROOT)
-    return subprocess.call([*mkdocs_cmd, 'build'], cwd=ROOT)
+    result = subprocess.call([*mkdocs_cmd, 'build'], cwd=ROOT)
+    if result != 0:
+        return result
+    stage_static_files(ROOT)
+    return 0
 
 
 def cmd_serve(args: argparse.Namespace) -> int:

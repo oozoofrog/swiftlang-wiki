@@ -23,3 +23,4 @@
 | 2026-04-09 | ingest | getting-started 외 6개 | getting-started, first-pull-request, compiler-faq, testing-guide, continuous-integration, development-tips | 기여 가이드 6페이지 (에이전트) |
 | 2026-04-09 | analyze | 소스 코드 분석 | sil-optimizer-pass-catalog, ast-node-hierarchy, swift-compiler-sources | 코드 구조 분석 3페이지 (Passes.def, *Nodes.def, SwiftCompilerSources/) |
 | 2026-04-09 | update | index.md, overview.md | 전체 | 23개 신규 페이지 인덱스 등록 + overview 교차참조 추가 |
+| 2026-04-10 | publish | downloads/index.md, mkdocs.yml | downloads, Home, Wiki Index | Swift 공식/준공식 참고 문서 다운로드 허브 추가 + ZIP/개별 파일 정적 자산 배치 |

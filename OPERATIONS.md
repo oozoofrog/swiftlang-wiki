@@ -21,6 +21,9 @@
 - `sources/`
   - 원문/근거/ingest 소스
   - 페이지 frontmatter의 `sources:`에서 참조
+- `files/`
+  - 페이지가 링크하는 정적 다운로드 자산 원본
+  - build 시 `site/files/`로 복사되어 공개 서빙됨
 - `site/`
   - 로컬 빌드 결과물
 - `scripts/sync.sh`

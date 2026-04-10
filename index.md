@@ -1,7 +1,7 @@
 ---
-page_count: 71
+page_count: 73
 source_count: 72
-last_updated: "2026-04-09"
+last_updated: "2026-04-10"
 ---
 
 # Wiki Index
@@ -12,6 +12,7 @@ last_updated: "2026-04-09"
 |--------|------|------|
 | [overview](pages/overview.md) | Swift 컴파일러 모노레포 전체 개요 및 파이프라인 | overview, architecture, pipeline |
 | [compiling-swift-generics](pages/compiling-swift-generics.md) | "Compiling Swift Generics" 책 요약 — 4가지 핵심 시맨틱 객체 | generics, compilation, book |
+| [downloads](pages/downloads/index.md) | Swift 공식/준공식 참고 문서 다운로드 허브 | downloads, references, offline |
 
 ## 엔티티 (Entity)
 
