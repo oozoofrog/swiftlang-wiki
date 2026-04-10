@@ -62,6 +62,8 @@ Swift 6 이후에는 동시성이 단지 async/await 문법이 아니라
 
 관련 페이지:
 - [[swift-concurrency-architecture]]
+- [[swift-actor-isolation-and-sendable]]
+- [[swift-task-executor-runtime]]
 - [[concurrency-data-race-safety]]
 - [[diagnostics]]
 - [[sil-optimizer-pass-catalog]]
@@ -115,6 +117,8 @@ Swift의 제네릭, ownership, concurrency, resilience 같은 중요한 특성�
 - [[swift-type-system]]
 - [[swift-ownership-memory-model]]
 - [[swift-concurrency-architecture]]
+- [[swift-actor-isolation-and-sendable]]
+- [[swift-task-executor-runtime]]
 - [[standard-library-runtime-and-compiler]]
 - [[swift-macro-tooling-stack]]
 - [[overview]]

@@ -1,6 +1,6 @@
 site_name: Swift Compiler Wiki
 site_url: https://oozoofrog.dev/swiftlang-wiki/
-site_description: Swift와 Swift Compiler 전체 지식 위키 — 115 pages, LLM-generated knowledge base
+site_description: Swift와 Swift Compiler 전체 지식 위키 — 117 pages, LLM-generated knowledge base
 repo_url: https://github.com/oozoofrog/swiftlang-wiki
 repo_name: oozoofrog/swiftlang-wiki
 edit_uri: edit/main/pages/
@@ -72,6 +72,8 @@ nav:
     - swift-type-system.md
     - swift-ownership-memory-model.md
     - swift-concurrency-architecture.md
+    - swift-actor-isolation-and-sendable.md
+    - swift-task-executor-runtime.md
     - standard-library-runtime-and-compiler.md
     - swift-toolchain-stack.md
     - swift-macro-tooling-stack.md

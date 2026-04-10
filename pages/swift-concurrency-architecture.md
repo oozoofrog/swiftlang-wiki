@@ -22,10 +22,10 @@ Swift 6 strict concurrency 검사에 집중한 페이지가 이미 있지만,
 | 층 | 핵심 질문 | 연결 페이지 |
 |---|---|---|
 | 언어 표면 | `async`/`await`, `Task`, `TaskGroup`, `actor`, global actor는 무엇인가 | [[swift-language-overview]], [[official-docs/concurrency-data-race-safety-to-compiler-checks]] |
-| 타입/안전성 | `Sendable`, actor isolation, cross-actor access는 어떻게 판정되는가 | [[swift-type-system]], [[concurrency-data-race-safety]], [[type-checker]] |
+| 타입/안전성 | `Sendable`, actor isolation, cross-actor access는 어떻게 판정되는가 | [[swift-type-system]], [[swift-actor-isolation-and-sendable]], [[concurrency-data-race-safety]], [[type-checker]] |
 | ownership / isolation | 값 이동, borrow, region isolation은 동시성과 어떻게 만나는가 | [[swift-ownership-memory-model]], [[ownership-manifesto]], [[sil-ownership]] |
 | SIL / lowering | concurrency 의미가 SIL과 mandatory pass에서 어떻게 표현되는가 | [[sil-reference]], [[sil-optimizer-pass-catalog]], [[concurrency-data-race-safety]] |
-| runtime / executor | task, job, executor, actor runtime은 실행시 어떻게 움직이는가 | [[runtime]], [[standard-library-runtime-and-compiler]] |
+| runtime / executor | task, job, executor, actor runtime은 실행시 어떻게 움직이는가 | [[swift-task-executor-runtime]], [[runtime]], [[standard-library-runtime-and-compiler]] |
 | migration / diagnostics | Swift 5→6 전환에서 무엇이 warning/error가 되는가 | [[concurrency-data-race-safety]], [[diagnostics]], [[swift-compiler-learning-stack]] |
 
 ## 왜 별도 허브가 필요한가
@@ -52,6 +52,7 @@ Swift Concurrency는 자주 두 가지로 과소단순화된다.
 실제로는 suspension point, task creation, cancellation, task local, task group 같은 실행 모델이 뒤에 깔려 있다.
 
 관련 페이지:
+- [[swift-task-executor-runtime]]
 - [[swift-language-overview]]
 - [[runtime]]
 
@@ -60,6 +61,7 @@ actor의 핵심은 문법보다도
 어떤 값/선언/클로저가 어느 실행 문맥에 속해 있는가를 정적으로 추적한다는 점이다.
 
 관련 페이지:
+- [[swift-actor-isolation-and-sendable]]
 - [[concurrency-data-race-safety]]
 - [[type-checker]]
 - [[diagnostics]]
@@ -128,6 +130,7 @@ compiler가 판정한 concurrency 의미는 결국 runtime과 stdlib public API�
 Task, Actor, Executor, MainActor 같은 표면 타입 뒤에는 runtime entrypoint와 ABI 구조가 있다.
 
 관련 페이지:
+- [[swift-task-executor-runtime]]
 - [[runtime]]
 - [[standard-library-runtime-and-compiler]]
 
@@ -187,21 +190,26 @@ compiler + optimizer + runtime + stdlib public API를 가로지르는 구조라�
 1. [[swift-language-overview]]
 2. [[swift-type-system]]
 3. [[swift-concurrency-architecture]]
-4. [[concurrency-data-race-safety]]
+4. [[swift-actor-isolation-and-sendable]]
+5. [[swift-task-executor-runtime]]
+6. [[concurrency-data-race-safety]]
 
 ### 구현 관점
 1. [[swift-and-swift-compiler]]
-2. [[concurrency-data-race-safety]]
-3. [[sil-reference]]
-4. [[sil-optimizer-pass-catalog]]
-5. [[runtime]]
+2. [[swift-actor-isolation-and-sendable]]
+3. [[swift-task-executor-runtime]]
+4. [[concurrency-data-race-safety]]
+5. [[sil-reference]]
+6. [[sil-optimizer-pass-catalog]]
+7. [[runtime]]
 
 ### ownership과 같이 보는 루트
 1. [[swift-ownership-memory-model]]
 2. [[ownership-manifesto]]
 3. [[sil-ownership]]
 4. [[swift-concurrency-architecture]]
-5. [[concurrency-data-race-safety]]
+5. [[swift-actor-isolation-and-sendable]]
+6. [[concurrency-data-race-safety]]
 
 ### migration / 실무 관점
 1. [[official-docs/concurrency-data-race-safety-to-compiler-checks]]
@@ -215,6 +223,8 @@ compiler + optimizer + runtime + stdlib public API를 가로지르는 구조라�
 - [[swift-and-swift-compiler]]
 - [[swift-type-system]]
 - [[swift-ownership-memory-model]]
+- [[swift-actor-isolation-and-sendable]]
+- [[swift-task-executor-runtime]]
 - [[concurrency-data-race-safety]]
 - [[type-checker]]
 - [[diagnostics]]

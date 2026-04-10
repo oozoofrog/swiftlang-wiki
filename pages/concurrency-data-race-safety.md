@@ -13,6 +13,8 @@ Swift 6의 concurrency migration 문서가 설명하는 핵심은 단순히 `asy
 
 이 페이지는 strict concurrency checking과 migration에 집중한 심화 페이지다.
 Task / actor / executor / runtime까지 포함한 더 넓은 구조는 [[swift-concurrency-architecture]]에서 한 번에 볼 수 있다.
+actor 경계와 `Sendable` 축을 집중해서 보려면 [[swift-actor-isolation-and-sendable]],
+실행 모델을 보려면 [[swift-task-executor-runtime]]으로 이어 가면 된다.
 
 원문 진입점은 `https://www.swift.org/documentation/concurrency/` 이지만, 다운로드 번들 안의 파일은 redirect-only다.
 실제 canonical 주제는 Swift 6 migration guide의 **Enable data-race safety checking** 페이지다.
@@ -199,6 +201,8 @@ Swift 6의 concurrency migration은 단순한 스타일 권장이 아니라,
 - [[official-docs/language-to-compiler-crosswalk]]
 - [[official-docs/swift-documentation-index]]
 - [[swift-concurrency-architecture]]
+- [[swift-actor-isolation-and-sendable]]
+- [[swift-task-executor-runtime]]
 - [[swift-ownership-memory-model]]
 - [[type-checker]]
 - [[diagnostics]]

@@ -22,7 +22,7 @@ sources: [ownership-manifesto.md, sil-ownership.md, official-docs/ownership-ssa.
 | SIL 소유권 | borrow scope, consume, lifetime-ending use, OSSA는 어떻게 표현되는가 | [[ownership-manifesto]], [[sil-ownership]], [[official-docs/ownership-ssa]] |
 | 메모리 접근과 수명 | 주소 기반 접근, exclusivity, lexical lifetime은 어디서 보이는가 | [[sil-memory-access]], [[sil-reference]], [[runtime]] |
 | ABI / runtime 연결 | 타입 레이아웃, metadata, ARC, reference counting은 어떻게 맞물리는가 | [[standard-library-runtime-and-compiler]], [[abi-type-layout]], [[abi-type-metadata]], [[runtime]] |
-| 동시성 / 격리 | `Sendable`, actor isolation, region isolation은 ownership과 어떻게 연결되는가 | [[swift-concurrency-architecture]], [[concurrency-data-race-safety]], [[official-docs/concurrency-data-race-safety-to-compiler-checks]], [[sil-optimizer-pass-catalog]] |
+| 동시성 / 격리 | `Sendable`, actor isolation, region isolation은 ownership과 어떻게 연결되는가 | [[swift-concurrency-architecture]], [[swift-actor-isolation-and-sendable]], [[concurrency-data-race-safety]], [[official-docs/concurrency-data-race-safety-to-compiler-checks]], [[sil-optimizer-pass-catalog]] |
 
 ## 왜 이 허브가 중요한가
 
@@ -155,6 +155,7 @@ Sema, SIL, verifier, optimizer, concurrency 검증을 가로지르는 축이라�
 - [[swift-and-swift-compiler]]
 - [[swift-type-system]]
 - [[swift-concurrency-architecture]]
+- [[swift-actor-isolation-and-sendable]]
 - [[standard-library-runtime-and-compiler]]
 - [[ownership-manifesto]]
 - [[sil-ownership]]

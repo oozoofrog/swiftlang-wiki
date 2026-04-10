@@ -8,8 +8,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 
 | 항목 | 값 |
 |------|-----|
-| 페이지 | 115 |
-| 교차참조 | 1824 |
+| 페이지 | 117 |
+| 교차참조 | 1976 |
 | 소스 | swift/docs/, 서브프로젝트 README, 코드 분석 |
 
 ## 빠른 탐색
@@ -26,6 +26,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **[Swift 타입 시스템](swift-type-system.md)** — generics, existential, opaque, conformance, metadata까지 묶는 상위 허브
 - **[Swift 소유권·메모리 모델](swift-ownership-memory-model.md)** — ownership, borrowing, ARC, lifetime, concurrency isolation을 함께 보는 허브
 - **[Swift Concurrency 전체 구조](swift-concurrency-architecture.md)** — async/await, task, actor, executor, runtime, migration을 한 장으로 묶는 허브
+- **[Swift actor isolation·Sendable](swift-actor-isolation-and-sendable.md)** — actor boundary, global actor, MainActor, Sendable을 집중해서 보는 허브
+- **[Swift Task·Executor·Runtime](swift-task-executor-runtime.md)** — task, task group, executor, actor runtime의 실행 모델 허브
 - **[표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md)** — stdlib, runtime, compiler가 어떻게 한 몸처럼 움직이는지 정리한 허브
 - **[Swift 툴체인 스택](swift-toolchain-stack.md)** — LLVM/Clang/driver/SwiftPM/CMake/Ninja/lit/LLDB까지 포함한 기술 스택 지도
 - **[Swift 매크로·도구 스택](swift-macro-tooling-stack.md)** — SwiftSyntax, SourceKit-LSP, formatter, macro 생태계를 묶는 허브
@@ -54,9 +56,11 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **타입 시스템 중심**: [Swift 타입 시스템](swift-type-system.md) → [타입 체커](type-checker.md) → [Compiling Swift Generics](compiling-swift-generics.md) → [런타임](runtime.md)
 - **소유권/메모리 모델 중심**: [Swift 소유권·메모리 모델](swift-ownership-memory-model.md) → [Value/Reference Types → SIL 소유권](official-docs/value-reference-types-to-sil-ownership.md) → [Ownership SSA 해설](official-docs/ownership-ssa.md) → [런타임](runtime.md) → [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md)
 - **동시성 전체 구조 중심**: [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md) → [타입 체커](type-checker.md) → [SIL 옵티마이저 패스 카탈로그](sil-optimizer-pass-catalog.md) → [런타임](runtime.md)
+- **actor/sendable 중심**: [Swift actor isolation·Sendable](swift-actor-isolation-and-sendable.md) → [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md) → [타입 체커](type-checker.md) → [진단 시스템](diagnostics.md)
+- **task/executor/runtime 중심**: [Swift Task·Executor·Runtime](swift-task-executor-runtime.md) → [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [런타임](runtime.md) → [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md)
 - **stdlib/runtime 중심**: [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md) → [Standard Library 교차 읽기](official-docs/standard-library-to-compiler-crosswalk.md) → [ABI 안정성](abi-stability.md) → [런타임](runtime.md)
 - **동시성 안전성 중심**: [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md) → [타입 체커](type-checker.md) → [SIL 옵티마이저 패스 카탈로그](sil-optimizer-pass-catalog.md)
-- **Swift 전체 조감 루트**: [Swift 전체 지도](swift-ecosystem-map.md) → [Swift 언어 개요](swift-language-overview.md) → [Swift와 Swift Compiler의 관계](swift-and-swift-compiler.md) → [Swift 타입 시스템](swift-type-system.md) → [Swift 소유권·메모리 모델](swift-ownership-memory-model.md) → [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md) → [Swift 툴체인 스택](swift-toolchain-stack.md)
+- **Swift 전체 조감 루트**: [Swift 전체 지도](swift-ecosystem-map.md) → [Swift 언어 개요](swift-language-overview.md) → [Swift와 Swift Compiler의 관계](swift-and-swift-compiler.md) → [Swift 타입 시스템](swift-type-system.md) → [Swift 소유권·메모리 모델](swift-ownership-memory-model.md) → [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [Swift actor isolation·Sendable](swift-actor-isolation-and-sendable.md) → [Swift Task·Executor·Runtime](swift-task-executor-runtime.md) → [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md) → [Swift 툴체인 스택](swift-toolchain-stack.md)
 - **학습 로드맵 루트**: [Swift Compiler 학습 스택](swift-compiler-learning-stack.md) → [Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md) → [키워드 연결망](keyword-network.md)
 - **툴체인/실무 루트**: [Swift 툴체인 스택](swift-toolchain-stack.md) → [빌드·테스트·디버그 스택](swift-compiler-build-test-debug-stack.md) → [CMake와 Ninja](cmake-and-ninja-build.md) → [lit와 FileCheck](lit-and-filecheck.md) → [LLDB와 Swift 디버깅](lldb-and-swift-debugging.md)
 - **매크로/도구 루트**: [Swift 매크로·도구 스택](swift-macro-tooling-stack.md) → [swift-syntax](swift-syntax-package.md) → [SourceKit-LSP](sourcekit-lsp.md) → [swift-format](swift-format-package.md)
@@ -67,7 +71,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 
 | 카테고리 | 페이지 | 주요 내용 |
 |----------|--------|-----------|
-| [Swift 전체 지도](swift-ecosystem-map.md) | 10 | Swift 언어, 타입 시스템, ownership/memory, concurrency, stdlib/runtime, 툴체인, 도구, 상호관계, 학습 로드맵 |
+| [Swift 전체 지도](swift-ecosystem-map.md) | 12 | Swift 언어, 타입 시스템, ownership/memory, concurrency, actor/sendable, task/executor/runtime, stdlib/runtime, 툴체인, 도구, 상호관계, 학습 로드맵 |
 | [컴파일러 코어](type-checker.md) | 12 | Parser, Sema, IRGen, Request Evaluator, AST |
 | [SIL](sil-reference.md) | 14 | IR 명세, 인스트럭션, 소유권, 옵티마이저, 패스 카탈로그 |
 | [ABI](abi-mangling.md) | 7 | 맹글링, 타입 메타데이터/레이아웃, 호출 규약, Library Evolution |

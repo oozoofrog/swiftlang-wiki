@@ -56,6 +56,8 @@ Swift를 배우다 보면 둘이 같은 것처럼 보일 때가 많지만,
 
 관련 페이지:
 - [[swift-concurrency-architecture]]
+- [[swift-actor-isolation-and-sendable]]
+- [[swift-task-executor-runtime]]
 - [[swift-ownership-memory-model]]
 - [[concurrency-data-race-safety]]
 - [[type-checker]]
@@ -112,6 +114,8 @@ Swift를 실전에서 깊게 이해하려면 다음 질문들이 결국 컴파�
 - [[swift-ecosystem-map]]
 - [[swift-language-overview]]
 - [[swift-concurrency-architecture]]
+- [[swift-actor-isolation-and-sendable]]
+- [[swift-task-executor-runtime]]
 - [[swift-ownership-memory-model]]
 - [[overview]]
 - [[official-docs/language-to-compiler-crosswalk]]

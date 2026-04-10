@@ -79,6 +79,16 @@ stdlib API 감각에서 시작해 SIL ownership과 runtime 계약까지 이어�
 - [[ownership-manifesto]]
 - [[sil-ownership]]
 
+### 동시성 런타임은 어디에 놓이나
+Swift concurrency는 이 허브와도 매우 가깝다.
+표면적으로는 `Task`, `MainActor`, executor API로 보이지만,
+실제로는 stdlib public Concurrency 모듈 + runtime 구현 + compiler lowering이 같이 움직인다.
+
+관련 페이지:
+- [[swift-concurrency-architecture]]
+- [[swift-actor-isolation-and-sendable]]
+- [[swift-task-executor-runtime]]
+
 ## Foundation 같은 상위 라이브러리는 어디에 놓이나
 
 Foundation은 stdlib 바로 위의 실사용 계층처럼 볼 수 있다.
@@ -120,6 +130,8 @@ Foundation은 stdlib 바로 위의 실사용 계층처럼 볼 수 있다.
 - [[swift-language-overview]]
 - [[swift-and-swift-compiler]]
 - [[swift-ownership-memory-model]]
+- [[swift-concurrency-architecture]]
+- [[swift-task-executor-runtime]]
 - [[official-docs/standard-library-to-compiler-crosswalk]]
 - [[runtime]]
 - [[abi-stability]]
