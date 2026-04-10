@@ -1,6 +1,6 @@
 site_name: Swift Compiler Wiki
 site_url: https://oozoofrog.dev/swiftlang-wiki/
-site_description: Swift 컴파일러 내부 구조 위키 — 71+ pages, LLM-generated knowledge base
+site_description: Swift 컴파일러 내부 구조 위키 — 96+ pages, LLM-generated knowledge base
 repo_url: https://github.com/oozoofrog/swiftlang-wiki
 repo_name: oozoofrog/swiftlang-wiki
 edit_uri: edit/main/pages/
@@ -63,6 +63,34 @@ markdown_extensions:
 nav:
   - Home: index.md
   - 다운로드 자료: downloads/index.md
+  - 공식 문서 해설:
+    - official-docs/index.md
+    - official-docs/language-to-compiler-crosswalk.md
+    - 입문 허브:
+      - official-docs/swift-documentation-index.md
+      - official-docs/swift-compiler-architecture.md
+      - official-docs/tspl-to-compiler-crosswalk.md
+    - 컴파일러 코어:
+      - official-docs/compiling-swift-generics-pdf.md
+      - official-docs/compiling-swift-generics-readme.md
+      - official-docs/swift-generics-manifesto.md
+      - official-docs/type-checker-design-and-implementation.md
+      - official-docs/swift-intermediate-language.md
+      - official-docs/ownership-ssa.md
+      - official-docs/high-level-optimizations-in-sil.md
+    - 툴링/운영:
+      - official-docs/compiler-performance-reference.md
+      - official-docs/driver-internals.md
+      - official-docs/diagnostics-authoring.md
+      - official-docs/swift-repl-and-debugger.md
+      - official-docs/swiftpm-docs-to-build-pipeline.md
+    - ABI/라이브러리/언어 의미:
+      - official-docs/abi-stability-manifesto.md
+      - official-docs/api-design-guidelines-to-compiler-crosswalk.md
+      - official-docs/standard-library-to-compiler-crosswalk.md
+      - official-docs/core-libraries-to-compiler-crosswalk.md
+      - official-docs/value-reference-types-to-sil-ownership.md
+      - official-docs/concurrency-data-race-safety-to-compiler-checks.md
   - 개요:
     - overview.md
     - compiling-swift-generics.md

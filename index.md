@@ -1,5 +1,5 @@
 ---
-page_count: 73
+page_count: 96
 source_count: 72
 last_updated: "2026-04-10"
 ---
@@ -13,6 +13,52 @@ last_updated: "2026-04-10"
 | [overview](pages/overview.md) | Swift 컴파일러 모노레포 전체 개요 및 파이프라인 | overview, architecture, pipeline |
 | [compiling-swift-generics](pages/compiling-swift-generics.md) | "Compiling Swift Generics" 책 요약 — 4가지 핵심 시맨틱 객체 | generics, compilation, book |
 | [downloads](pages/downloads/index.md) | Swift 공식/준공식 참고 문서 다운로드 허브 | downloads, references, offline |
+| [official-docs/index](pages/official-docs/index.md) | 다운로드된 공식 문서별 위키 정리 허브 | official-docs, references, crosswalk |
+| [language-to-compiler-crosswalk](pages/official-docs/language-to-compiler-crosswalk.md) | 문법/라이브러리/빌드 지식이 컴파일러 내부와 만나는 지도 | crosswalk, learning-path, compiler |
+
+## 공식 문서 해설 (Reference)
+
+### 입문 허브
+
+| 페이지 | 설명 | 태그 |
+|--------|------|------|
+| [swift-documentation-index](pages/official-docs/swift-documentation-index.md) | Swift.org 공식 문서 전체의 구조를 읽는 허브 | docs, swift-org, hub |
+| [swift-compiler-architecture](pages/official-docs/swift-compiler-architecture.md) | 공개 컴파일러 아키텍처 요약과 내부 위키 연결 | compiler, architecture, swift-org |
+| [tspl-to-compiler-crosswalk](pages/official-docs/tspl-to-compiler-crosswalk.md) | TSPL/언어 레퍼런스에서 구현 위키로 넘어가는 읽기 지도 | tspl, language, crosswalk |
+| [language-to-compiler-crosswalk](pages/official-docs/language-to-compiler-crosswalk.md) | 표면 언어 개념 ↔ 컴파일러 구현 전체 교차학습 지도 | learning-path, crosswalk |
+
+### 컴파일러 코어
+
+| 페이지 | 설명 | 태그 |
+|--------|------|------|
+| [compiling-swift-generics-pdf](pages/official-docs/compiling-swift-generics-pdf.md) | Generics 책 PDF 배포본 해설 | generics, book |
+| [compiling-swift-generics-readme](pages/official-docs/compiling-swift-generics-readme.md) | Generics 책 README와 빌드 상태 해설 | generics, docs-build |
+| [swift-generics-manifesto](pages/official-docs/swift-generics-manifesto.md) | Generics Manifesto 비전 문서 해설 | generics, manifesto |
+| [type-checker-design-and-implementation](pages/official-docs/type-checker-design-and-implementation.md) | TypeChecker 공식 문서 해설 | type-checker, constraints |
+| [swift-intermediate-language](pages/official-docs/swift-intermediate-language.md) | SIL 공식 레퍼런스 해설 | sil, ir |
+| [ownership-ssa](pages/official-docs/ownership-ssa.md) | Ownership SSA / OSSA 해설 | ownership, sil |
+| [high-level-optimizations-in-sil](pages/official-docs/high-level-optimizations-in-sil.md) | stdlib 의미 기반 SIL 최적화 해설 | optimizer, semantics |
+
+### 툴링/운영
+
+| 페이지 | 설명 | 태그 |
+|--------|------|------|
+| [compiler-performance-reference](pages/official-docs/compiler-performance-reference.md) | 성능 측정/회귀 분석 공식 문서 해설 | performance, tooling |
+| [driver-internals](pages/official-docs/driver-internals.md) | 드라이버 내부 구조 해설 | driver, build |
+| [diagnostics-authoring](pages/official-docs/diagnostics-authoring.md) | 진단 메시지 작성 가이드 해설 | diagnostics, contributor |
+| [swift-repl-and-debugger](pages/official-docs/swift-repl-and-debugger.md) | REPL/디버거/LLDB 공개 문서 해설 | lldb, repl |
+| [swiftpm-docs-to-build-pipeline](pages/official-docs/swiftpm-docs-to-build-pipeline.md) | SwiftPM redirect 문서와 빌드 파이프라인 연결 | swiftpm, build |
+
+### ABI/라이브러리/언어 의미
+
+| 페이지 | 설명 | 태그 |
+|--------|------|------|
+| [abi-stability-manifesto](pages/official-docs/abi-stability-manifesto.md) | ABI 상위 비전 문서 해설 | abi, runtime |
+| [api-design-guidelines-to-compiler-crosswalk](pages/official-docs/api-design-guidelines-to-compiler-crosswalk.md) | API 디자인 규칙과 importer/diagnostics 연결 | api-design, crosswalk |
+| [standard-library-to-compiler-crosswalk](pages/official-docs/standard-library-to-compiler-crosswalk.md) | 표준 라이브러리와 runtime/ABI 연결 | stdlib, runtime |
+| [core-libraries-to-compiler-crosswalk](pages/official-docs/core-libraries-to-compiler-crosswalk.md) | Core Libraries와 module/toolchain 경계 연결 | core-libraries, modules |
+| [value-reference-types-to-sil-ownership](pages/official-docs/value-reference-types-to-sil-ownership.md) | 값/참조 타입과 ownership/ARC 연결 | ownership, semantics |
+| [concurrency-data-race-safety-to-compiler-checks](pages/official-docs/concurrency-data-race-safety-to-compiler-checks.md) | Swift 6 동시성 안전성 주제와 컴파일러 검사 연결 | concurrency, diagnostics |
 
 ## 엔티티 (Entity)
 
