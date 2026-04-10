@@ -41,6 +41,7 @@ sources: [swift.org/documentation/concurrency/index.html]
 
 ## 같이 보면 좋은 위키 페이지
 
+- [[swift-concurrency-architecture]]
 - [[concurrency-data-race-safety]]
 - [[type-checker]]
 - [[diagnostics]]
@@ -50,4 +51,4 @@ sources: [swift.org/documentation/concurrency/index.html]
 
 ## 읽는 방법 메모
 
-이 페이지는 redirect-only 공식 문서를 따라 들어오는 입구다. 실제 심화 설명은 [[concurrency-data-race-safety]]에서 다룬다.
+이 페이지는 redirect-only 공식 문서를 따라 들어오는 입구다. 실제 심화 설명은 [[concurrency-data-race-safety]]에서 다루고, 더 넓은 구조는 [[swift-concurrency-architecture]]에서 묶는다.

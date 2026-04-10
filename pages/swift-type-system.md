@@ -104,6 +104,7 @@ Swift 타입 시스템의 고유한 난이도는 제네릭 + 프로토콜 + asso
 
 - [[swift-language-overview]]
 - [[swift-and-swift-compiler]]
+- [[swift-concurrency-architecture]]
 - [[swift-ownership-memory-model]]
 - [[type-checker]]
 - [[compiling-swift-generics]]

@@ -38,6 +38,7 @@ Swift Compiler를 배우는 데 필요한 지식은 한 덩어리가 아니다.
 - [[swift-language-overview]]
 - [[swift-type-system]]
 - [[swift-ownership-memory-model]]
+- [[swift-concurrency-architecture]]
 - [[standard-library-runtime-and-compiler]]
 - [[official-docs/tspl-to-compiler-crosswalk]]
 - [[official-docs/language-to-compiler-crosswalk]]
@@ -74,6 +75,7 @@ Swift 고유 세부 구현으로 들어가기 전에,
 추천 페이지:
 - [[compiling-swift-generics]]
 - [[swift-ownership-memory-model]]
+- [[swift-concurrency-architecture]]
 - [[generic-signatures]]
 - [[substitution-maps]]
 - [[conformances]]
@@ -140,8 +142,9 @@ Swift 고유 세부 구현으로 들어가기 전에,
 2. [[swift-language-overview]]
 3. [[swift-and-swift-compiler]]
 4. [[swift-ownership-memory-model]]
-5. [[swift-toolchain-stack]]
-6. [[keyword-network]]
+5. [[swift-concurrency-architecture]]
+6. [[swift-toolchain-stack]]
+7. [[keyword-network]]
 
 ### 구현 중심 루트
 1. [[overview]]
@@ -166,7 +169,6 @@ Swift 고유 세부 구현으로 들어가기 전에,
 
 ## 이 위키에서 다음에 더 보강할 축
 
-- Swift concurrency 전체 구조 허브
 - Swift Evolution / proposal history 허브
 
 ## 같이 보면 좋은 페이지
@@ -175,5 +177,6 @@ Swift 고유 세부 구현으로 들어가기 전에,
 - [[swift-language-overview]]
 - [[swift-and-swift-compiler]]
 - [[swift-ownership-memory-model]]
+- [[swift-concurrency-architecture]]
 - [[swift-toolchain-stack]]
 - [[swift-compiler-7-day-course]]

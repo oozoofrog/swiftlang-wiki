@@ -44,6 +44,7 @@ Swift를 이해하려면 최소한 다음을 함께 봐야 한다.
 ### 1. Swift 언어부터 이해하고 싶은 경우
 - [[swift-language-overview]]
 - [[swift-ownership-memory-model]]
+- [[swift-concurrency-architecture]]
 - [[official-docs/tspl-to-compiler-crosswalk]]
 - [[official-docs/language-to-compiler-crosswalk]]
 
@@ -77,10 +78,11 @@ Swift를 이해하려면 최소한 다음을 함께 봐야 한다.
 1. [[swift-language-overview]]
 2. [[swift-and-swift-compiler]]
 3. [[swift-ownership-memory-model]]
-4. [[swift-toolchain-stack]]
-5. [[swift-compiler-learning-stack]]
-6. [[keyword-network]]
-7. [[official-docs/index]]
+4. [[swift-concurrency-architecture]]
+5. [[swift-toolchain-stack]]
+6. [[swift-compiler-learning-stack]]
+7. [[keyword-network]]
+8. [[official-docs/index]]
 
 ## 같이 보면 좋은 페이지
 
@@ -88,6 +90,7 @@ Swift를 이해하려면 최소한 다음을 함께 봐야 한다.
 - [[official-docs/index]]
 - [[official-docs/language-to-compiler-crosswalk]]
 - [[swift-ownership-memory-model]]
+- [[swift-concurrency-architecture]]
 - [[keyword-network]]
 - [[glossary-compiler]]
 - [[swift-compiler-7-day-course]]

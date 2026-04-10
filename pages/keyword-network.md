@@ -19,6 +19,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - 언어 ↔ 구현 브리지: [[swift-and-swift-compiler]]
 - Swift 타입 시스템 허브: [[swift-type-system]]
 - Swift 소유권·메모리 모델 허브: [[swift-ownership-memory-model]]
+- Swift Concurrency 허브: [[swift-concurrency-architecture]]
 - stdlib/runtime/compiler 허브: [[standard-library-runtime-and-compiler]]
 - 툴체인 전체 지도: [[swift-toolchain-stack]]
 - 매크로/도구 허브: [[swift-macro-tooling-stack]]
@@ -36,6 +37,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - [[swift-and-swift-compiler|Swift ↔ Compiler]]
 - [[swift-type-system|type system]]
 - [[swift-ownership-memory-model|ownership/memory]]
+- [[swift-concurrency-architecture|concurrency architecture]]
 - [[standard-library-runtime-and-compiler|stdlib/runtime/compiler]]
 - [[swift-toolchain-stack|toolchain stack]]
 - [[swift-macro-tooling-stack|macro/tooling]]
@@ -46,6 +48,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - 언어 개념부터 컴파일러로 넘어가고 싶다 → [[swift-language-overview]] / [[swift-and-swift-compiler]]
 - 타입 시스템을 generics/ABI/runtime까지 연결해서 보고 싶다 → [[swift-type-system]]
 - ownership, borrow, lifetime, ARC를 한 장으로 먼저 잡고 싶다 → [[swift-ownership-memory-model]]
+- task, actor, executor, Sendable까지 동시성 전체 그림을 먼저 잡고 싶다 → [[swift-concurrency-architecture]]
 - 기본 타입/표준 라이브러리/런타임이 어떻게 한 몸인지 보고 싶다 → [[standard-library-runtime-and-compiler]]
 - SwiftSyntax / 매크로 / SourceKit 도구축을 보고 싶다 → [[swift-macro-tooling-stack]]
 - 무엇을 어느 정도까지 배워야 할지 알고 싶다 → [[swift-compiler-learning-stack]]
@@ -122,6 +125,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 ## 5. 동시성 / 격리 / 전송 가능성
 
 핵심 키워드:
+- [[swift-concurrency-architecture|concurrency architecture]]
 - [[concurrency-data-race-safety|Strict Concurrency]]
 - [[concurrency-data-race-safety|Sendable]]
 - [[concurrency-data-race-safety|actor isolation]]
@@ -129,6 +133,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - [[sil-optimizer-pass-catalog|FlowIsolation]]
 
 추천 이동:
+- 전체 구조부터 보고 싶다 → [[swift-concurrency-architecture]]
 - 설정/마이그레이션부터 보고 싶다 → [[concurrency-data-race-safety]]
 - 공식 문서 입구에서 들어가고 싶다 → [[official-docs/concurrency-data-race-safety-to-compiler-checks]]
 - ownership과 같이 보고 싶다 → [[swift-ownership-memory-model]] / [[sil-ownership]] / [[official-docs/value-reference-types-to-sil-ownership]]
@@ -239,6 +244,8 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
   - [[sil-reference]] → [[sil-ownership]] → [[optimizer-design]] → [[sil-optimizer-pass-catalog]]
 - value/reference → ownership/memory → OSSA → runtime
   - [[official-docs/value-reference-types-to-sil-ownership]] → [[swift-ownership-memory-model]] → [[official-docs/ownership-ssa]] → [[runtime]]
+- async/await → task/actor → executor → safety checking
+  - [[swift-concurrency-architecture]] → [[concurrency-data-race-safety]] → [[sil-optimizer-pass-catalog]] → [[runtime]]
 - Sendable → actor isolation → FlowIsolation → ownership
   - [[concurrency-data-race-safety]] → [[sil-optimizer-pass-catalog]] → [[sil-ownership]]
 - ABI stability → metadata → runtime → library evolution

@@ -35,4 +35,5 @@
 | 2026-04-10 | publish | llvm-backend.md 외 5개, mkdocs.yml, index.md, keyword-network.md | toolchain, infrastructure, contributor workflow | LLVM / Clang Importer / LLDB / CMake·Ninja / lit·FileCheck / build-test-debug 스택 페이지 추가 + 기존 가이드와 상호연결 |
 | 2026-04-10 | publish | swift-type-system.md 외 2개, mkdocs.yml, index.md, keyword-network.md | language, semantics, stdlib/runtime, tooling | Swift 타입 시스템 / 매크로·도구 스택 / 표준 라이브러리·런타임·컴파일러 상위 허브 추가 + 기존 언어/도구/stdlib 페이지와 상호연결 |
 | 2026-04-10 | publish | swift-ownership-memory-model.md, mkdocs.yml, index.md, keyword-network.md | ownership, memory, concurrency bridge | Swift 소유권·메모리 모델 상위 허브 추가 + 언어/OSSA/runtime/concurrency 문서 사이 역링크 보강 |
+| 2026-04-10 | publish | swift-concurrency-architecture.md, mkdocs.yml, index.md, keyword-network.md | concurrency, runtime, migration, compiler bridge | Swift Concurrency 전체 구조 허브 추가 + strict concurrency/ownership/runtime 문서와 상호연결 |
 

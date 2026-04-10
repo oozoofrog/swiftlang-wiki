@@ -11,6 +11,9 @@ sources: [swift.org/documentation/concurrency/index.html, official-docs/concurre
 Swift 6의 concurrency migration 문서가 설명하는 핵심은 단순히 `async`/`await`를 배우는 것이 아니다.
 정말 중요한 변화는 **actor isolation**과 **`Sendable` 규칙**을 컴파일러가 훨씬 더 강하게 검사하기 시작한다는 점이다.
 
+이 페이지는 strict concurrency checking과 migration에 집중한 심화 페이지다.
+Task / actor / executor / runtime까지 포함한 더 넓은 구조는 [[swift-concurrency-architecture]]에서 한 번에 볼 수 있다.
+
 원문 진입점은 `https://www.swift.org/documentation/concurrency/` 이지만, 다운로드 번들 안의 파일은 redirect-only다.
 실제 canonical 주제는 Swift 6 migration guide의 **Enable data-race safety checking** 페이지다.
 
@@ -183,17 +186,19 @@ Swift 6의 concurrency migration은 단순한 스타일 권장이 아니라,
 ## 추천 읽기 순서
 
 1. [[official-docs/concurrency-data-race-safety-to-compiler-checks]]
-2. [[type-checker]]
-3. [[diagnostics]]
-4. [[sil-optimizer-pass-catalog]]
-5. [[sil-ownership]]
-6. [[ownership-manifesto]]
-7. [[swift-ownership-memory-model]]
+2. [[swift-concurrency-architecture]]
+3. [[type-checker]]
+4. [[diagnostics]]
+5. [[sil-optimizer-pass-catalog]]
+6. [[sil-ownership]]
+7. [[ownership-manifesto]]
+8. [[swift-ownership-memory-model]]
 
 ## 같이 보면 좋은 페이지
 
 - [[official-docs/language-to-compiler-crosswalk]]
 - [[official-docs/swift-documentation-index]]
+- [[swift-concurrency-architecture]]
 - [[swift-ownership-memory-model]]
 - [[type-checker]]
 - [[diagnostics]]

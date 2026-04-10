@@ -16,7 +16,7 @@ sources: [swift-readme.md, swift.org/documentation/index.html, swift.org/documen
 | 층 | 핵심 질문 | 연결 페이지 |
 |---|---|---|
 | 표면 문법 | 사용자가 어떤 문법과 선언 모델을 쓰는가 | [[official-docs/tspl-to-compiler-crosswalk]], [[modules]], [[access-control]], [[literals]] |
-| 타입 시스템 | 값, 참조, 프로토콜, 제네릭, 오류, 동시성을 어떻게 모델링하는가 | [[type-checker]], [[generic-signatures]], [[error-handling]], [[concurrency-data-race-safety]] |
+| 타입 시스템 | 값, 참조, 프로토콜, 제네릭, 오류, 동시성을 어떻게 모델링하는가 | [[type-checker]], [[generic-signatures]], [[error-handling]], [[swift-concurrency-architecture]], [[concurrency-data-race-safety]] |
 | 실행 의미 | 값/참조 의미론, 소유권, 메모리, 런타임은 어떻게 작동하는가 | [[ownership-manifesto]], [[sil-ownership]], [[runtime]], [[abi-type-metadata]] |
 | ABI/배포 | 모듈 안정성, ABI 안정성, 라이브러리 진화는 어떻게 다뤄지는가 | [[abi-stability]], [[library-evolution]], [[serialization]] |
 | 생태계 | SwiftPM, Foundation, SwiftSyntax, SourceKit-LSP 같은 도구/패키지는 어디에 위치하는가 | [[swift-package-manager]], [[swift-foundation-package]], [[swift-syntax-package]], [[sourcekit-lsp]] |
@@ -61,6 +61,7 @@ Swift 6 이후에는 동시성이 단지 async/await 문법이 아니라
 정적 안전성 검사 체계라는 점이 훨씬 중요해졌다.
 
 관련 페이지:
+- [[swift-concurrency-architecture]]
 - [[concurrency-data-race-safety]]
 - [[diagnostics]]
 - [[sil-optimizer-pass-catalog]]
@@ -113,6 +114,7 @@ Swift의 제네릭, ownership, concurrency, resilience 같은 중요한 특성�
 - [[swift-ecosystem-map]]
 - [[swift-type-system]]
 - [[swift-ownership-memory-model]]
+- [[swift-concurrency-architecture]]
 - [[standard-library-runtime-and-compiler]]
 - [[swift-macro-tooling-stack]]
 - [[overview]]
