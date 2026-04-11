@@ -21,4 +21,4 @@ Clang Importer가 C/ObjC 선언을 Swift로 임포트할 때 이름을 변환하
 
 ---
 
-관련 페이지: [[objc-interop]], [[overview]], [[glossary-compiler]]
+관련 페이지: [[proposal-c-export-and-bridging-to-importer]], [[clang-importer]], [[objc-interop]], [[overview]], [[glossary-compiler]]

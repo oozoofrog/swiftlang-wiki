@@ -82,6 +82,8 @@ Swift 생태계 전체가 현실 시스템과 접속하는 관문에 가깝다.
 
 - [[swift-toolchain-stack]]
 - [[swift-language-overview]]
+- [[proposal-c-export-and-bridging-to-importer]]
+- [[proposal-c-pointer-interop-to-unsafe-pointer-model]]
 - [[proposal-objc-interop-to-importer-and-dispatch]]
 - [[objc-interop]]
 - [[how-swift-imports-c-apis]]
