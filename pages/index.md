@@ -1,5 +1,10 @@
 ---
 title: Swift Compiler Wiki
+type: summary
+category: learning
+tags: [swift, compiler, wiki, navigation, hub]
+aliases: [Swift Compiler Wiki, Swift 컴파일러 위키, 홈]
+sources: [overview.md, keyword-network.md, swift-ecosystem-map.md]
 ---
 
 # Swift Compiler Wiki

@@ -1,8 +1,8 @@
 ---
-type: glossary
+type: reference
 category: compiler
 tags: [glossary, terminology, lexicon]
-aliases: [용어 사전, Lexicon]
+aliases: [컴파일러 용어 사전, 용어 사전, Lexicon]
 sources: [lexicon.md]
 ---
 

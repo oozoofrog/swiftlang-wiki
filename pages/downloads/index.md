@@ -1,5 +1,10 @@
 ---
 title: Swift 공식/준공식 참고 문서 다운로드
+type: reference
+category: official-docs
+tags: [swift, official-docs, downloads, references, offline]
+aliases: [Swift 문서 다운로드, 공식 문서 다운로드, downloads]
+sources: [official-docs/index.md, official-docs/language-to-compiler-crosswalk.md]
 ---
 
 # Swift 공식/준공식 참고 문서 다운로드

@@ -48,4 +48,5 @@
 | 2026-04-11 | publish | wiki-knowledge-base-principles.md, mkdocs.yml, index.md, wiki-knowledge-chronicle.md | editorial principles, philosophy, meta | 위키를 지식베이스로 유지하기 위한 원칙과 발전 철학 문서 추가 |
 | 2026-04-11 | publish | wiki-editor-checklist.md, wiki-page-templates.md, wiki-knowledge-base-principles.md, mkdocs.yml, index.md, wiki-knowledge-chronicle.md | editorial tools, checklist, templates | 공개 편집 체크리스트와 페이지 생성 템플릿 문서를 추가해 원칙 문서를 실제 작업 도구로 확장 |
 | 2026-04-11 | publish | wiki-frontmatter-taxonomy.md, wiki-editor-checklist.md, wiki-page-templates.md, wiki-knowledge-base-principles.md, mkdocs.yml, index.md, wiki-knowledge-chronicle.md, schema.md | editorial taxonomy, frontmatter, metadata | type/category/tags/aliases/sources 기준을 taxonomy 문서로 명문화하고 관련 메타 문서 및 내부 schema를 동기화 |
+| 2026-04-11 | normalize | glossary-compiler.md, index.md, downloads/index.md, wiki-frontmatter-taxonomy.md, schema.md | frontmatter, taxonomy, legacy cleanup | glossary/home/download hub의 legacy frontmatter를 canonical taxonomy 값으로 1차 정리 |
 

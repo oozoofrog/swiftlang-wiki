@@ -212,11 +212,10 @@ sources: [wiki-knowledge-base-principles.md, wiki-editor-checklist.md, wiki-page
 
 현재 주의할 점:
 - 일부 오래된 문서는 예전 `type`/`category` 습관이 남아 있을 수 있다
-- landing page 성격의 index 문서는 축약된 frontmatter를 가질 수 있다
-- glossary 성격 문서는 별도 취급 흔적이 있을 수 있지만, 새 문서는 보통 `reference` 축에서 다루면 충분하다
+- 과거에는 landing page나 glossary page에 축약/별도 frontmatter 관성이 있었지만, 수정 시점에 canonical 값으로 흡수하는 쪽을 우선한다
 
 원칙은 단순하다.
-새 문서일수록
+새 문서이거나 손보는 문서일수록
 예외를 늘리기보다
 기존 축으로 흡수하는 편이 낫다.
 

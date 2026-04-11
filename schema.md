@@ -24,7 +24,7 @@ version: 1
 
 ## public 기준선
 - public wiki의 canonical frontmatter 기준은 `pages/wiki-frontmatter-taxonomy.md`
-- 오래된 문서에 `glossary` 같은 legacy type이 남아 있을 수 있지만, 새 public 페이지에는 위 taxonomy 문서를 우선 적용
+- 오래된 문서에 남은 legacy type/category는 수정 시점에 taxonomy 기준으로 점진 정리한다
 
 ## 카테고리
 
