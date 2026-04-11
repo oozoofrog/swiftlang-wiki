@@ -42,6 +42,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - 학습 로드맵: [[swift-compiler-learning-stack]]
 - 언어 → 구현 전체 지도: [[official-docs/language-to-compiler-crosswalk]]
 - 입문 루트: [[swift-compiler-7-day-course]]
+- 압축 인덱스 / 빠른 점프: [[power-user-start]]
 - 용어 정의: [[glossary-compiler]]
 - 큰 그림: [[overview]]
 
@@ -90,6 +91,7 @@ sources: [glossary-compiler.md, official-docs/language-to-compiler-crosswalk.md]
 - SwiftSyntax / 매크로 / SourceKit 도구축을 보고 싶다 → [[swift-macro-tooling-stack]]
 - 무엇을 어느 정도까지 배워야 할지 알고 싶다 → [[swift-compiler-learning-stack]]
 - LLVM / driver / SwiftPM / LLDB 같은 주변 스택까지 보고 싶다 → [[swift-toolchain-stack]]
+- 반복 방문자용 압축 인덱스에서 바로 점프하고 싶다 → [[power-user-start]]
 
 ## 1. 구문 / 파싱 / 표면 문법
 

@@ -9,99 +9,51 @@ sources: [overview.md, keyword-network.md, swift-ecosystem-map.md]
 
 # Swift Compiler Wiki
 
-Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
+Swift 언어, compiler 구현, 공식 문서, proposal history를
+하나의 지식 그래프로 연결한 위키.
 
 | 항목 | 값 |
 |------|-----|
-| 페이지 | 138 |
-| 교차참조 | 2878 |
+| 페이지 | 139 |
+| 교차참조 | 2975 |
 | 소스 | swift/docs/, 서브프로젝트 README, 코드 분석 |
 
-## 빠른 탐색
+## 어디서 시작할까
 
-- **[프로젝트 개요](overview.md)** — 컴파일러 파이프라인, 모노레포 구성
-- **[SIL 레퍼런스](sil-reference.md)** — Swift Intermediate Language 명세
-- **[205개 패스 카탈로그](sil-optimizer-pass-catalog.md)** — SIL 옵티마이저 전체 패스 목록
-- **[심볼 맹글링](abi-mangling.md)** — ABI 맹글링/디맹글링 체계
-- **[타입 체커](type-checker.md)** — 제약 기반 양방향 타입 추론
-- **[Generics 책](compiling-swift-generics.md)** — "Compiling Swift Generics" 요약
+- **처음 시작한다** → [Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md) → [Swift 전체 지도](swift-ecosystem-map.md) → [Swift 언어 개요](swift-language-overview.md)
+- **구현으로 바로 들어간다** → [파워유저 시작점](power-user-start.md) → [타입 체커](type-checker.md) / [SIL 레퍼런스](sil-reference.md) / [런타임](runtime.md)
+- **자료/원문부터 본다** → [공식 참고 문서 다운로드](downloads/index.md) → [공식 문서 해설 허브](official-docs/index.md) → [언어 → 컴파일러 교차학습 지도](official-docs/language-to-compiler-crosswalk.md)
+- **개념을 따라 탐색한다** → [위키 키워드 연결망](keyword-network.md) → [용어 사전](glossary-compiler.md)
+
+!!! tip "반복 방문자 / 구현 위주 독자"
+    긴 목록 대신 압축 인덱스로 바로 들어가고 싶다면 [파워유저 시작점](power-user-start.md)을 보세요.
+
+## 대표 허브
+
 - **[Swift 전체 지도](swift-ecosystem-map.md)** — Swift 언어, 컴파일러, 툴체인, 생태계를 한 장으로 보는 최상위 허브
 - **[Swift 언어 개요](swift-language-overview.md)** — 언어 의미, 라이브러리, 런타임, 생태계를 함께 보는 입구
 - **[Swift와 Swift Compiler의 관계](swift-and-swift-compiler.md)** — 언어 기능과 컴파일러 구현이 어떻게 맞물리는지 설명하는 브리지
 - **[Swift 타입 시스템](swift-type-system.md)** — generics, existential, opaque, conformance, metadata까지 묶는 상위 허브
 - **[Swift 소유권·메모리 모델](swift-ownership-memory-model.md)** — ownership, borrowing, ARC, lifetime, concurrency isolation을 함께 보는 허브
 - **[Swift Concurrency 전체 구조](swift-concurrency-architecture.md)** — async/await, task, actor, executor, runtime, migration을 한 장으로 묶는 허브
-- **[Swift actor isolation·Sendable](swift-actor-isolation-and-sendable.md)** — actor boundary, global actor, MainActor, Sendable을 집중해서 보는 허브
-- **[Swift Task·Executor·Runtime](swift-task-executor-runtime.md)** — task, task group, executor, actor runtime의 실행 모델 허브
 - **[Swift Evolution / proposal history](swift-evolution-and-proposal-history.md)** — proposal, manifesto, archive, rejected 문서를 통해 설계 역사를 읽는 허브
-- **[Value Semantics / COW proposals → ownership/runtime](proposal-value-semantics-and-cow-to-ownership.md)** — 값 의미론·COW proposal을 현재 ownership/runtime 문맥으로 읽는 교차 페이지
-- **[In-Place Operations proposal → writeback / COW / optimizer-friendly API](proposal-in-place-operations-to-writeback-and-cow.md)** — mutating/non-mutating 쌍 proposal을 writeback/COW/optimizer 문맥으로 읽는 교차 페이지
-- **[Optimizer Effects / Unsupported Optimization Attributes proposals → SIL optimizer / function attributes](proposal-optimizer-effects-and-attributes-to-sil-optimizer.md)** — effect model과 optimizer attrs proposal을 `_effects`/specialization/inlining 문맥으로 읽는 교차 페이지
-- **[Declaration Type Checker proposal → 현대 Sema](proposal-declaration-type-checker-to-sema.md)** — 선언 타입 체커 proposal을 TypeChecker/Request Evaluator 맥락으로 읽는 교차 페이지
-- **[Compilation Model / WMO proposals → driver](proposal-compilation-model-and-wmo-to-driver.md)** — 초기 build model/WMO proposal을 driver·dependency analysis 맥락으로 읽는 교차 페이지
-- **[Enums / EnumStyle proposals → 타입 시스템 / API 표면 / 레이아웃](proposal-enums-and-enum-style-to-type-system-and-layout.md)** — enum proposal 묶음을 ADT/type system/layout 문맥으로 읽는 교차 페이지
-- **[TypeState proposal → 초기화 / lifetime / ownership 경계](proposal-typestate-to-initialization-and-lifetime-model.md)** — typestate proposal을 initialization/lifetime/ownership 문맥으로 읽는 교차 페이지
-- **[Option Sets proposal → importer / layout / value-type API](proposal-option-sets-to-importer-and-layout.md)** — `NS_OPTIONS` proposal을 importer/layout/OptionSet 문맥으로 읽는 교차 페이지
-- **[AttrC proposal → C export / bridging](proposal-c-export-and-bridging-to-importer.md)** — `@c` proposal을 C export, type bridging, importer 문맥으로 읽는 교차 페이지
-- **[C pointer interop proposals → UnsafePointer 모델](proposal-c-pointer-interop-to-unsafe-pointer-model.md)** — pointer interop proposal을 `UnsafePointer`/`inout`/array bridging 문맥으로 읽는 교차 페이지
-- **[ObjC interop proposal → importer / dispatch](proposal-objc-interop-to-importer-and-dispatch.md)** — ObjC interop proposal을 importer와 dynamic dispatch 문맥으로 읽는 교차 페이지
-- **[Initialization / Accessors proposals → property model](proposal-initialization-and-accessors-to-property-model.md)** — init/accessors proposal을 property model과 SIL access 문맥으로 읽는 교차 페이지
-- **[Initializer Inheritance proposal → 현대 init 모델](proposal-initializer-inheritance-to-modern-init-model.md)** — initializer inheritance proposal을 현대 init 상속 규칙 관점으로 읽는 교차 페이지
-- **[Constructors / ClassConstruction proposals → 현대 init 모델](proposal-constructors-and-class-construction-to-init-model.md)** — rejected constructor proposal을 현재 초기화 soundness 문맥으로 읽는 교차 페이지
-- **[Remote Mirrors proposal → runtime/reflection](proposal-remote-mirrors-to-runtime-reflection.md)** — remote mirrors proposal을 metadata/runtime/debugging 문맥으로 읽는 교차 페이지
 - **[표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md)** — stdlib, runtime, compiler가 어떻게 한 몸처럼 움직이는지 정리한 허브
 - **[Swift 툴체인 스택](swift-toolchain-stack.md)** — LLVM/Clang/driver/SwiftPM/CMake/Ninja/lit/LLDB까지 포함한 기술 스택 지도
-- **[Swift 매크로·도구 스택](swift-macro-tooling-stack.md)** — SwiftSyntax, SourceKit-LSP, formatter, macro 생태계를 묶는 허브
 - **[Swift Compiler 학습 스택](swift-compiler-learning-stack.md)** — 무엇을 어떤 순서로 공부해야 하는지 정리한 로드맵
-- **[빌드·테스트·디버그 스택](swift-compiler-build-test-debug-stack.md)** — 실제 기여 루프를 build/test/debug 관점으로 묶은 허브
-- **[LLVM 백엔드와 Swift](llvm-backend.md)** — IRGen 이후 LLVM 단계가 Swift와 어떻게 연결되는지 정리
-- **[Clang Importer](clang-importer.md)** — C/ObjC/C++ 상호운용의 중심 구성 요소 정리
-- **[lit와 FileCheck](lit-and-filecheck.md)** — Swift 컴파일러 테스트 문화의 핵심 도구 설명
-- **[공식 참고 문서 다운로드](downloads/index.md)** — ZIP/개별 문서 다운로드 허브
 - **[공식 문서 해설 허브](official-docs/index.md)** — 다운로드 문서별 위키 정리 페이지
-- **[언어 → 컴파일러 교차학습 지도](official-docs/language-to-compiler-crosswalk.md)** — 문법/라이브러리/빌드 지식이 내부 구현과 만나는 지도
 - **[위키 키워드 연결망](keyword-network.md)** — 용어/개념/패키지 페이지를 키워드 허브로 묶은 지도
-- **[Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md)** — actor isolation / Sendable / strict concurrency를 컴파일러 관점에서 정리
-- **[Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md)** — 공식 문서와 실제 소스 경로를 함께 따라가는 입문 루트
-- **[용어 사전](glossary-compiler.md)** — 컴파일러 핵심 용어 ~60개
-- **[위키 원칙과 철학](wiki-knowledge-base-principles.md)** — 이 위키를 지식베이스로 유지하기 위한 작성 규칙과 발전 철학
-- **[위키 편집 체크리스트](wiki-editor-checklist.md)** — 새 페이지 작성/수정/연결/검증 시 확인할 공개 체크리스트
-- **[위키 생성 템플릿](wiki-page-templates.md)** — subject/hub/crosswalk/meta 페이지를 위한 공개 템플릿 모음
-- **[위키 taxonomy / frontmatter 규칙](wiki-frontmatter-taxonomy.md)** — type/category/tags/aliases/sources를 어떤 기준으로 고르는지 정한 메타 문서
 
-!!! tip "오프라인으로 읽기"
-    로컬에 받아서 읽을 자료가 필요하면 [다운로드 허브](downloads/index.md)에서 전체 ZIP 번들이나 개별 참고 문서를 바로 받을 수 있습니다.
+## 추천 읽기 경로
 
-## 새로 추가된 읽기 경로
+- **입문 루트**: [Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md) → [Swift 전체 지도](swift-ecosystem-map.md) → [Swift 언어 개요](swift-language-overview.md)
+- **타입 시스템 루트**: [Swift 타입 시스템](swift-type-system.md) → [타입 체커](type-checker.md) → [Compiling Swift Generics](compiling-swift-generics.md) → [런타임](runtime.md)
+- **소유권/메모리 루트**: [Swift 소유권·메모리 모델](swift-ownership-memory-model.md) → [Ownership SSA 해설](official-docs/ownership-ssa.md) → [런타임](runtime.md)
+- **동시성 루트**: [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [Swift actor isolation·Sendable](swift-actor-isolation-and-sendable.md) → [Swift Task·Executor·Runtime](swift-task-executor-runtime.md) → [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md)
+- **proposal/history 루트**: [Swift Evolution / proposal history](swift-evolution-and-proposal-history.md) → [Value Semantics / COW proposals](proposal-value-semantics-and-cow-to-ownership.md) → [Declaration Type Checker proposal](proposal-declaration-type-checker-to-sema.md)
+- **툴체인/기여 루트**: [Swift 툴체인 스택](swift-toolchain-stack.md) → [빌드·테스트·디버그 스택](swift-compiler-build-test-debug-stack.md) → [lit와 FileCheck](lit-and-filecheck.md) → [LLDB와 Swift 디버깅](lldb-and-swift-debugging.md)
+- **공식 문서 기반 루트**: [공식 참고 문서 다운로드](downloads/index.md) → [공식 문서 해설 허브](official-docs/index.md) → [언어 → 컴파일러 교차학습 지도](official-docs/language-to-compiler-crosswalk.md)
 
-- **언어 입문 → 구현**: [TSPL → 컴파일러 교차 읽기](official-docs/tspl-to-compiler-crosswalk.md) → [타입 체커](type-checker.md) → [SIL 레퍼런스](sil-reference.md)
-- **제네릭 중심**: [Compiling Swift Generics PDF 해설](official-docs/compiling-swift-generics-pdf.md) → [Generics Manifesto 해설](official-docs/swift-generics-manifesto.md)
-- **값/참조 의미론 중심**: [Value/Reference Types → SIL 소유권 교차 읽기](official-docs/value-reference-types-to-sil-ownership.md) → [SIL 소유권](sil-ownership.md)
-- **빌드/도구 중심**: [Swift Compiler 공개 개요 해설](official-docs/swift-compiler-architecture.md) → [Driver Internals 문서 해설](official-docs/driver-internals.md) → [SwiftPM 문서 → 빌드 파이프라인 교차 읽기](official-docs/swiftpm-docs-to-build-pipeline.md)
-- **타입 시스템 중심**: [Swift 타입 시스템](swift-type-system.md) → [타입 체커](type-checker.md) → [Compiling Swift Generics](compiling-swift-generics.md) → [런타임](runtime.md)
-- **소유권/메모리 모델 중심**: [Swift 소유권·메모리 모델](swift-ownership-memory-model.md) → [Value/Reference Types → SIL 소유권](official-docs/value-reference-types-to-sil-ownership.md) → [Ownership SSA 해설](official-docs/ownership-ssa.md) → [런타임](runtime.md) → [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md)
-- **동시성 전체 구조 중심**: [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md) → [타입 체커](type-checker.md) → [SIL 옵티마이저 패스 카탈로그](sil-optimizer-pass-catalog.md) → [런타임](runtime.md)
-- **actor/sendable 중심**: [Swift actor isolation·Sendable](swift-actor-isolation-and-sendable.md) → [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md) → [타입 체커](type-checker.md) → [진단 시스템](diagnostics.md)
-- **task/executor/runtime 중심**: [Swift Task·Executor·Runtime](swift-task-executor-runtime.md) → [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [런타임](runtime.md) → [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md)
-- **설계 역사 중심**: [Swift Evolution / proposal history](swift-evolution-and-proposal-history.md) → [Generics Manifesto](generics-manifesto.md) → [Ownership Manifesto](ownership-manifesto.md) → [ABI Stability Manifesto 해설](official-docs/abi-stability-manifesto.md)
-- **proposal → 구현 교차 읽기**: [Value Semantics / COW proposals](proposal-value-semantics-and-cow-to-ownership.md) → [Declaration Type Checker proposal](proposal-declaration-type-checker-to-sema.md) → [Compilation Model / WMO proposals](proposal-compilation-model-and-wmo-to-driver.md)
-- **proposal → 구현 교차 읽기 (enum 축)**: [Enums / EnumStyle proposals](proposal-enums-and-enum-style-to-type-system-and-layout.md) → [Swift 타입 시스템](swift-type-system.md) → [ABI 타입 레이아웃](abi-type-layout.md)
-- **proposal → 구현 교차 읽기 (state/lifetime 축)**: [TypeState proposal](proposal-typestate-to-initialization-and-lifetime-model.md) → [Initialization / Accessors proposals](proposal-initialization-and-accessors-to-property-model.md) → [Swift 소유권·메모리 모델](swift-ownership-memory-model.md)
-- **proposal → 구현 교차 읽기 (optimizer/효과 축)**: [In-Place Operations proposal](proposal-in-place-operations-to-writeback-and-cow.md) → [Optimizer Effects / Unsupported Attributes proposals](proposal-optimizer-effects-and-attributes-to-sil-optimizer.md) → [고수준 SIL 최적화](high-level-sil-optimizations.md)
-- **proposal → 구현 교차 읽기 (OptionSet/interop 축)**: [Option Sets proposal](proposal-option-sets-to-importer-and-layout.md) → [Swift의 C API 임포트 방식](how-swift-imports-c-apis.md) → [Clang Importer](clang-importer.md)
-- **proposal → 구현 교차 읽기 1.5차**: [AttrC proposal](proposal-c-export-and-bridging-to-importer.md) → [C pointer interop proposals](proposal-c-pointer-interop-to-unsafe-pointer-model.md) → [Clang Importer](clang-importer.md)
-- **proposal → 구현 교차 읽기 2차**: [ObjC interop proposal](proposal-objc-interop-to-importer-and-dispatch.md) → [Initialization / Accessors proposals](proposal-initialization-and-accessors-to-property-model.md) → [Remote Mirrors proposal](proposal-remote-mirrors-to-runtime-reflection.md)
-- **proposal → 구현 교차 읽기 3차**: [Initializer Inheritance proposal](proposal-initializer-inheritance-to-modern-init-model.md) → [Constructors / ClassConstruction proposals](proposal-constructors-and-class-construction-to-init-model.md) → [SIL 초기화 규약](sil-initializer-conventions.md)
-- **stdlib/runtime 중심**: [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md) → [Standard Library 교차 읽기](official-docs/standard-library-to-compiler-crosswalk.md) → [ABI 안정성](abi-stability.md) → [런타임](runtime.md)
-- **동시성 안전성 중심**: [Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md) → [타입 체커](type-checker.md) → [SIL 옵티마이저 패스 카탈로그](sil-optimizer-pass-catalog.md)
-- **Swift 전체 조감 루트**: [Swift 전체 지도](swift-ecosystem-map.md) → [Swift 언어 개요](swift-language-overview.md) → [Swift와 Swift Compiler의 관계](swift-and-swift-compiler.md) → [Swift 타입 시스템](swift-type-system.md) → [Swift 소유권·메모리 모델](swift-ownership-memory-model.md) → [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [Swift actor isolation·Sendable](swift-actor-isolation-and-sendable.md) → [Swift Task·Executor·Runtime](swift-task-executor-runtime.md) → [Swift Evolution / proposal history](swift-evolution-and-proposal-history.md) → [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md) → [Swift 툴체인 스택](swift-toolchain-stack.md)
-- **학습 로드맵 루트**: [Swift Compiler 학습 스택](swift-compiler-learning-stack.md) → [Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md) → [키워드 연결망](keyword-network.md)
-- **툴체인/실무 루트**: [Swift 툴체인 스택](swift-toolchain-stack.md) → [빌드·테스트·디버그 스택](swift-compiler-build-test-debug-stack.md) → [CMake와 Ninja](cmake-and-ninja-build.md) → [lit와 FileCheck](lit-and-filecheck.md) → [LLDB와 Swift 디버깅](lldb-and-swift-debugging.md)
-- **매크로/도구 루트**: [Swift 매크로·도구 스택](swift-macro-tooling-stack.md) → [swift-syntax](swift-syntax-package.md) → [SourceKit-LSP](sourcekit-lsp.md) → [swift-format](swift-format-package.md)
-- **입문자용 전체 루트**: [Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md)
-- **키워드 탐색 루트**: [위키 키워드 연결망](keyword-network.md) → [용어 사전](glossary-compiler.md) → 세부 페이지
-
-## 카테고리
+## 주제별 탐색
 
 | 카테고리 | 페이지 | 주요 내용 |
 |----------|--------|-----------|
@@ -116,3 +68,12 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 | [기여 가이드](getting-started.md) | 7 | 시작하기, 테스트, CI, FAQ |
 | [패키지](swift-syntax-package.md) | 11 | SwiftPM, SourceKit-LSP, SwiftNIO 등 |
 | [툴체인/인프라](swift-toolchain-stack.md) | 7 | LLVM, Clang Importer, 빌드·테스트·디버그 스택, CMake/Ninja, lit/FileCheck, LLDB |
+
+## 위키 사용 / 편집
+
+- **[파워유저 시작점](power-user-start.md)** — 반복 방문자와 구현 중심 독자를 위한 압축 인덱스
+- **[위키 원칙과 철학](wiki-knowledge-base-principles.md)** — 이 위키를 지식베이스로 유지하기 위한 작성 규칙과 발전 철학
+- **[위키 편집 체크리스트](wiki-editor-checklist.md)** — 새 페이지 작성/수정/연결/검증 시 확인할 공개 체크리스트
+- **[위키 생성 템플릿](wiki-page-templates.md)** — subject/hub/crosswalk/meta 페이지를 위한 공개 템플릿 모음
+- **[위키 taxonomy / frontmatter 규칙](wiki-frontmatter-taxonomy.md)** — type/category/tags/aliases/sources를 어떤 기준으로 고르는지 정한 메타 문서
+- **[위키 지식 연대기](wiki-knowledge-chronicle.md)** — 위키가 어떤 순서로 확장됐는지 기록한 메타 연대기
