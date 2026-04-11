@@ -19,6 +19,22 @@ sources: [log.md]
 - lint, sanitize, 내부 정리 같은 유지보수 작업은 필요할 때만 최소한으로 언급한다.
 - 새 배치가 추가될 때마다 이 페이지도 함께 갱신한다.
 
+## 2026-04-11
+
+### 위키 원칙과 철학 명문화
+
+위키를 단순 문서 저장소가 아니라
+지식베이스로 유지하기 위한 기준 문서가 추가됐다.
+
+대표 페이지:
+- [[wiki-knowledge-base-principles]]
+
+핵심 방향:
+- subject page는 주제 자체 설명에 집중
+- 위키 내부 메타/히스토리는 메타 페이지로 분리
+- 새 지식은 허브/역링크/키워드 축과 함께 묶어서 추가
+- 반복 가능한 좋은 작업은 스킬과 체크리스트로 승격
+
 ## 2026-04-10
 
 ### 상위 허브 확장
@@ -149,6 +165,7 @@ history 허브와 crosswalk 묶음이 본격적으로 추가됐다.
 ## 같이 보면 좋은 페이지
 
 - [[index]]
+- [[wiki-knowledge-base-principles]]
 - [[swift-ecosystem-map]]
 - [[swift-evolution-and-proposal-history]]
 - [[keyword-network]]

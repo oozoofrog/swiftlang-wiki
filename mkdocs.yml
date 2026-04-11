@@ -1,6 +1,6 @@
 site_name: Swift Compiler Wiki
 site_url: https://oozoofrog.dev/swiftlang-wiki/
-site_description: Swift와 Swift Compiler 전체 지식 위키 — 134 pages, LLM-generated knowledge base
+site_description: Swift와 Swift Compiler 전체 지식 위키 — 135 pages, LLM-generated knowledge base
 repo_url: https://github.com/oozoofrog/swiftlang-wiki
 repo_name: oozoofrog/swiftlang-wiki
 edit_uri: edit/main/pages/
@@ -66,6 +66,7 @@ nav:
   - 키워드 연결망: keyword-network.md
   - 7일 입문 코스: swift-compiler-7-day-course.md
   - 위키 지식 연대기: wiki-knowledge-chronicle.md
+  - 위키 원칙과 철학: wiki-knowledge-base-principles.md
   - Swift 전체 지도:
     - swift-ecosystem-map.md
     - swift-language-overview.md

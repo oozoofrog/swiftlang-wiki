@@ -8,8 +8,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 
 | 항목 | 값 |
 |------|-----|
-| 페이지 | 134 |
-| 교차참조 | 2789 |
+| 페이지 | 135 |
+| 교차참조 | 2806 |
 | 소스 | swift/docs/, 서브프로젝트 README, 코드 분석 |
 
 ## 빠른 탐색
@@ -59,6 +59,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **[Swift 6 데이터 경쟁 안전성 검사](concurrency-data-race-safety.md)** — actor isolation / Sendable / strict concurrency를 컴파일러 관점에서 정리
 - **[Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md)** — 공식 문서와 실제 소스 경로를 함께 따라가는 입문 루트
 - **[용어 사전](glossary-compiler.md)** — 컴파일러 핵심 용어 ~60개
+- **[위키 원칙과 철학](wiki-knowledge-base-principles.md)** — 이 위키를 지식베이스로 유지하기 위한 작성 규칙과 발전 철학
 
 !!! tip "오프라인으로 읽기"
     로컬에 받아서 읽을 자료가 필요하면 [다운로드 허브](downloads/index.md)에서 전체 ZIP 번들이나 개별 참고 문서를 바로 받을 수 있습니다.
