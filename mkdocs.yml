@@ -48,6 +48,9 @@ plugins:
   - roamlinks
   - obsidian-interactive-graph
 
+hooks:
+  - hooks/title_aware_wikilinks.py
+
 markdown_extensions:
   - tables
   - admonition

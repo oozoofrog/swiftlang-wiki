@@ -1,5 +1,4 @@
 ---
-title: swift-language-overview
 type: summary
 category: learning
 tags: [swift, language, overview, semantics, ecosystem]
@@ -7,7 +6,7 @@ aliases: [Swift 언어 개요, Swift 개요, Swift Language Overview]
 sources: [swift-readme.md, swift.org/documentation/index.html, swift.org/documentation/tspl/index.html]
 ---
 
-# swift-language-overview
+# Swift 언어 개요
 
 이 페이지의 목적은 Swift를 “문법 목록”이 아니라
 언어 의미, 라이브러리, 런타임, 도구 생태계까지 포함한 하나의 시스템으로 보는 데 있다.
