@@ -1,6 +1,6 @@
 ---
 type: entity
-category: tools
+category: tooling
 tags: [swift-format, code-style, formatting, linting]
 aliases: [swift-format]
 sources: [swift-format-readme.md]

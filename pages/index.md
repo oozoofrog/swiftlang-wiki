@@ -8,8 +8,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 
 | 항목 | 값 |
 |------|-----|
-| 페이지 | 137 |
-| 교차참조 | 2829 |
+| 페이지 | 138 |
+| 교차참조 | 2878 |
 | 소스 | swift/docs/, 서브프로젝트 README, 코드 분석 |
 
 ## 빠른 탐색
@@ -62,6 +62,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **[위키 원칙과 철학](wiki-knowledge-base-principles.md)** — 이 위키를 지식베이스로 유지하기 위한 작성 규칙과 발전 철학
 - **[위키 편집 체크리스트](wiki-editor-checklist.md)** — 새 페이지 작성/수정/연결/검증 시 확인할 공개 체크리스트
 - **[위키 생성 템플릿](wiki-page-templates.md)** — subject/hub/crosswalk/meta 페이지를 위한 공개 템플릿 모음
+- **[위키 taxonomy / frontmatter 규칙](wiki-frontmatter-taxonomy.md)** — type/category/tags/aliases/sources를 어떤 기준으로 고르는지 정한 메타 문서
 
 !!! tip "오프라인으로 읽기"
     로컬에 받아서 읽을 자료가 필요하면 [다운로드 허브](downloads/index.md)에서 전체 ZIP 번들이나 개별 참고 문서를 바로 받을 수 있습니다.

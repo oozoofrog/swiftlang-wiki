@@ -66,6 +66,7 @@ subject page에 흩뿌리지 않는다.
 - 원칙/철학 → 이 문서
 - 실제 편집 체크 → [[wiki-editor-checklist]]
 - 실제 페이지 뼈대 → [[wiki-page-templates]]
+- frontmatter/taxonomy 기준 → [[wiki-frontmatter-taxonomy]]
 
 즉
 지식과 위키 운영은 연결되지만,
@@ -289,6 +290,7 @@ Swift compiler 주제는 어렵다.
 - [[wiki-knowledge-chronicle]]
 - [[wiki-editor-checklist]]
 - [[wiki-page-templates]]
+- [[wiki-frontmatter-taxonomy]]
 - [[keyword-network]]
 - [[swift-compiler-learning-stack]]
 - [[swift-evolution-and-proposal-history]]

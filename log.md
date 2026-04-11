@@ -47,4 +47,5 @@
 | 2026-04-10 | publish | proposal-enums-and-enum-style-to-type-system-and-layout.md, proposal-typestate-to-initialization-and-lifetime-model.md, mkdocs.yml, index.md, keyword-network.md, wiki-knowledge-chronicle.md | proposal crosswalks, enums, typestate, lifetime | Enums/EnumStyle과 TypeState proposal을 타입 시스템/레이아웃 및 initialization/lifetime/ownership 문맥으로 연결하는 교차 읽기 페이지 추가 |
 | 2026-04-11 | publish | wiki-knowledge-base-principles.md, mkdocs.yml, index.md, wiki-knowledge-chronicle.md | editorial principles, philosophy, meta | 위키를 지식베이스로 유지하기 위한 원칙과 발전 철학 문서 추가 |
 | 2026-04-11 | publish | wiki-editor-checklist.md, wiki-page-templates.md, wiki-knowledge-base-principles.md, mkdocs.yml, index.md, wiki-knowledge-chronicle.md | editorial tools, checklist, templates | 공개 편집 체크리스트와 페이지 생성 템플릿 문서를 추가해 원칙 문서를 실제 작업 도구로 확장 |
+| 2026-04-11 | publish | wiki-frontmatter-taxonomy.md, wiki-editor-checklist.md, wiki-page-templates.md, wiki-knowledge-base-principles.md, mkdocs.yml, index.md, wiki-knowledge-chronicle.md, schema.md | editorial taxonomy, frontmatter, metadata | type/category/tags/aliases/sources 기준을 taxonomy 문서로 명문화하고 관련 메타 문서 및 내부 schema를 동기화 |
 

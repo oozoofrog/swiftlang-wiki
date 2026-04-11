@@ -36,7 +36,7 @@ sources: [wiki-knowledge-base-principles.md]
 - [ ] 관련 페이지로 이어지는 링크가 충분한가?
 - [ ] 독자가 다음에 어디를 읽어야 할지 보이는가?
 - [ ] 과장/단정 없이 현재 상태와 역사적 문맥의 경계를 지켰는가?
-- [ ] frontmatter(type/category/tags/aliases/sources)가 맞는가?
+- [ ] frontmatter(type/category/tags/aliases/sources)가 [[wiki-frontmatter-taxonomy]] 기준과 맞는가?
 
 ## 2. 새 subject page 체크리스트
 
@@ -167,5 +167,6 @@ sources: [wiki-knowledge-base-principles.md]
 
 - [[wiki-knowledge-base-principles]]
 - [[wiki-page-templates]]
+- [[wiki-frontmatter-taxonomy]]
 - [[wiki-knowledge-chronicle]]
 - [[index]]

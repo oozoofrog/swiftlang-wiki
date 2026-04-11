@@ -15,6 +15,7 @@ sources: [wiki-knowledge-base-principles.md, wiki-editor-checklist.md]
 기준 문서:
 - [[wiki-knowledge-base-principles]]
 - [[wiki-editor-checklist]]
+- [[wiki-frontmatter-taxonomy]]
 
 ## 1. subject page 템플릿
 
@@ -238,6 +239,8 @@ sources: [<related-meta-docs>]
 
 ## 5. frontmatter 선택 가이드
 
+상세 판정 기준은 [[wiki-frontmatter-taxonomy]]를 우선 기준으로 본다.
+
 ### type
 - `summary` — 큰 그림 허브
 - `concept` — 개념 설명
@@ -263,5 +266,6 @@ sources: [<related-meta-docs>]
 
 - [[wiki-knowledge-base-principles]]
 - [[wiki-editor-checklist]]
+- [[wiki-frontmatter-taxonomy]]
 - [[wiki-knowledge-chronicle]]
 - [[index]]

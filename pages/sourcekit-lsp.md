@@ -1,6 +1,6 @@
 ---
 type: entity
-category: tools
+category: tooling
 tags: [sourcekit-lsp, lsp, ide, code-completion]
 aliases: [SourceKit-LSP, LSP]
 sources: [sourcekit-lsp-readme.md]

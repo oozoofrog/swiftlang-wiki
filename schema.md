@@ -20,8 +20,11 @@ version: 1
 | entity | 구체적 대상 (모듈, 서브시스템, 도구) | `silgen.md` |
 | concept | 추상적 아이디어나 패턴 | `ownership-ssa.md` |
 | summary | 영역 전체 개요 | `overview.md` |
-| glossary | 용어 정의 | `glossary-compiler.md` |
-| analysis | 질의 결과로 생성된 분석 | `sil-pipeline-analysis.md` |
+| reference | 교차 읽기, 참고, 공식 문서 해설, 메타 문서 | `official-docs/swift-intermediate-language.md` |
+
+## public 기준선
+- public wiki의 canonical frontmatter 기준은 `pages/wiki-frontmatter-taxonomy.md`
+- 오래된 문서에 `glossary` 같은 legacy type이 남아 있을 수 있지만, 새 public 페이지에는 위 taxonomy 문서를 우선 적용
 
 ## 카테고리
 
@@ -30,7 +33,7 @@ version: 1
 | compiler | Swift 컴파일러 코어 (AST, Parse, Sema, IRGen) | `swift/lib/`, `swift/include/` |
 | sil | SIL IR, SILGen, SIL Optimizer | `swift/lib/SIL*`, `swift/docs/SIL/` |
 | stdlib | 표준 라이브러리, Foundation | `swift/stdlib/`, `swift-foundation/` |
-| tools | SourceKit, swift-format, swift-inspect 등 | `swift/tools/`, `sourcekit-lsp/` |
+| tooling | SourceKit, swift-format, swift-inspect, LLVM/LLDB, 빌드 인프라 등 | `swift/tools/`, `sourcekit-lsp/`, `llvm-project/` |
 | packages | SPM 패키지 생태계 | `swiftpm/`, `swift-syntax/`, `swift-driver/` |
 | llvm | LLVM/Clang 백엔드 | `llvm-project/` |
 | testing | 테스트 프레임워크 및 인프라 | `swift-testing/`, `swift/test/` |
