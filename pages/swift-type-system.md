@@ -9,8 +9,8 @@ sources: [type-checker.md, swift.org/documentation/tspl/index.html, swiftlang-sw
 # Swift 타입 시스템
 
 이 페이지는 Swift 타입 시스템을 상위 레벨에서 묶는 허브다.
-기존 위키에는 제네릭, conformances, archetype, literals, dynamic casting 같은 세부 페이지가 이미 있지만,
-그것들을 하나의 타입 시스템 이야기로 연결해 주는 상위 설명은 비어 있었다.
+제네릭, conformances, archetype, literals, dynamic casting, existentials는 따로 보면 흩어져 보이지만,
+실제로는 하나의 타입 시스템 이야기 안에서 맞물린다.
 
 ## Swift 타입 시스템을 이루는 큰 축
 

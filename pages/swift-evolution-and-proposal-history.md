@@ -11,10 +11,9 @@ sources: [swiftlang-swift/docs/proposals, swiftlang-swift/docs/proposals/archive
 이 페이지는 Swift 언어와 컴파일러를 “지금 구현이 어떤가”가 아니라
 “왜 이런 방향으로 왔는가”라는 설계/역사 관점에서 읽기 위한 상위 허브다.
 
-기존 위키에는 [[generics-manifesto]], [[ownership-manifesto]], [[library-evolution]],
-[[official-docs/abi-stability-manifesto]], [[swift-concurrency-architecture]]처럼
-개별 축의 설계 문서나 결과 상태를 설명하는 페이지는 이미 있다.
-하지만 proposal, manifesto, archive, rejected 문서를 한 덩어리의 “언어 진화 지형도”로 묶는 입구는 비어 있었다.
+Swift에는 proposal, manifesto, archive, rejected 문서에
+장기 비전, 실패한 실험, 재구성된 아이디어가 함께 남아 있다.
+이 페이지는 그 자료들을 한 덩어리의 “언어 진화 지형도”로 묶어 읽기 위한 상위 허브다.
 
 ## 이 허브가 묶는 6개 축
 

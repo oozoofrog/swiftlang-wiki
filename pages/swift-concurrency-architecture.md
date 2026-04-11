@@ -12,10 +12,9 @@ sources: [concurrency-data-race-safety.md, official-docs/concurrency-data-race-s
 단순한 `async`/`await` 문법 묶음이 아니라,
 언어 표면, 타입/격리 규칙, SIL lowering, executor/runtime, migration까지 잇는 상위 허브로 정리한다.
 
-기존 위키에는 [[concurrency-data-race-safety]]처럼
-Swift 6 strict concurrency 검사에 집중한 페이지가 이미 있지만,
-그 페이지 하나만으로는 Task / actor / executor / runtime / compiler lowering의 전체 구조가 한눈에 보이지 않았다.
-이 허브는 바로 그 큰 지도를 제공한다.
+strict checking, Task/actor API, executor/runtime, compiler lowering은 종종 따로 보이지만,
+실제로는 하나의 실행/격리 모델을 다른 층에서 설명하는 요소들이다.
+이 허브는 그 전체 지형을 한 장에 모은다.
 
 ## Swift Concurrency를 이루는 6개 층
 

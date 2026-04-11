@@ -10,9 +10,8 @@ sources: [ownership-manifesto.md, sil-ownership.md, official-docs/ownership-ssa.
 
 이 페이지는 Swift의 ownership, borrowing, ARC, copy-on-write, lifetime, concurrency isolation을
 하나의 이야기로 묶는 상위 허브다.
-기존 위키에는 [[ownership-manifesto]], [[sil-ownership]], [[sil-memory-access]], [[runtime]],
-[[concurrency-data-race-safety]] 같은 세부 페이지가 있지만,
-그것들을 “Swift의 메모리/수명/이동 규칙”이라는 큰 그림으로 다시 연결하는 입구는 비어 있었다.
+값/참조 의미론, borrow, consume, exclusivity, ARC, actor isolation은 보통 따로 배우기 쉽지만,
+실제로는 모두 Swift의 메모리/수명/이동 규칙이라는 하나의 문제로 다시 만난다.
 
 ## 이 허브가 묶는 5개 축
 

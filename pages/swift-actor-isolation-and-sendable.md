@@ -12,7 +12,7 @@ sources: [concurrency-data-race-safety.md, official-docs/concurrency-data-race-s
 즉 actor isolation, global actor, `MainActor`, `Sendable`, cross-actor access를
 하나의 허브로 묶는다.
 
-기존 위키의 [[concurrency-data-race-safety]]가 Swift 5→6 migration과 strict checking에 초점을 맞췄다면,
+[[concurrency-data-race-safety]]가 Swift 5→6 migration과 strict checking에 초점을 맞췄다면,
 이 페이지는 그보다 한 단계 더 구조적으로
 “무엇이 어떤 격리 경계에 속하고, 무엇이 안전하게 전송될 수 있는가”를 설명하는 입구다.
 
