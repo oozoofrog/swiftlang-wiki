@@ -8,8 +8,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 
 | 항목 | 값 |
 |------|-----|
-| 페이지 | 132 |
-| 교차참조 | 2690 |
+| 페이지 | 134 |
+| 교차참조 | 2789 |
 | 소스 | swift/docs/, 서브프로젝트 README, 코드 분석 |
 
 ## 빠른 탐색
@@ -34,6 +34,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **[Optimizer Effects / Unsupported Optimization Attributes proposals → SIL optimizer / function attributes](proposal-optimizer-effects-and-attributes-to-sil-optimizer.md)** — effect model과 optimizer attrs proposal을 `_effects`/specialization/inlining 문맥으로 읽는 교차 페이지
 - **[Declaration Type Checker proposal → 현대 Sema](proposal-declaration-type-checker-to-sema.md)** — 선언 타입 체커 proposal을 TypeChecker/Request Evaluator 맥락으로 읽는 교차 페이지
 - **[Compilation Model / WMO proposals → driver](proposal-compilation-model-and-wmo-to-driver.md)** — 초기 build model/WMO proposal을 driver·dependency analysis 맥락으로 읽는 교차 페이지
+- **[Enums / EnumStyle proposals → 타입 시스템 / API 표면 / 레이아웃](proposal-enums-and-enum-style-to-type-system-and-layout.md)** — enum proposal 묶음을 ADT/type system/layout 문맥으로 읽는 교차 페이지
+- **[TypeState proposal → 초기화 / lifetime / ownership 경계](proposal-typestate-to-initialization-and-lifetime-model.md)** — typestate proposal을 initialization/lifetime/ownership 문맥으로 읽는 교차 페이지
 - **[Option Sets proposal → importer / layout / value-type API](proposal-option-sets-to-importer-and-layout.md)** — `NS_OPTIONS` proposal을 importer/layout/OptionSet 문맥으로 읽는 교차 페이지
 - **[AttrC proposal → C export / bridging](proposal-c-export-and-bridging-to-importer.md)** — `@c` proposal을 C export, type bridging, importer 문맥으로 읽는 교차 페이지
 - **[C pointer interop proposals → UnsafePointer 모델](proposal-c-pointer-interop-to-unsafe-pointer-model.md)** — pointer interop proposal을 `UnsafePointer`/`inout`/array bridging 문맥으로 읽는 교차 페이지
@@ -74,6 +76,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **task/executor/runtime 중심**: [Swift Task·Executor·Runtime](swift-task-executor-runtime.md) → [Swift Concurrency 전체 구조](swift-concurrency-architecture.md) → [런타임](runtime.md) → [표준 라이브러리·런타임·컴파일러](standard-library-runtime-and-compiler.md)
 - **설계 역사 중심**: [Swift Evolution / proposal history](swift-evolution-and-proposal-history.md) → [Generics Manifesto](generics-manifesto.md) → [Ownership Manifesto](ownership-manifesto.md) → [ABI Stability Manifesto 해설](official-docs/abi-stability-manifesto.md)
 - **proposal → 구현 교차 읽기**: [Value Semantics / COW proposals](proposal-value-semantics-and-cow-to-ownership.md) → [Declaration Type Checker proposal](proposal-declaration-type-checker-to-sema.md) → [Compilation Model / WMO proposals](proposal-compilation-model-and-wmo-to-driver.md)
+- **proposal → 구현 교차 읽기 (enum 축)**: [Enums / EnumStyle proposals](proposal-enums-and-enum-style-to-type-system-and-layout.md) → [Swift 타입 시스템](swift-type-system.md) → [ABI 타입 레이아웃](abi-type-layout.md)
+- **proposal → 구현 교차 읽기 (state/lifetime 축)**: [TypeState proposal](proposal-typestate-to-initialization-and-lifetime-model.md) → [Initialization / Accessors proposals](proposal-initialization-and-accessors-to-property-model.md) → [Swift 소유권·메모리 모델](swift-ownership-memory-model.md)
 - **proposal → 구현 교차 읽기 (optimizer/효과 축)**: [In-Place Operations proposal](proposal-in-place-operations-to-writeback-and-cow.md) → [Optimizer Effects / Unsupported Attributes proposals](proposal-optimizer-effects-and-attributes-to-sil-optimizer.md) → [고수준 SIL 최적화](high-level-sil-optimizations.md)
 - **proposal → 구현 교차 읽기 (OptionSet/interop 축)**: [Option Sets proposal](proposal-option-sets-to-importer-and-layout.md) → [Swift의 C API 임포트 방식](how-swift-imports-c-apis.md) → [Clang Importer](clang-importer.md)
 - **proposal → 구현 교차 읽기 1.5차**: [AttrC proposal](proposal-c-export-and-bridging-to-importer.md) → [C pointer interop proposals](proposal-c-pointer-interop-to-unsafe-pointer-model.md) → [Clang Importer](clang-importer.md)
@@ -99,7 +103,7 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 | [Generics](generic-signatures.md) | 5 | 시그니처, 치환 맵, 아키타입, Conformance |
 | [Interop](objc-interop.md) | 6 | ObjC, C API 임포트, C++ 양방향 |
 | [언어 설계](ownership-manifesto.md) | 8 | 소유권, 동시성 안전성, 에러 처리, 캐스팅, 접근 제어 |
-| [제안 → 구현 교차 읽기](swift-evolution-and-proposal-history.md) | 14 | evolution 허브, value semantics/COW, in-place operations, optimizer effects/attrs, declaration type checker, compilation model/WMO, option sets, C export, C pointer interop, ObjC interop, initialization/accessors, initializer inheritance, constructors/class construction, remote mirrors |
+| [제안 → 구현 교차 읽기](swift-evolution-and-proposal-history.md) | 16 | evolution 허브, value semantics/COW, in-place operations, optimizer effects/attrs, declaration type checker, compilation model/WMO, enums/enum style, typestate, option sets, C export, C pointer interop, ObjC interop, initialization/accessors, initializer inheritance, constructors/class construction, remote mirrors |
 | [기여 가이드](getting-started.md) | 7 | 시작하기, 테스트, CI, FAQ |
 | [패키지](swift-syntax-package.md) | 11 | SwiftPM, SourceKit-LSP, SwiftNIO 등 |
 | [툴체인/인프라](swift-toolchain-stack.md) | 7 | LLVM, Clang Importer, 빌드·테스트·디버그 스택, CMake/Ninja, lit/FileCheck, LLDB |

@@ -29,4 +29,4 @@ SIL 인스트럭션은 Swift 프로그램의 연산을 표현하는 단위이다
 - `begin_borrow` / `end_borrow` — 대여 범위 표시
 - `move_value` — 소유권 이전
 
-관련 페이지: [[sil-reference]], [[sil-types]], [[sil-ownership]], [[sil-memory-access]]
+관련 페이지: [[proposal-enums-and-enum-style-to-type-system-and-layout]], [[sil-reference]], [[sil-types]], [[sil-ownership]], [[sil-memory-access]]

@@ -44,4 +44,4 @@ struct Empty {}                  → <{}>
 - 다중 payload enum: payload union + tag
 - no-payload enum: C enum과 유사
 
-관련 페이지: [[abi-type-metadata]], [[abi-mangling]], [[abi-calling-convention]], [[abi-stability]], [[runtime]]
+관련 페이지: [[proposal-enums-and-enum-style-to-type-system-and-layout]], [[proposal-option-sets-to-importer-and-layout]], [[abi-type-metadata]], [[abi-mangling]], [[abi-calling-convention]], [[abi-stability]], [[runtime]]

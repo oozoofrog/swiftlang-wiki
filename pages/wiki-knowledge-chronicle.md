@@ -82,6 +82,8 @@ history 허브와 crosswalk 묶음이 본격적으로 추가됐다.
 - [[proposal-optimizer-effects-and-attributes-to-sil-optimizer]]
 - [[proposal-declaration-type-checker-to-sema]]
 - [[proposal-compilation-model-and-wmo-to-driver]]
+- [[proposal-enums-and-enum-style-to-type-system-and-layout]]
+- [[proposal-typestate-to-initialization-and-lifetime-model]]
 - [[proposal-option-sets-to-importer-and-layout]]
 - [[proposal-c-export-and-bridging-to-importer]]
 - [[proposal-c-pointer-interop-to-unsafe-pointer-model]]

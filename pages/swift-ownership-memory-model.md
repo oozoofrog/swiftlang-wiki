@@ -150,16 +150,17 @@ Sema, SIL, verifier, optimizer, concurrency 검증을 가로지르는 축이라�
 
 ## 같이 보면 좋은 페이지
 
+- [[proposal-typestate-to-initialization-and-lifetime-model]]
 - [[swift-language-overview]]
 - [[swift-and-swift-compiler]]
 - [[swift-type-system]]
+- [[official-docs/value-reference-types-to-sil-ownership]]
 - [[swift-concurrency-architecture]]
 - [[swift-actor-isolation-and-sendable]]
 - [[proposal-value-semantics-and-cow-to-ownership]]
 - [[standard-library-runtime-and-compiler]]
 - [[ownership-manifesto]]
 - [[sil-ownership]]
-- [[official-docs/value-reference-types-to-sil-ownership]]
 - [[official-docs/ownership-ssa]]
 - [[concurrency-data-race-safety]]
 - [[keyword-network]]

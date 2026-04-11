@@ -1,6 +1,6 @@
 site_name: Swift Compiler Wiki
 site_url: https://oozoofrog.dev/swiftlang-wiki/
-site_description: Swift와 Swift Compiler 전체 지식 위키 — 132 pages, LLM-generated knowledge base
+site_description: Swift와 Swift Compiler 전체 지식 위키 — 134 pages, LLM-generated knowledge base
 repo_url: https://github.com/oozoofrog/swiftlang-wiki
 repo_name: oozoofrog/swiftlang-wiki
 edit_uri: edit/main/pages/
@@ -87,6 +87,8 @@ nav:
     - proposal-optimizer-effects-and-attributes-to-sil-optimizer.md
     - proposal-declaration-type-checker-to-sema.md
     - proposal-compilation-model-and-wmo-to-driver.md
+    - proposal-enums-and-enum-style-to-type-system-and-layout.md
+    - proposal-typestate-to-initialization-and-lifetime-model.md
     - proposal-option-sets-to-importer-and-layout.md
     - proposal-c-export-and-bridging-to-importer.md
     - proposal-c-pointer-interop-to-unsafe-pointer-model.md
