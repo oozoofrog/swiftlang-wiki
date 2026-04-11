@@ -8,8 +8,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 
 | 항목 | 값 |
 |------|-----|
-| 페이지 | 135 |
-| 교차참조 | 2806 |
+| 페이지 | 137 |
+| 교차참조 | 2829 |
 | 소스 | swift/docs/, 서브프로젝트 README, 코드 분석 |
 
 ## 빠른 탐색
@@ -60,6 +60,8 @@ Swift 컴파일러 내부 구조에 대한 LLM 생성 지식 베이스.
 - **[Swift 컴파일러 입문 7일 코스](swift-compiler-7-day-course.md)** — 공식 문서와 실제 소스 경로를 함께 따라가는 입문 루트
 - **[용어 사전](glossary-compiler.md)** — 컴파일러 핵심 용어 ~60개
 - **[위키 원칙과 철학](wiki-knowledge-base-principles.md)** — 이 위키를 지식베이스로 유지하기 위한 작성 규칙과 발전 철학
+- **[위키 편집 체크리스트](wiki-editor-checklist.md)** — 새 페이지 작성/수정/연결/검증 시 확인할 공개 체크리스트
+- **[위키 생성 템플릿](wiki-page-templates.md)** — subject/hub/crosswalk/meta 페이지를 위한 공개 템플릿 모음
 
 !!! tip "오프라인으로 읽기"
     로컬에 받아서 읽을 자료가 필요하면 [다운로드 허브](downloads/index.md)에서 전체 ZIP 번들이나 개별 참고 문서를 바로 받을 수 있습니다.

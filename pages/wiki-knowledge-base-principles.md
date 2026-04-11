@@ -64,6 +64,8 @@ subject page에 흩뿌리지 않는다.
 - 위키 확장 연대기 → [[wiki-knowledge-chronicle]]
 - 작업 로그 → `log.md`
 - 원칙/철학 → 이 문서
+- 실제 편집 체크 → [[wiki-editor-checklist]]
+- 실제 페이지 뼈대 → [[wiki-page-templates]]
 
 즉
 지식과 위키 운영은 연결되지만,
@@ -258,6 +260,8 @@ Swift compiler 주제는 어렵다.
 
 새 페이지를 만들거나 크게 고칠 때는 최소한 이 질문을 본다.
 
+상세판은 [[wiki-editor-checklist]]를 기준으로 쓴다.
+
 1. 이 페이지는 주제를 직접 설명하는가?
 2. 위키 내부 사정/작업 히스토리가 subject page 안에 섞여 있지는 않은가?
 3. 관련 허브/역링크/키워드 축에 연결됐는가?
@@ -283,6 +287,8 @@ Swift compiler 주제는 어렵다.
 ## 같이 보면 좋은 페이지
 
 - [[wiki-knowledge-chronicle]]
+- [[wiki-editor-checklist]]
+- [[wiki-page-templates]]
 - [[keyword-network]]
 - [[swift-compiler-learning-stack]]
 - [[swift-evolution-and-proposal-history]]

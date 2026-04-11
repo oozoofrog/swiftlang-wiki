@@ -28,6 +28,8 @@ sources: [log.md]
 
 대표 페이지:
 - [[wiki-knowledge-base-principles]]
+- [[wiki-editor-checklist]]
+- [[wiki-page-templates]]
 
 핵심 방향:
 - subject page는 주제 자체 설명에 집중
@@ -166,6 +168,8 @@ history 허브와 crosswalk 묶음이 본격적으로 추가됐다.
 
 - [[index]]
 - [[wiki-knowledge-base-principles]]
+- [[wiki-editor-checklist]]
+- [[wiki-page-templates]]
 - [[swift-ecosystem-map]]
 - [[swift-evolution-and-proposal-history]]
 - [[keyword-network]]
