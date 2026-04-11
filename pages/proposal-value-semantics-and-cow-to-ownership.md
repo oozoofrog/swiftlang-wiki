@@ -145,6 +145,8 @@ ownership / aliasing / future concurrency 감각이 만나던 지점을 보여 �
 ## 같이 보면 좋은 페이지
 
 - [[swift-evolution-and-proposal-history]]
+- [[proposal-in-place-operations-to-writeback-and-cow]]
+- [[proposal-optimizer-effects-and-attributes-to-sil-optimizer]]
 - [[swift-ownership-memory-model]]
 - [[official-docs/value-reference-types-to-sil-ownership]]
 - [[sil-ownership]]

@@ -21,4 +21,4 @@ Swift가 C 기반 언어의 API를 모듈 임포트 또는 브리징 헤더를 �
 
 ---
 
-관련 페이지: [[proposal-c-export-and-bridging-to-importer]], [[proposal-c-pointer-interop-to-unsafe-pointer-model]], [[clang-importer]], [[c-to-swift-name-translation]], [[objc-interop]], [[overview]]
+관련 페이지: [[proposal-option-sets-to-importer-and-layout]], [[proposal-c-export-and-bridging-to-importer]], [[proposal-c-pointer-interop-to-unsafe-pointer-model]], [[clang-importer]], [[c-to-swift-name-translation]], [[objc-interop]], [[overview]]

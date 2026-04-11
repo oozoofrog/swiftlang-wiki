@@ -111,8 +111,11 @@ implementation doc은 “어떻게”를 설명하는 경우가 많다.
 
 바로 이어 읽기 좋은 교차 페이지:
 - [[proposal-value-semantics-and-cow-to-ownership]]
+- [[proposal-in-place-operations-to-writeback-and-cow]]
+- [[proposal-optimizer-effects-and-attributes-to-sil-optimizer]]
 - [[proposal-declaration-type-checker-to-sema]]
 - [[proposal-compilation-model-and-wmo-to-driver]]
+- [[proposal-option-sets-to-importer-and-layout]]
 - [[proposal-c-export-and-bridging-to-importer]]
 - [[proposal-c-pointer-interop-to-unsafe-pointer-model]]
 - [[proposal-objc-interop-to-importer-and-dispatch]]
@@ -140,8 +143,12 @@ proposal의 아이디어가 compiler / runtime / ABI에서 어떤 비용을 치�
 ### proposals 디렉터리 예시
 - `swift/docs/proposals/Concurrency.rst`
 - `swift/docs/proposals/ValueSemantics.rst`
+- `swift/docs/proposals/Inplace.rst`
 - `swift/docs/proposals/InoutCOWOptimization.rst`
+- `swift/docs/proposals/OptimizerEffects.rst`
+- `swift/docs/proposals/UnsupportedOptimizationAttributes.rst`
 - `swift/docs/proposals/WholeModuleOptimization.rst`
+- `swift/docs/proposals/OptionSets.rst`
 - `swift/docs/proposals/RemoteMirrors.rst`
 - `swift/docs/proposals/ObjCInteroperation.rst`
 - `swift/docs/proposals/DeclarationTypeChecker.rst`
@@ -197,8 +204,11 @@ proposal의 아이디어가 compiler / runtime / ABI에서 어떤 비용을 치�
 - [[swift-ownership-memory-model]]
 - [[swift-concurrency-architecture]]
 - [[proposal-value-semantics-and-cow-to-ownership]]
+- [[proposal-in-place-operations-to-writeback-and-cow]]
+- [[proposal-optimizer-effects-and-attributes-to-sil-optimizer]]
 - [[proposal-declaration-type-checker-to-sema]]
 - [[proposal-compilation-model-and-wmo-to-driver]]
+- [[proposal-option-sets-to-importer-and-layout]]
 - [[proposal-c-export-and-bridging-to-importer]]
 - [[proposal-c-pointer-interop-to-unsafe-pointer-model]]
 - [[proposal-objc-interop-to-importer-and-dispatch]]

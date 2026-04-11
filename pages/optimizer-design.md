@@ -63,4 +63,4 @@ SIL 수준에서 최적화하는 이유: IRGen으로 LLVM IR에 내리면 고수
   - `SILCombiner/` — SIL 결합 최적화
   - `Differentiation/` — 자동 미분
 
-관련 페이지: [[sil-reference]], [[overview]], [[sil-arc-optimization]], [[sil-utilities]], [[debugging-the-compiler]], [[compiler-performance]]
+관련 페이지: [[proposal-optimizer-effects-and-attributes-to-sil-optimizer]], [[proposal-in-place-operations-to-writeback-and-cow]], [[sil-reference]], [[overview]], [[sil-arc-optimization]], [[sil-utilities]], [[debugging-the-compiler]], [[compiler-performance]]

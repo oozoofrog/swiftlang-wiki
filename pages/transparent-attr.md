@@ -21,4 +21,4 @@ sources: [transparent-attr.md]
 
 `@_transparent`는 매우 제한적으로 사용해야 한다. 구현이 변경될 수 있거나, private 함수를 호출하거나, `-Onone`에서의 인라이닝이 문제가 된다면 `@inlinable` + `@inline(__always)`를 사용해야 한다.
 
-관련 페이지: [[sil-function-attributes]], [[keyword-network]], [[high-level-sil-optimizations]], [[optimizer-design]], [[compiler-performance]]
+관련 페이지: [[proposal-optimizer-effects-and-attributes-to-sil-optimizer]], [[sil-function-attributes]], [[keyword-network]], [[high-level-sil-optimizations]], [[optimizer-design]], [[compiler-performance]]

@@ -21,4 +21,4 @@ sources: [high-level-sil-optimizations.rst]
 - **Fixed Storage** (Span, InlineArray): `fixed_storage.get_count`, `fixed_storage.check_index`
 - **@_effects**: `readnone`, `readonly`, `releasenone` 등 부작용 명세
 
-관련 페이지: [[optimizer-design]], [[keyword-network]], [[sil-reference]], [[glossary-compiler]], [[standard-library-to-compiler-crosswalk]], [[sil-optimizer-pass-catalog]], [[transparent-attr]]
+관련 페이지: [[proposal-optimizer-effects-and-attributes-to-sil-optimizer]], [[proposal-in-place-operations-to-writeback-and-cow]], [[optimizer-design]], [[keyword-network]], [[sil-reference]], [[glossary-compiler]], [[standard-library-to-compiler-crosswalk]], [[sil-optimizer-pass-catalog]], [[transparent-attr]]
